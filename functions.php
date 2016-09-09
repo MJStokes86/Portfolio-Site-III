@@ -89,6 +89,12 @@ function get_fontawesome_enqueue () {
 
 add_action(wp_enqueue_scripts, 'get_fontawesome_enqueue');
 
+function custom_excerpt_length() {
+	return 55;
+}
+
+add_filter('excerpt_length', 'custom_excerpt_length');
+
 
 
 
