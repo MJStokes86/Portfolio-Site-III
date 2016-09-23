@@ -16,6 +16,14 @@ html, body{
 
 } 
 
+
+#page-contact {
+		background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('../img/bklynbridge.jpg') center no-repeat;
+		
+
+} 
+ 
+
 #bars {
 	color: #fff;
 	position:  fixed;
@@ -206,7 +214,7 @@ html, body{
 .post_container {
 	background-color: #212121;
 	color: #fff;
-	height: 500px;
+	height: 1000px;
 	position: relative;
 	left: 25px;
 	margin-top: 700px;
@@ -216,9 +224,32 @@ html, body{
 
 }
 
+#border-right:not(:last-child) {
+	border-right: solid 1px pink;
+}
+
+
+.col-xs-6 {
+	color: #fff;
+}
+
+.social {
+	text-decoration: none;
+	color: #fff;
+}
+
+.social li {
+	display:  inline-block;
+}
+
+.entry-content {
+	color: #fff;
+}
+
+
 
 .footer {
-	background-color: #212121;
+	background-color: #000;
 	color: #fff;
 
 }

@@ -30,6 +30,7 @@ add_theme_support('custom-header');
 add_theme_support('post-thumbnails');
 
 add_theme_support('post-formats', array('aside', 'image', 'video' ));
+add_theme_support('html5', array('search-form'));
 
 
 function bkny_widget_setup() {
@@ -96,6 +97,49 @@ function custom_excerpt_length() {
 add_filter('excerpt_length', 'custom_excerpt_length');
 
 
+function awesome_remove_version() {
+	return '';
+
+
+}
+
+add_filter('the_generator', 'awesome_remove_version');
+
+
+add_filter('wp_mail_content_type', 'set_content_type');
+
+
+function set_content_type($content_type) {
+	return 'text/html';
+
+}
+
+
+
+// function contact_form() {
+// 	if(!isset($_POST['submit'])) { return; }
+
+
+// 	$form = array();
+// 	$form['the_name'] = $_POST['the_name'];
+// 	$form['the_email'] = $_POST['the_email'];
+// 	$form['subject'] = $_POST['subject'];
+// 	$form['body'] = $_POST['body'];
+
+// 	$subject = $form['subject'];
+
+// 	$to = 'mjstokes1986@att.net';
+	
+
+// 	if(wp_mail($to, $subject)) {
+// 		wp_redirect(home_url()); exit;
+// 	}
+
+
+
+// }
+
+// add_action('wp_head', 'contact_form');
 
 
  ?>

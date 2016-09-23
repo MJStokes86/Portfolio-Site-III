@@ -10,7 +10,7 @@
 		
 
 		<h4 style='color:#fff'>About</h4>
-		<hr style='color:white'>
+		<hr style='color:#fff'>
 		<h1 id='my-name'>MICHAEL J STOKES</h1>
 		
 			</div>
