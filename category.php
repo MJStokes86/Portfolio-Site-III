@@ -8,7 +8,9 @@
 
 <div class="row">
 	<div class="col-xs-12">
-	<h1>Search Results</h1>
+
+	
+	<h1><?php single_cat_title($prefix='', $display=true) ?></h1>
 
 	<?php 
 
@@ -19,8 +21,8 @@
 				<?php get_template_part('content', 'search') ?>
 				
 
-				
-			<hr>
+				<hr>
+
 
 			<?php endwhile;
 

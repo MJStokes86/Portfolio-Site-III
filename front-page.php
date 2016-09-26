@@ -9,17 +9,17 @@
 		<img src="<?php bloginfo('template_directory'); ?>/img/Logo.png" id='logo'>
 		<h1 id='my-name'>MICHAEL J STOKES</h1>
 		<br>
-		<p id='web-dev'>WEB DEVELOPMENT</p>
+		<!-- <p id='web-dev'>WEB DEVELOPMENT</p> -->
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="content-block text-center">	
+<div class="content-block text-center parallax-window" data-parallax="scroll" data-image-src="<?php bloginfo('template_directory'); ?>/img/Dumbo-Brooklyn.jpg">	
 <div class="container">	
 <div class="row">
 <div class="col-xs-12">
-	<h1 id='date'>	<?php $d = date('F j, Y'); echo $d;	 ?></h1>
+	<h1 id='date'><?php $d = date('F j, Y'); echo $d;	 ?></h1>
 </div>									
 </div>
 </div>	
@@ -39,7 +39,7 @@
 
 
 
-			$lastBlog = new WP_Query('type=post&posts_per_page=3&order=ASC&cat=-12,-13,-14,-15');
+			$lastBlog = new WP_Query('type=post&posts_per_page=3&order=ASC&cat=39');
 
 			
 		
@@ -85,7 +85,7 @@
 </div>	
 
 
-<div class="services">
+<div class="services parallax-window">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12">
@@ -117,9 +117,6 @@
 				</ul>
 				</div>
 
-				<div class="col-xs-6 device-bg">
-					<img src="<?php bloginfo('template_directory'); ?>/img/device_set.png" id="devices">
-				</div>
 			</div>
 		</div>
 	</div>
@@ -127,7 +124,7 @@
 
 
 
-<div class="featured-work">
+<!-- <div class="featured-work">
 <div class="container-fluid">
 <div class="row">
 <div class="col-xs-12">
@@ -144,6 +141,8 @@
 </div>	
 </div>
 </div>
+
+ -->
 
 
 

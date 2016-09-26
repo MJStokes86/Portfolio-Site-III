@@ -5,9 +5,10 @@
 
 
 
-	
+	<div class="container-fluid">
 
 	<div class="row-fluid">
+	<div class="col-xs-12">
 
 
 		<div class="cols left-div">
@@ -26,7 +27,7 @@
 		 	
 
 		<div class="col-xs-1" id="post_date"><p><?php echo get_the_date('n.d.y'); ?></p></div> 
-		<div class="col-xs-1" id="post_category">
+		<!-- <div class="col-xs-1" id="post_category">
 		<p>
 
 		<?php 
@@ -38,7 +39,7 @@
 
 		?></p>
 		</div>
-
+ -->
 		<br>
 		<br>
 		<br>
@@ -85,6 +86,8 @@
 
 		
 
+	</div>
+	</div>
 	</div>
 
 	<br>

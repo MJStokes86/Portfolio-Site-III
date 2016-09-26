@@ -1,12 +1,16 @@
-<?php get_header();?>
+<body id="page-blog">
 
-<div class="row">
-	
-	<div class="col-xs-12 col-sm-8">
-		
+<?php get_header(); ?>
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="col-xs-12">
 
 
-		<?php 
+		<div class="cols left-div">
+
+
+			<?php 
 
 		if(have_posts()):
 
@@ -18,23 +22,18 @@
 				<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 				<?php if(has_post_thumbnail()): ?>
 
-					<div class="pull-right"><?php the_post_thumbnail('thumbnail'); ?></div>
+					<div class="pull-left"><?php the_post_thumbnail('thumbnail'); ?></div>
 
 				<?php endif; ?>
 
-				<small><?php the_category(' '); ?> || <?php the_tags(); ?> || <?php edit_post_link(); ?></small>
-
+				
 				<?php the_content(); ?>
 
-				<hr>
+				<small><!-- <?php the_category(' '); ?> || --> <?php the_tags(); ?> <!-- || <?php edit_post_link(); ?> --></small>
 
-				<?php if(comments_open()) {
-					comments_template();
-					} else {
-						echo '<h5 class=""text-center">Sorry, Comments are Closed!</h5>';
-					}
 
-					?>
+
+				
 					
 				</article>
 				
@@ -47,13 +46,45 @@
 
 		?>
 
+
+
+
+
+		</div>
+
+
+		<div class="cols right-div"><?php get_sidebar() ?></div>
+			
+
+		
+
+
+		</div>
 	</div>
-
-<div class="col-xs-12 col-sm-4">
-	<?php get_sidebar(); ?>
-
 </div>
 
-</div>
 
+<div class="container comment_container">
+
+<div class="row">
+	<div class="col-xs-12">
+
+
+	
+
+	<?php if(comments_open()) {
+					comments_template();
+					} else {
+						echo '<h5 class=""text-center">Sorry, Comments are Closed!</h5>';
+					}
+
+					?>
+		
+
+
+
+	</div>
+</div>
+</div>
+	
 <?php get_footer(); ?>
