@@ -10,6 +10,53 @@ html, body{
 	padding: 0;
 }
 
+.article {
+
+	column-width: 150px;
+	-webkit-column-width: 150px;
+	-moz-column-width: 150px;
+	column-gap: 30px;
+	-webkit-column-gap: 30px;
+	-moz-column-gap: 30px;
+
+}
+
+.article p:first-child {
+	padding-top: 225px;
+	padding-left: -100px;
+}
+
+/* .article p:first-child::first-letter{
+	font-size: 3em;
+}
+ */
+.entry-title {
+	width: 300px;
+}
+
+.first-item {
+	font-size: 5em;
+}
+
+
+.ghost-button {
+
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 17px;
+	padding: 7px 12px;
+	font-weight: normal;
+	margin-right: 12px;
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	min-width: 120px;
+
+}
+
+
+
+
 
 
 

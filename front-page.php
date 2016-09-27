@@ -89,14 +89,14 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12">
-				<h1 class="text-left">
+			<!-- 	<h1 class="text-center">
 
 				<?php 
 				$cat_id = 13;
 					echo get_cat_name($cat_id);
-					 ?></h1>
-				<div class="col-xs-6">
-				<ul class="service-list">
+					 ?></h1> -->
+				
+			
 					<?php 
 					query_posts('cat=13&showposts=1');
 					if(have_posts()) {
@@ -114,8 +114,7 @@
 
 
 					 ?>
-				</ul>
-				</div>
+				
 
 			</div>
 		</div>
