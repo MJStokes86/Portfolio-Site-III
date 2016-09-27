@@ -28,7 +28,7 @@
 	if(have_posts()) {
 		the_post(); ?></p>
 
-	<p><?php the_content(); ?></p>
+	<article class="article_about"><p><?php the_content(); ?></p></article>
 
 	<?php 
 }
@@ -80,6 +80,21 @@
 	<div class="container-fluid">
 	<div class="row">
 	<div class="col-xs-12">
+
+	<?php 
+	query_posts('cat=16&showposts=1'); 
+	if(have_posts()) {
+		the_post(); ?></p>
+
+	<p><?php the_content(); ?></p>
+
+	<?php 
+}
+
+
+
+
+?>
 
 	</div>			
 	</div>	

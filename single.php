@@ -26,7 +26,7 @@
 
 
 
-				<div class="article">
+				<div class="article_single">
 				<?php if(has_post_thumbnail()): ?>
 
 					<div class="pull-left"><?php the_post_thumbnail('thumbnail'); ?></div>

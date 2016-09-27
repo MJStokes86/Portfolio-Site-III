@@ -10,7 +10,7 @@ html, body{
 	padding: 0;
 }
 
-.article {
+.article_about {
 
 	column-width: 150px;
 	-webkit-column-width: 150px;
@@ -18,10 +18,28 @@ html, body{
 	column-gap: 30px;
 	-webkit-column-gap: 30px;
 	-moz-column-gap: 30px;
+	column-count: 3;
+	border-top: solid #fff 5px;
+	border-bottom: solid #fff 5px;
+	padding: 50px;
+	font-family: Garamond;
 
 }
 
-.article p:first-child {
+.article_single {
+
+	column-width: 150px;
+	-webkit-column-width: 150px;
+	-moz-column-width: 150px;
+	column-gap: 30px;
+	-webkit-column-gap: 30px;
+	-moz-column-gap: 30px;
+	font-family: Garamond;
+
+
+}
+
+.article_single p:first-child {
 	padding-top: 225px;
 	padding-left: -100px;
 }
