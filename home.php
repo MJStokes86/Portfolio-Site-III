@@ -26,7 +26,7 @@
 		 		
 		 	
 
-		<div class="col-xs-1" id="post_date"><p><?php echo get_the_date('n.d.y'); ?></p></div> 
+		<p class="text_bg1" id="post_date"><?php echo get_the_date('n.d.y'); ?></p>
 		<!-- <div class="col-xs-1" id="post_category">
 		<p>
 
@@ -48,7 +48,7 @@
 
 		<div class="featured_photo"><?php echo the_post_thumbnail('100px') ?></div>
 
-		<div class="blog-title"><h1><?php echo the_title() ?></h1></div>	
+		<div class="blog-title text_bg2"><h1><?php echo the_title() ?></h1></div>	
 
 		<br>	
 

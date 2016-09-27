@@ -72,6 +72,28 @@ html, body{
 
 }
 
+.text_bg1 {
+	background-color: #000;
+	display: block;
+	padding: 25px 0 0 15px;
+	margin: 4px 12px;
+	width: 200px;
+	line-height: 1.1em;
+}
+
+.text_bg2 {
+	text-transform: uppercase;	
+	line-height: 30px;
+	font-size: 30px;
+	padding: 10px;
+	background-color: pink;
+	color: #000;
+	display: inline;
+	overflow: hidden;
+
+}
+
+
 
 
 
@@ -278,6 +300,21 @@ html, body{
 
 }
 
+.featured_photo, .blog-title, .template-part {
+	position: relative;
+	left: 15px;
+}
+
+.template-part p {
+	width: 75%;
+}
+
+.blog-title {
+	width: 50%;
+    display: inline-block;
+
+}
+
 
 .left-div {
 	width: 800px;
@@ -295,9 +332,16 @@ html, body{
 
 }
 
+
+
+
 #post_date {
-	background-color: #000;
+	
 	color: #fff;
+	font-size: 2em;
+	padding-bottom: 2px;
+
+
 }
 
 #post_category {
