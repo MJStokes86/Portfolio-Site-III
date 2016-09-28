@@ -48,22 +48,19 @@
 
 		<div class="featured_photo"><?php echo the_post_thumbnail('100px') ?></div>
 
-		<div class="blog-title text_bg2"><h1><?php echo the_title() ?></h1></div>	
+		<br>
+		<br>
+
+
+		<div class="blog-title"><h1><span class="text_bg2"><?php echo the_title() ?></span></h1></div>	
 
 		<br>	
+		<br>
+		<br>
 
 
 		<div class="template-part">
-
-
-
-		<p>
-		<?php echo get_the_excerpt() ?>
-		<a href="<?php the_permalink(); ?>">Read more&raquo;</a>
-
-			
-		</p>
-
+		<p><?php echo get_the_excerpt() ?> <a class='ghost-button' href="<?php the_permalink(); ?>">Read more</a></p>
 		</div>
 
 
@@ -146,7 +143,7 @@
 			<br>
 			<p>
 			<?php echo get_the_excerpt() ?>
-			<a href="<?php the_permalink(); ?>">Read more&raquo;</a>
+			<a class="ghost-button-pink" href="<?php the_permalink(); ?>">Read more</a>
 
 			
 		</p>

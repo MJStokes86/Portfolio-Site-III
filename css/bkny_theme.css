@@ -72,6 +72,22 @@ html, body{
 
 }
 
+.ghost-button-pink {
+
+	color: #000;
+	border: 1px solid #fff;
+	font-size: 17px;
+	padding: 7px 5px;
+	font-weight: normal;
+	margin-right: 12px;
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	min-width: 120px;
+	background-color: pink;
+
+}
+
 .text_bg1 {
 	background-color: #000;
 	display: block;
@@ -83,16 +99,16 @@ html, body{
 
 .text_bg2 {
 	text-transform: uppercase;	
-	line-height: 30px;
-	font-size: 30px;
-	padding: 10px;
+	line-height: 1;
 	background-color: pink;
 	color: #000;
-	display: inline;
-	overflow: hidden;
-
 }
 
+/* h1 span {
+  line-height: 2;
+  background-color: ;
+}
+ */
 
 
 
@@ -238,11 +254,9 @@ html, body{
 
 }
 
-.title {
-	background-color: white;
-	color: #000;
-	padding: 20px 40px;
-}
+/* .title {
+	width: 50%;
+} */
 
 .services {
 	height: auto;
@@ -255,10 +269,7 @@ html, body{
 	background-blend-mode: multiply;
 }
 
-#skills {
-	background-color: #fff !important;
-	color:#000 !important;
-}
+
 
 
 #devices {
@@ -271,6 +282,63 @@ html, body{
 }
 
 /* end of front-page.php */
+
+
+/* page-about.php */
+
+#skills {
+	background-color: #212121;
+	color: #fff;
+	background-image: none !important;
+}
+
+.skill-bar span{
+	display: table;
+	height: 5px;
+	background-color: #fff;
+
+}
+
+ .devicons {
+	font-size: 3em;
+}
+
+.glyphicon {
+	font-size: 3em;
+}
+.fa {
+	font-size: 3em;
+}
+
+.skills li {
+	list-style: none;
+}
+
+.skills ul {
+	position: relative;
+	left: -20px;
+}
+
+.interests {
+/* 	margin-bottom:10px;
+ */	margin-top: -30px;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items:center;
+	
+}
+
+.interests p {
+	font-size: 25px;
+}
+
+.interests .container-fluid {
+	border: solid 1px #fff;	
+
+}
+
+/* end of page-about.php */
 
 .tags_list {
 	display: inline-block;
@@ -399,6 +467,8 @@ html, body{
 
 
 
+/* footer.php */
+
 .footer {
 	background-color: #000;
 	color: #fff;
@@ -408,6 +478,20 @@ html, body{
 .footer a {
 	color: #fff;
 }
+
+.footer ul {
+	list-style: none;
+}
+
+.social-media li {
+	display: inline-block;
+	padding: 10px;
+
+
+
+}
+
+/* end of footer.php */
 
 
 

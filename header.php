@@ -6,6 +6,9 @@
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<?php wp_head(); ?>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+	<script src="https://use.fontawesome.com/a46e157fb6.js"></script>
+
 
 
 </head>

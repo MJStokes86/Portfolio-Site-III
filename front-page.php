@@ -60,11 +60,7 @@
 
 			<br>	
 
-
- 
-
-
-					<div class="title">	<?php get_template_part('content-title', get_post_format()); ?></div>
+					<div class=" title text_bg2"><h1><?php get_template_part('content-title', get_post_format()); ?></h1></div>
 
 				
 	</div>

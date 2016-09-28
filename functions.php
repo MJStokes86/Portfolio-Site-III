@@ -3,7 +3,12 @@
 function bkny_theme_script_enqueue() {
 
 	wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/bkny_theme.css', array(), '4.5.3', 'all');
+
 	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.7', 'all');	
+
+	wp_enqueue_style('devicons', '//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css');
+
+	wp_enqueue_style('glyphicons', '//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css');
 	
 	wp_enqueue_script('jquery', get_template_directory_uri() .'/js/jquery.min.js', array(), '3.1.0', true);
 

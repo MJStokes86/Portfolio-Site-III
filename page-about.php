@@ -18,7 +18,7 @@
 	</div>
 </div>
 
-<div class="content-block text-center">	
+<div class="content-block text-center parallax-window" data-parallax="scroll" data-image-src="<?php bloginfo('template_directory'); ?>/img/Dumbo-Brooklyn.jpg">	
 <div class="container">	
 <div class="row">
 <div class="col-xs-12">
@@ -76,7 +76,7 @@
 
 
 
-<div class="img-bg latest-post" id='img2'>
+<div class="img-bg interests text-center" id='img2'>
 	<div class="container-fluid">
 	<div class="row">
 	<div class="col-xs-12">
