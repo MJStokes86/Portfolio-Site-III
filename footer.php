@@ -60,7 +60,7 @@ array(
 
 <div class="col-xs-3 text-center">
 <h3>Contact Me</h3>
-<i class="fa fa-phone"><p>(336) 693-5580</p></i> <br> <i class="fa fa-envelope"><p>mjstokes1986@att.net</p></i>
+<p><i class="fa fa-phone"> (336) 693-5580</p></i><p><i class="fa fa-envelope"> mjstokes1986@att.net</p></i>
 <hr>
 <ul class="social-media">
 	<li><a href="http://facebook.com/mstokesj86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/facebook32.png" alt=""></a></li>
@@ -69,9 +69,9 @@ array(
 	<li><a href="http://twitter.com/mstokes86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/twitter32.png" alt=""></a></li>
 </ul>
 
-<small><p>Copyright &copy; <?php echo date('Y'); ?>.
-mjstokes.com.
-All rights reserved.</p></small>
+<small><p>Copyright &copy; <?php echo date('Y'); ?> |
+mjstokes.com |
+All rights reserved </p></small>
 	
 
 </div>

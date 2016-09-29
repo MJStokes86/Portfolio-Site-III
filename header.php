@@ -8,6 +8,8 @@
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
 	<script src="https://use.fontawesome.com/a46e157fb6.js"></script>
+	<script src="//cdn.jsdelivr.net/jquery.touchswipe/1.6.15/jquery.touchSwipe.min.js"></script>
+
 
 
 
@@ -30,28 +32,28 @@ else{
 
 <body <?php body_class($bkny_classes); ?>>
 
-		<div class="mobile-header">
-		<a href="#sidr" id="nav-toggle"><i class="fa fa-bars fa-2x" id="bars"></i></a>
-		</div>
 
-		<div id="main-navigation">
-			<nav class="nav">
-				
-				<?php 
-				wp_nav_menu(array(
-				'theme_location' => 'primary',
-				'container' => false,
-				'menu_class' => 'sidr-nav')
-				);
-				?>
 
-			</nav>
-		</div>
+<div class=" button_container" id="toggle">
+	<span class="top"></span>
+	<span class="middle"></span>
+	<span class="bottom"></span>
+	
+</div>
+
+
+<div class="overlay" id="overlay">
+	<nav class="overlay-menu">
+		<?php 
+		wp_nav_menu(array(
+		'theme_location' => 'primary',
+		'container' => false,
+		'menu_class' => 'overlay-menu')
+		);
+		?>
 		
+
+	</nav>
+</div>
+
 		
-
-
-
-<!-- img src="<?php  header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /> -->
-
-
