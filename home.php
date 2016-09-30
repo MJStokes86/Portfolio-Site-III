@@ -26,7 +26,7 @@
 		 		
 		 	
 
-		<p class="text_bg1" id="post_date"><?php echo get_the_date('n.d.y'); ?></p>
+		<p class="running_head_black" id="post_date"><?php echo get_the_date('n.d.y'); ?></p>
 		<!-- <div class="col-xs-1" id="post_category">
 		<p>
 
@@ -45,18 +45,14 @@
 		<br>
 		<br>
 		<br>
-
-		<div class="featured_photo"><?php echo the_post_thumbnail('100px') ?></div>
-
-		<br>
 		<br>
 
 
-		<div class="blog-title"><h1><span class="text_bg2"><?php echo the_title() ?></span></h1></div>	
+		<div class="featured_photo"><?php echo the_post_thumbnail('large') ?></div>
 
-		<br>	
-		<br>
-		<br>
+
+		<div class="blog-title"><h1><span class="running_head_pink"><?php echo the_title() ?></span></h1></div>	
+		
 
 
 		<div class="template-part">
@@ -139,7 +135,7 @@
 
 			<div class="recent_post_thumbnail"><?php echo the_post_thumbnail('thumbnail') ?></div>
 			<br>
-			<h2><?php the_title(); ?></h2>
+			<h2 class="blog-title" id="container_titles"><?php the_title(); ?></h2>
 			<br>
 			<p>
 			<?php echo get_the_excerpt() ?>

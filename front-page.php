@@ -19,7 +19,7 @@
 <div class="container">	
 <div class="row">
 <div class="col-xs-12">
-	<h1 id='date'><?php $d = date('F j, Y'); echo $d;	 ?></h1>
+	<h1 id='date'><?php $d = date('F j, Y'); echo $d; ?></h1>
 </div>									
 </div>
 </div>	
@@ -56,7 +56,7 @@
 
 	<div class="col-xs-4 text-center">
 
-			<div class="thumbnail-img"><?php echo the_post_thumbnail('thumbnail'); ?></div>	
+			<div class="thumbnail-img"><?php echo the_post_thumbnail('medium'); ?></div>	
 
 			<br>	
 

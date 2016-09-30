@@ -39,10 +39,10 @@ html, body{
 
 }
 
-.article_single p:first-child {
+/* .article_single p:first-child {
 	padding-top: 225px;
 	padding-left: -100px;
-}
+} */
 
 /* .article p:first-child::first-letter{
 	font-size: 3em;
@@ -88,20 +88,22 @@ html, body{
 
 }
 
-.text_bg1 {
+.running_head_black {
 	background-color: #000;
 	display: block;
-	padding: 25px 0 0 15px;
+	padding: 35px 0 5px 0;
 	margin: 4px 12px;
-	width: 200px;
+	width: 250px;
 	line-height: 1.1em;
 }
 
-.text_bg2 {
+.blog-title {
 	text-transform: uppercase;	
-	line-height: 1;
-	background-color: pink;
-	color: #000;
+	/* line-height: 1.8; */
+	color: pink;
+	padding: 20px;
+	font-size: 20px;
+	font-family: 'Anton', sans-serif;
 }
 
 /* h1 span {
@@ -110,7 +112,33 @@ html, body{
 }
  */
 
+.featured_photo {
+	position: relative;
+	top: 5% !important;
+}
 
+.running_head_text {
+	font-size: 15px;
+	text-transform: uppercase;
+	padding-left: 10px;
+
+}
+
+.running_head_text {
+	position: relative;
+	top: 50px;
+}
+
+#running_head_projects {
+	position: relative;
+	top: 0;
+	left: -10px;
+}
+
+#container_titles {
+	font-size: 30px;
+	padding: 0;
+}
 
 
 
@@ -121,6 +149,10 @@ html, body{
 		
 
 } 
+
+#search {
+	width: 80%;
+}
 
 /* header.php */
  
@@ -153,6 +185,15 @@ html, body{
 	color: #fff !important;
 	position: relative;
 	
+}
+
+#menu-main-navigation li a:hover {
+	color:  pink !important;
+	-webkit-transition: color 0.5s linear; 
+    -moz-transition: color 0.5s linear;
+    -ms-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+     transition: color 0.5s linear;
 }
 
 
@@ -270,7 +311,8 @@ html, body{
 	top: 50%;
 	transform: translateY(-50%);
 	font-size: 50px;
-	font-family: 'Vollkorn', serif;
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
 	font-weight: 400;
 	text-align: center;
 }
@@ -294,9 +336,10 @@ html, body{
 
 }
 
-.overlay ul li a:hover::after, .overlay ul li a:focus::after, .overlay ul li a:active::after {
-	width: 100%;
-}
+/* .overlay ul li a:hover::after, .overlay ul li a:focus::after, .overlay ul li a:active::after {
+	width: 25%;
+} */
+
 
 .overlay ul li a::after {
 	content: '';
@@ -329,8 +372,10 @@ html, body{
 /* front-page.php */
 
 #date {
-	color:  #C8A585 !important;
+	color: pink !important;
 	font-size: 80px;
+	font-family: Anton, sans-serif;
+	text-transform: uppercase;
 }
 
 .img-bg {
@@ -598,6 +643,11 @@ html, body{
 	position: relative;
 	float: left;
 	top: 30px;
+}
+
+#blog_photo {
+	position: relative;
+	top: 5% !important;
 }
 
 

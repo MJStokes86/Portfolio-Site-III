@@ -27,12 +27,12 @@
 
 
 				<div class="article_single">
-				<?php if(has_post_thumbnail()): ?>
+				<!-- <?php if(has_post_thumbnail()): ?>
 
-					<div class="pull-left"><?php the_post_thumbnail('thumbnail'); ?></div>
+					<div class="pull-left"><?php the_post_thumbnail('medium'); ?></div>
 
 				<?php endif; ?>
-
+ -->
 				<p><?php the_content(); ?></p>
 
 				<small><!-- <?php the_category(' '); ?> || --> <?php the_tags(); ?> <!-- || <?php edit_post_link(); ?> --></small>
