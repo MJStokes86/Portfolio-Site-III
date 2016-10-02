@@ -4,10 +4,8 @@
 
 <div class="container-fluid">
 	<div class="row-fluid">
-		<div class="col-xs-12">
+		<div class="col-xs-12 main-blog">
 
-
-		<div class="cols left-div">
 
 
 			<?php 
@@ -25,19 +23,19 @@
 
 
 
-
-				<div class="article_single">
-				<!-- <?php if(has_post_thumbnail()): ?>
+	
+				<div class="content">
+				 <!-- <?php if(has_post_thumbnail()): ?>
 
 					<div class="pull-left"><?php the_post_thumbnail('medium'); ?></div>
 
-				<?php endif; ?>
- -->
+				<?php endif; ?> -->
+
 				<p><?php the_content(); ?></p>
 
 				<small><!-- <?php the_category(' '); ?> || --> <?php the_tags(); ?> <!-- || <?php edit_post_link(); ?> --></small>
 				</div>
-
+				
 
 				
 					
@@ -58,10 +56,9 @@
 
 
 
-		</div>
 
-
-		<div class="cols right-div"><?php get_sidebar() ?></div>
+<!-- 
+		<div class="cols right-div"><?php get_sidebar() ?></div> -->
 			
 
 		

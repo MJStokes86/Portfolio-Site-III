@@ -35,9 +35,12 @@ html, body{
 	-webkit-column-gap: 30px;
 	-moz-column-gap: 30px;
 	font-family: Garamond;
+	column-count: 3;
 
 
 }
+
+
 
 /* .article_single p:first-child {
 	padding-top: 225px;
@@ -50,6 +53,11 @@ html, body{
  */
 .entry-title {
 	width: 300px;
+}
+
+.entry img {
+	width: 100%;
+	object-fit: cover;
 }
 
 .first-item {
@@ -163,9 +171,6 @@ html, body{
 	top: 5%;
 }
 
-.nav, .nav-brand, #sidr-social-media {
-	display: none;
-}
 
 #menu-main-navigation {
 	display: inline;
@@ -180,6 +185,28 @@ html, body{
 	background-color: transparent !important;
 	border: none !important;
 }
+
+#my-name {
+	font-family:'Anton', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	margin-top: 15%;
+	}
+
+.navbar-brand img {
+	width: 100px;
+	height: 100px;
+	margin-top: 25%;
+	
+}
+
+#toggle {
+	margin-top: 1%;
+	
+}
+
+
+
 
 #menu-main-navigation li a{
 	color: #fff !important;
@@ -413,11 +440,7 @@ html, body{
 
 
 
-#my-name {
-	font-family:'Anton', sans-serif;
-	font-size: 50px;
-	color: #fff;
-	}
+
 
 #web-dev {
 	font-family: 'Arimo', sans-serif;
@@ -727,6 +750,15 @@ html, body{
 
 
 /* single.php */
+
+ .main-blog {
+ 	background-color: #212121;
+ 	color: #fff;
+ 	height: auto;
+ 	width: auto;
+
+
+}
 
 .pull-left {
 	height: 200px;

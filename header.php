@@ -32,14 +32,28 @@ else{
 
 <body <?php body_class($bkny_classes); ?>>
 
+<nav class="nav-default navbar-fixed-top navbar-color">
+	<div class="container-fluid">
+		<div class="navbar-header">
 
 
 <div class=" button_container" id="toggle">
 	<span class="top"></span>
 	<span class="middle"></span>
 	<span class="bottom"></span>
-	
+		
 </div>
+
+<a href="#" class='navbar-brand navbar-text-color'><img class= 'img-responsive navbar-img' src="<?php bloginfo('template_directory'); ?>/img/Logo.png" alt=""></a><h1 class="navbar-brand" id='my-name'>MICHAEL J STOKES</h1>
+				</div>
+			
+		</div>
+	</div>
+</nav>
+
+
+
+
 
 
 <div class="overlay" id="overlay">
@@ -55,5 +69,8 @@ else{
 
 	</nav>
 </div>
+
+
+
 
 		

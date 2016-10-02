@@ -5,9 +5,9 @@
 		<div class="row">
 		
 		<div class="col-xs-12" id="brand">
-
+<!-- 
 		<img src="<?php bloginfo('template_directory'); ?>/img/Logo.png" id='logo'>
-		<h1 id='my-name'>MICHAEL J STOKES</h1>
+		<h1 id='my-name'>MICHAEL J STOKES</h1> -->
 		<br>
 		<!-- <p id='web-dev'>WEB DEVELOPMENT</p> -->
 			</div>
