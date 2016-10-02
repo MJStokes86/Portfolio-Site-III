@@ -23,7 +23,7 @@
 		 	while($latestPost->have_posts()){
 		 		$latestPost->the_post(); ?>
 
-		<div class="running_head_pink"  id="featured"><p>Featured</p>
+		<div class="running_head_pink"  id="featured"><p>Featured Post</p>
   		</div>
 		
 
@@ -122,8 +122,7 @@
 
 
 
-			<div class="featured-thumbnail"><?php echo the_post_thumbnail('medium') ?></div>
-			<br>
+			<div class="featured-thumbnail"><?php echo the_post_thumbnail('medium') ?><h3 style="color:pink; font-family:Anton, sans-serif;"><?php echo get_the_date('n.d.y'); ?></h3></div>
 			<h2 class="blog-title" id="container_titles"><?php the_title(); ?></h2>
 			<br>
 			<p>

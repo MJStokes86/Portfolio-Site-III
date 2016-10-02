@@ -14,7 +14,7 @@
 
 			while(have_posts()): the_post(); ?> 
 				
-				<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+				<?php the_title('<h1 class="blog-title text-center" style="font-size: 50px; line-height: 1.8;">', '</h1>'); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -40,7 +40,9 @@
 				
 				</div>
 
-				<small><!-- <?php the_category(' '); ?> || --> <?php the_tags(); ?> <!-- || <?php edit_post_link(); ?> --></small>
+				<hr style="border-color: pink;">	
+
+				<h3 class="blog-title"><?php the_tags(); ?></h3>
 				
 
 				

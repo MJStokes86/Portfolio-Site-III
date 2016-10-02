@@ -126,7 +126,7 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
     </div> 
  */ ?> 
 
- <hr>
+ <hr style="border-color:pink;">
 
     <div id="comments-form"> 
      

@@ -80,9 +80,7 @@ html, body{
 
 }
 
-/* .template-part a {
-	color: #fff;
-} */
+
 
 .ghost-button:hover {
 	color: #000;
@@ -831,6 +829,8 @@ html, body{
  	color: #fff;
  	height: auto;
  	width: auto;
+ 	background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.9);
 
 
 }
@@ -843,11 +843,21 @@ html, body{
 	column-gap: 30px;
 	-webkit-column-gap: 30px;
 	-moz-column-gap: 30px;
-	font-family: Garamond;
-	font-size: 25px;
+	font-family: Times New Roman;
+	font-size: 20px;
 	column-count: 3;
+	line-height: 1.8em;
 
 
+}
+
+.content p a {
+	color: pink;
+
+}
+
+.content p a:hover {
+	text-decoration: none;
 }
 
 
@@ -860,14 +870,75 @@ html, body{
 
 	background-color: #212121;
 	color: #fff;
-	height: 500px;
+	height: auto;
 	position: relative;
 	left: 10px;
 	margin-top: 5px;
 	margin-bottom: 10px;
 	width: 95% !important;
+	background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.9);
 
 }
+
+.comments-header, #comments-header {
+
+	text-transform: uppercase;	
+	color: pink;
+	padding: 20px;
+	font-size: 30px;
+	font-family: 'Anton', sans-serif;
+
+}
+
+#comment-button {
+
+	color: pink;
+	border: 1px solid pink;
+	font-size: 17px;
+	padding: 7px 12px;
+	font-weight: normal;
+	margin-right: 12px;
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	min-width: 120px;
+	background-color: transparent;
+
+}
+
+
+
+#comment-button:hover {
+	color: #000;
+	background-color: pink;
+	border-color: pink;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s linear; 
+    -moz-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+     transition: background-color 0.5s linear;
+
+}
+
+#comment {
+
+	border-radius: 0;
+	border: solid pink 2px;
+	background-color: transparent;
+	color: pink;
+
+
+}
+
+.comment-meta span {
+	color: pink;
+}
+
+
+
+
 
 
 
