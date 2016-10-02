@@ -24,17 +24,23 @@
 
 
 	
+				
+				 <?php if(has_post_thumbnail()): ?>
+
+					<div class="text-center"><?php the_post_thumbnail('large'); ?></div>
+
+				<?php endif; ?>
+
 				<div class="content">
-				 <!-- <?php if(has_post_thumbnail()): ?>
-
-					<div class="pull-left"><?php the_post_thumbnail('medium'); ?></div>
-
-				<?php endif; ?> -->
+				<br>
+				<br>
 
 				<p><?php the_content(); ?></p>
 
-				<small><!-- <?php the_category(' '); ?> || --> <?php the_tags(); ?> <!-- || <?php edit_post_link(); ?> --></small>
+				
 				</div>
+
+				<small><!-- <?php the_category(' '); ?> || --> <?php the_tags(); ?> <!-- || <?php edit_post_link(); ?> --></small>
 				
 
 				

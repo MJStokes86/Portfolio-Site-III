@@ -23,40 +23,27 @@
 		 	while($latestPost->have_posts()){
 		 		$latestPost->the_post(); ?>
 
-		 		
-		 	
-
-		<p class="running_head_black" id="post_date"><?php echo get_the_date('n.d.y'); ?></p>
-		<!-- <div class="col-xs-1" id="post_category">
-		<p>
-
-		<?php 
-
-
-		$cat = get_the_category();
-			echo $cat[0]->cat_name;
-
-
-		?></p>
-		</div>
- -->
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-
-
-		<div class="featured_photo"><?php echo the_post_thumbnail('large') ?></div>
-
-
-		<div class="blog-title"><h1><span class="running_head_pink"><?php echo the_title() ?></span></h1></div>	
+		<div class="running_head_pink"  id="featured"><p>Featured</p>
+  		</div>
 		
+
+		 		
+		 <div class="running_head_black" id="post_date"><p><?php echo get_the_date('n.d.y'); ?></p></div>
+		
+
+		<div class="featured-thumbnail" id="featured_photo"><?php echo the_post_thumbnail('full') ?></div>
+
+		
+
+		<h1 class="featured-blog-title"><span style="color: #fff;"class="blog-title"><?php echo the_title() ?></span></h1>
+		
+		<br>
+		<br>
+		<br>
 
 
 		<div class="template-part">
-		<p><?php echo get_the_excerpt() ?> <a class='ghost-button' href="<?php the_permalink(); ?>">Read more</a></p>
+		<p><?php echo get_the_excerpt() . "<br><br>" ?><a class='ghost-button' href="<?php the_permalink(); ?>">Read more</a></p>
 		</div>
 
 
@@ -90,7 +77,9 @@
 
 	<div class="row">
 		<div class="col-xs-12">
+		<div class="running_head_pink" id="recent_posts">
 		<h1>Recent Posts</h1>
+		</div>
 
 
 			<?php 
@@ -133,13 +122,13 @@
 
 
 
-			<div class="recent_post_thumbnail"><?php echo the_post_thumbnail('thumbnail') ?></div>
+			<div class="featured-thumbnail"><?php echo the_post_thumbnail('medium') ?></div>
 			<br>
 			<h2 class="blog-title" id="container_titles"><?php the_title(); ?></h2>
 			<br>
 			<p>
 			<?php echo get_the_excerpt() ?>
-			<a class="ghost-button-pink" href="<?php the_permalink(); ?>">Read more</a>
+			<a class="ghost-button" href="<?php the_permalink(); ?>">Read more</a>
 
 			
 		</p>

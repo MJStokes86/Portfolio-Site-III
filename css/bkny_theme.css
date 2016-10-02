@@ -35,7 +35,7 @@ html, body{
 	-webkit-column-gap: 30px;
 	-moz-column-gap: 30px;
 	font-family: Garamond;
-	column-count: 3;
+	column-count: 2;
 
 
 }
@@ -43,7 +43,7 @@ html, body{
 
 
 /* .article_single p:first-child {
-	padding-top: 225px;
+	padding-top: 300px;
 	padding-left: -100px;
 } */
 
@@ -80,6 +80,23 @@ html, body{
 
 }
 
+/* .template-part a {
+	color: #fff;
+} */
+
+.ghost-button:hover {
+	color: #000;
+	background-color: pink;
+	border-color: pink;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s linear; 
+    -moz-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+     transition: background-color 0.5s linear;
+
+}
+
 .ghost-button-pink {
 
 	color: #000;
@@ -105,6 +122,18 @@ html, body{
 	line-height: 1.1em;
 }
 
+.running_head_pink {
+	background-color: pink;
+	display: block;
+	padding: 35px 0 5px 0;
+	margin: 4px 12px;
+	width: 250px;
+	line-height: 1.1em;
+	color: #000;
+	text-transform: uppercase;
+	font-family: Anton, sans-serif;
+}
+
 .blog-title {
 	text-transform: uppercase;	
 	/* line-height: 1.8; */
@@ -114,13 +143,8 @@ html, body{
 	font-family: 'Anton', sans-serif;
 }
 
-/* h1 span {
-  line-height: 2;
-  background-color: ;
-}
- */
 
-.featured_photo {
+#featured_photo {
 	position: relative;
 	top: 5% !important;
 }
@@ -150,7 +174,10 @@ html, body{
 
 
 
-
+.featured-thumbnail img {
+	max-width: 100%;
+	height: auto !important;
+}
 
 #page-contact {
 		background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('../img/bklynbridge.jpg') center no-repeat;
@@ -160,6 +187,11 @@ html, body{
 
 #search {
 	width: 80%;
+	border-radius: 0;
+	border: none;
+	border-bottom: solid pink 2px;
+	background-color: transparent;
+	color: #fff;
 }
 
 /* header.php */
@@ -191,12 +223,14 @@ html, body{
 	font-size: 30px;
 	color: #fff;
 	margin-top: 15%;
+
 	}
 
 .navbar-brand img {
 	width: 100px;
 	height: 100px;
 	margin-top: 25%;
+	display: none;
 	
 }
 
@@ -595,6 +629,8 @@ html, body{
 
 #page-blog {
 		background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('../img/bklynbridge.jpg') center no-repeat;
+		background-color: pink;
+	background-blend-mode: multiply;
 		 -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -608,6 +644,8 @@ html, body{
 	background-color: #212121;
 	color:  #fff;
 	margin-top: 20px;
+	background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.8);
 
 }
 
@@ -620,10 +658,27 @@ html, body{
 	width: 75%;
 }
 
-.blog-title {
-	width: 50%;
-    display: inline-block;
 
+.featured-blog-title  {
+	position: absolute;
+	top: 500px;
+	left: 0;
+	width: 75%;
+	font-size: 30px;
+	text-transform: uppercase;	
+	line-height: 1.8;
+	color: pink;
+	padding: 20px;
+	font-family: 'Anton', sans-serif;
+
+}
+
+.featured-blog-title span {
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+   font-size: 35px;
 }
 
 
@@ -643,6 +698,18 @@ html, body{
 
 }
 
+#featured {
+	position: relative;
+	left: 0;
+}
+
+#featured p, #post_date p, #recent_posts h1 {
+	position: relative;
+	left: 5%;
+	font-size: 25px;
+
+}
+
 
 
 
@@ -651,8 +718,13 @@ html, body{
 	color: #fff;
 	font-size: 2em;
 	padding-bottom: 2px;
-
-
+	position: relative;
+	top: 383px !important;
+	left: 2.9%;
+	z-index: 1;
+	background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.7);
+    font-family: Anton, sans-serif;
 }
 
 #post_category {
@@ -683,6 +755,9 @@ html, body{
 	margin-top: 5px;
 	margin-bottom: 10px;
 	width: 95% !important;
+	height: auto;
+	background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.9);
 
 
 
@@ -760,6 +835,22 @@ html, body{
 
 }
 
+.content p {
+
+	column-width: 150px;
+	-webkit-column-width: 150px;
+	-moz-column-width: 150px;
+	column-gap: 30px;
+	-webkit-column-gap: 30px;
+	-moz-column-gap: 30px;
+	font-family: Garamond;
+	font-size: 25px;
+	column-count: 3;
+
+
+}
+
+
 .pull-left {
 	height: 200px;
 	width: 200px;
@@ -796,6 +887,49 @@ html, body{
 /* end of search.php */
 
 
+/* sidebar.php */
+
+.widget-title {
+/* 	background-color: #000;
+ */	display: block;
+	padding: 35px 0 5px 0;
+	margin: 4px 12px;
+	width: 200px;
+	line-height: 1.1em;
+	color: pink;
+	text-transform: uppercase;
+	font-family: Anton, sans-serif;
+	font-size: 20px;
+}
+
+.widget-title h1 {
+	position: relative;
+	left: 5%;
+	font-size: 25px;
+}
+
+.widgets-area ul {
+	list-style: none;
+}
+
+.widgets-area li a {
+	color: #fff;
+}
+
+.widgets-area li a:hover {
+	color: pink;
+	text-decoration: none;
+	-webkit-transition: color 0.5s linear; 
+    -moz-transition: color 0.5s linear;
+    -ms-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+     transition: color 0.5s linear;
+
+}
+
+/* end of sidebar.php */
+
+
 
 @media only screen and (max-width: 48em) {
 
@@ -819,13 +953,14 @@ html, body{
 }
 
 	.right-div {
-		width: 100%;
+		width: auto;
 		left: 3%;
 	}
 
 
 	.post_container {
 	height: 1500px;
+	width: 100%;
 
 }
 
@@ -837,6 +972,7 @@ html, body{
 
 
 /*end of home.php*/
+
 
 
 
