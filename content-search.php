@@ -3,24 +3,35 @@
 <div class="container">
 <div class="row">
 <div class="col-xs-12">
+<br>
+<br>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 <div class="col-xs-4">
-	<div class="pull-left"><?php the_post_thumbnail('thumbnail'); ?></div>
+	<div class="pull-left"><?php the_post_thumbnail('medium'); ?></div>
 </div>
 
-<div class="col-xs-4">
-	<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+<div class="col-xs-4 results-content">
+	<?php the_title('<h2 class="blog-title" style="font-size:25px;">', '</h2>'); ?>
 	<?php if(has_post_thumbnail()): ?>
 
 
 
 	<?php endif; ?>
 
-	<small><?php the_category(' '); ?> || <?php the_tags(); ?> || <?php edit_post_link(); ?></small>
 
 	<?php the_excerpt(); ?>
-	<a href="<?php the_permalink(); ?>">Read more&raquo;</a>
+	<a href="<?php the_permalink(); ?>" class="ghost-button">Read more</a>
+	<br>
+	<br>
+	<?php 
+				$post_tags = get_the_tags();
+				if ($post_tags) {
+					foreach($post_tags as $tag) {
+						echo '<ul class="tags"><li><a href="' . get_tag_link($tag->term_id) . '">' .  $tag->name . '</a></li></ul>';
+					}
+					} 
+					?>
 </div>
 
 

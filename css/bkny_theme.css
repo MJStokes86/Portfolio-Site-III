@@ -192,6 +192,11 @@ html, body{
 	color: #fff;
 }
 
+#search:focus {
+	
+  	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0);
+}
+
 /* header.php */
  
 
@@ -338,7 +343,7 @@ html, body{
 	visibility: hidden;
 	transition: opacity .35s, visibility .35s, height .35s;
 	overflow: hidden;
-	z-index: 1;
+	z-index: 99;
 }
 
 .overlay.open {
@@ -732,11 +737,7 @@ html, body{
 }
 
 
-#post_date, #post_category{
-	position: relative;
-	float: left;
-	top: 30px;
-}
+
 
 #blog_photo {
 	position: relative;
@@ -765,6 +766,8 @@ html, body{
 #border-right:not(:last-child) {
 	border-right: solid 1px pink;
 }
+
+
 
 /*end of home.php */
 
@@ -922,7 +925,9 @@ html, body{
 
 }
 
-#comment {
+
+
+#author, #email, #url, #comment {
 
 	border-radius: 0;
 	border: solid pink 2px;
@@ -932,10 +937,35 @@ html, body{
 
 }
 
-.comment-meta span {
+/* .comment-meta span {
 	color: pink;
+} */
+
+.tags {
+	list-style: none;
+	display: inline-block;
+	font-family: Anton, sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+
 }
 
+
+.tags li a {
+	color: pink;
+	
+}
+
+.tags li a:hover {
+	text-decoration: none;
+	color: #fff;
+     -webkit-transition: color 0.5s linear; 
+    -moz-transition: color 0.5s linear;
+    -ms-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+     transition: color 0.5s linear;
+
+}
 
 
 
@@ -953,9 +983,32 @@ html, body{
 	color: #fff;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.9);
+
 }
 
+
+
 /* end of search.php */
+
+
+/* content-search.php */
+
+.results h1 {
+	background-color: pink;
+	display: block;
+	padding: 35px 0 5px 0;
+	margin: 4px 12px;
+	width: 250px;
+	line-height: 1.1em;
+	color: #000;
+	text-transform: uppercase;
+	font-family: Anton, sans-serif;
+
+}
+
+/* end of content-search.php */
 
 
 /* sidebar.php */
@@ -1004,7 +1057,7 @@ html, body{
 
 @media only screen and (max-width: 48em) {
 
-	#bars {
+	#toggle {
 	
 	top: 10%;
 }
@@ -1025,7 +1078,7 @@ html, body{
 
 	.right-div {
 		width: auto;
-		left: 3%;
+		left: -9%;
 	}
 
 
@@ -1033,6 +1086,19 @@ html, body{
 	height: 1500px;
 	width: 100%;
 
+}
+
+#post_date {
+	
+	
+	top: 235px !important;
+	left: 3.8%;
+	
+}
+
+.featured-blog-title {
+	top: 350px !important;
+	line-height: 2.5em;
 }
 
 
@@ -1045,6 +1111,15 @@ html, body{
 /*end of home.php*/
 
 
+/* content-search.php */
+
+.results-content {
+
+	position: absolute;
+	left: 30%;
+}
+
+/* end of content-search.php */
 
 
 

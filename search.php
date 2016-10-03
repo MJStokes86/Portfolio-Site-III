@@ -8,7 +8,7 @@
 
 <div class="row">
 	<div class="col-xs-12">
-	<h1>Search Results</h1>
+	<h1 class="running_head_pink">Search Results</h1>
 
 	<?php 
 

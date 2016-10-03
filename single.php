@@ -41,8 +41,16 @@
 				</div>
 
 				<hr style="border-color: pink;">	
+				<?php 
+				$post_tags = get_the_tags();
+				if ($post_tags) {
+					foreach($post_tags as $tag) {
+						echo '<ul class="tags"><li><a href="' . get_tag_link($tag->term_id) . '">' .  $tag->name . '</a></li></ul>';
+					}
+					} 
+					?>
+					
 
-				<h3 class="blog-title"><?php the_tags(); ?></h3>
 				
 
 				

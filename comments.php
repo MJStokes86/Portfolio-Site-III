@@ -7,12 +7,12 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
 <?php return; endif; ?>
 
 
-<?php if (pings_open()) : ?>
+<!-- <?php if (pings_open()) : ?>
 	<p id="respond"><span id="track-link">
 		<a href="<?php trackback_url() ?>" rel="trackback">Get a Trackback link</a>
 	</span></p>
 
-<?php endif; ?>
+<?php endif; ?> -->
 
 <?php if ($comments) :  ?>
 
@@ -82,19 +82,27 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
 
 		<div class="comment-meta">
 			
-	<?php /* gravatars */ ?>
+	<?php echo get_avatar( get_the_author_email(), '48' ); ?>
 
 		<span class="comment-author"><?php comment_author_link() ?></span>,
 		<span class="comment-date"><?php comment_date() ?></span>:
 		</div>
 		<div class="comment-text">
+
+
 	<?php /* Or maybe put gravatars here. The typical thing is to float them in the CSS */  
     /* Typical gravatar call:  
         <img src="<?php gravatar("R", 80, "YOUR DEFAULT GRAVATAR URL"); ?>"  
         alt="" class="gravatar" width="80" height="80"> 
     */ ?>
 
+
+
     	<?php comment_text(); ?>
+
+        <div class="reply">
+         
+        </div>
 		</div>
 		</li>
 
@@ -129,8 +137,14 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
  <hr style="border-color:pink;">
 
     <div id="comments-form"> 
-     
-    <h2 id="comments-header">Leave a comment</h2> 
+
+    <div id="respond">
+ 
+<h3 id="comments-header"><?php comment_form_title( 'Leave a Comment', 'Leave a Reply to %s' ); ?></h3>
+ 
+<div class="cancel-comment-reply">
+<small><?php cancel_comment_reply_link(); ?></small>
+</div>
      
     <?php if (get_option('comment_registration') && !$user_ID ) : ?> 
         <p id="comments-blocked">You must be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to= 
@@ -186,7 +200,7 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
 
     	<br>
 
-        <input type="submit" value='SEND' id='comment-button'>
+        <input type="submit" value='POST COMMENT' id='comment-button'>
         <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>"></p> 
      
     <?php do_action('comment_form', $post->ID); ?> 
