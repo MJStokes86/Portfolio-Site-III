@@ -4,6 +4,7 @@
 	<meta charset="<?php  bloginfo('charset'); ?>">
 	<title><?php  bloginfo('name'); ?> <?php wp_title(); ?></title>
 	<meta name="description" content="<?php bloginfo('description'); ?>">
+	<?php if( is_singular() ) wp_enqueue_script( 'comment-reply' );  ?>
 	<?php wp_head(); ?>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>

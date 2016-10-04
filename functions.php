@@ -122,6 +122,27 @@ function set_content_type($content_type) {
 
 }
 
+if (get_option('thread_comments')) {
+	wp_enqueue_script('comment-reply');
+}
+
+function mytheme_comment($comment, $args, $depth) {
+   ?>
+
+   
+
+
+
+   <?php comment_text(); ?>
+    
+        <?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ,$comment->comment_ID, $comment->comment_post_ID); ?>
+  
+    <?php
+    }
+
+
+  
+    
 
 
 // function contact_form() {

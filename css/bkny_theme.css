@@ -925,6 +925,20 @@ html, body{
 
 }
 
+ li {
+	list-style: none;
+}
+
+.comment-edit-link {
+	display: none;
+}
+
+.reply {
+	display: block;
+}
+
+
+
 
 
 #author, #email, #url, #comment {

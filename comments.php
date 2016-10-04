@@ -1,5 +1,4 @@
 <?php 
-
 if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) : ?>
 
 <p id="comments-locked">Enter your password to view comments.</p>
@@ -8,50 +7,41 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
 
 
 <!-- <?php if (pings_open()) : ?>
-	<p id="respond"><span id="track-link">
-		<a href="<?php trackback_url() ?>" rel="trackback">Get a Trackback link</a>
-	</span></p>
-
+    <p id="respond"><span id="track-link">
+        <a href="<?php trackback_url() ?>" rel="trackback">Get a Trackback link</a>
+    </span></p>
 <?php endif; ?> -->
 
 <?php if ($comments) :  ?>
 
 <?php 
-
-	$author = array(
-
-		"highlight" => "highlight",
-		"email" => "YOUR EMAIL HERE",
-		"name" => "YOUR NAME HERE",
-		);
-
-	$numPingBacks = 0;
-	$numComments = 0;
-
-
-	foreach ($comments as $comment) {
-		if (get_comment_type() != "comment") { $numPingBacks++; }
-		else {$numComments++;}
-	}
-
-	$thiscomment = 'odd';
-
+    $author = array(
+        "highlight" => "highlight",
+        "email" => "YOUR EMAIL HERE",
+        "name" => "YOUR NAME HERE",
+        );
+    $numPingBacks = 0;
+    $numComments = 0;
+    foreach ($comments as $comment) {
+        if (get_comment_type() != "comment") { $numPingBacks++; }
+        else {$numComments++;}
+    }
+    $thiscomment = 'odd';
  ?>
 
  <?php 
+    if ($numPingBacks != 0) : ?>
 
- 	if ($numPingBacks != 0) : ?>
-
- 	<h2 class="comments-header"><?php _e($numPingBacks); ?> Trackbacks/Pingbacks</h2>
- 	<ol id="trackbacks">
+    <h2 class="comments-header"><?php _e($numPingBacks); ?> Trackbacks/Pingbacks</h2>
+    <ol id="trackbacks">
 
  <?php foreach ($comments as $comment) : ?>
  <?php if (get_comment_type() != "comment") : ?>
 
 
- 	<li id="comment-<?php comment_ID() ?>" class="<?php _e($thiscomment); ?>">
- 		<?php comment_type(__('Comment'), __('Trackback'), __('Pingback')); ?>:
- 	</li>
+    <li id="comment-<?php comment_ID() ?>" class="<?php _e($thiscomment); ?>">
+        <?php comment_type(__('Comment'), __('Trackback'), __('Pingback')); ?>:
+    </li>
 
  <?php  if('odd' == $thiscomment) {$thiscomment = 'even'; } else { $thiscomment = 'odd';} ?>
 
@@ -63,34 +53,11 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
 
 <?php if($numComments != 0) : ?>
 
-	<h2 class="comments-header"><?php  _e($numComments); ?> Comments</h2>
-	<ol id="comments">
-
-	<?php foreach ($comments as $comment) : ?>
-	<?php if (get_comment_type()=="comment") :  ?>
-
-		<li id="comment-<?php comment_ID(); ?>" class="<?php 
-
-		$this_name = $comment->comment_author;
-		$this_email = $comment->comment_author_email;
-
-		if (strcasecmp($this_name, $author["name"])==0 && strcasecmp($this_email, $author["email"])==0) _e($author["highlight"]); 
-		else 
-			_e($thiscomment);
-
-		?>">
-
-		<div class="comment-meta">
-			
-	<?php echo get_avatar( get_the_author_email(), '48' ); ?>
-
-		<span class="comment-author"><?php comment_author_link() ?></span>,
-		<span class="comment-date"><?php comment_date() ?></span>:
-		</div>
-		<div class="comment-text">
+    <h2 class="comments-header"><?php  _e($numComments); ?> Comments</h2>
+ 
 
 
-	<?php /* Or maybe put gravatars here. The typical thing is to float them in the CSS */  
+    <?php /* Or maybe put gravatars here. The typical thing is to float them in the CSS */  
     /* Typical gravatar call:  
         <img src="<?php gravatar("R", 80, "YOUR DEFAULT GRAVATAR URL"); ?>"  
         alt="" class="gravatar" width="80" height="80"> 
@@ -98,24 +65,22 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
 
 
 
-    	<?php comment_text(); ?>
+        
+       
+    <div class="reply">
+        
+        <?php wp_list_comments('callbacks=mytheme_comments') ?>
+    </div>
 
-        <div class="reply">
-         
         </div>
-		</div>
-		</li>
+        </li>
 
-		  <?php if('odd'==$thiscomment) { $thiscomment = 'even'; } else { $thiscomment = 'odd'; } ?> 
-     
-    <?php endif; endforeach; ?> 
-     
-    </ol> 
+        
+  
      
     <?php endif; ?> 
      
 <?php else :  
-
     /* No comments at all means a simple message instead */  
 ?> 
 
@@ -163,9 +128,9 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
      
     <?php else : ?> 
 
-    	<div class="form-group">
-     	
-     	<div class="input-wrap">
+        <div class="form-group">
+        
+        <div class="input-wrap">
         <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" placeholder="NAME<?php if ($req) _e(' (required)'); ?>" class='form-control'/> 
         </div>
          
@@ -185,9 +150,9 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
 
     <?php /* You might want to display this:  
         <p>XHTML: You can use these tags: <?php echo allowed_tags(); ?></p> */ ?> 
-		
-		<div class="input-wrap">
-        	<textarea name="comment" id="comment" rows="10" cols="30" class='form-control'></textarea>
+        
+        <div class="input-wrap">
+            <textarea name="comment" id="comment" rows="10" cols="30" class='form-control'></textarea>
         </div>
          
         <?php /* Buttons are easier to style than input[type=submit],  
@@ -198,7 +163,7 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
                 if you like */  
         ?> 
 
-    	<br>
+        <br>
 
         <input type="submit" value='POST COMMENT' id='comment-button'>
         <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>"></p> 
@@ -206,7 +171,7 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
     <?php do_action('comment_form', $post->ID); ?> 
 
 
-	</div>
+    </div>
     </form> 
     </div> 
 
@@ -221,4 +186,4 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
 
 
 
-	</ol>
+    </ol>

@@ -1467,7 +1467,7 @@ function get_comment_reply_link( $args = array(), $comment = null, $post = null 
 		'after'         => ''
 	);
 	$args = wp_parse_args( $args, $defaults );
-	if ( 0 == $args['depth'] || $args['max_depth'] <= $args['depth'] ) {
+	if ( !0 == $args['depth'] || $args['max_depth'] <= $args['depth'] ) {
 		return;
 	}
 	$comment = get_comment( $comment );
