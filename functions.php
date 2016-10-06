@@ -129,10 +129,6 @@ if (get_option('thread_comments')) {
 function mytheme_comment($comment, $args, $depth) {
    ?>
 
-   
-
-
-
    <?php comment_text(); ?>
     
         <?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ,$comment->comment_ID, $comment->comment_post_ID); ?>
@@ -142,33 +138,7 @@ function mytheme_comment($comment, $args, $depth) {
 
 
   
-    
-
-
-// function contact_form() {
-// 	if(!isset($_POST['submit'])) { return; }
-
-
-// 	$form = array();
-// 	$form['the_name'] = $_POST['the_name'];
-// 	$form['the_email'] = $_POST['the_email'];
-// 	$form['subject'] = $_POST['subject'];
-// 	$form['body'] = $_POST['body'];
-
-// 	$subject = $form['subject'];
-
-// 	$to = 'mjstokes1986@att.net';
-	
-
-// 	if(wp_mail($to, $subject)) {
-// 		wp_redirect(home_url()); exit;
-// 	}
-
-
-
-// }
-
-// add_action('wp_head', 'contact_form');
+   
 
 
 

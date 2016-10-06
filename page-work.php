@@ -24,7 +24,7 @@
 		 		
 		 	
 
-		<p class="running_head_black running_head_text">Featured Project</p>
+		<div class="running_head_pink" id='featured'><p>Featured Project</p></div>
 		<!-- <div class="col-xs-1" id="post_category">
 		<p>
 
@@ -50,7 +50,7 @@
 		<br>
 
 
-		<div class="blog-title"><h1><span class="running_head_pink"><?php echo the_title() ?></span></h1></div>	
+		<h1 class="featured-work-title"><span style="color: #fff;"class="blog-title"><?php echo the_title() ?></span></h1>
 
 		<br>	
 		<br>
@@ -93,9 +93,9 @@
 
 	<div class="row">
 		<div class="col-xs-12">
-		<p class="running_head_black running_head_text" id="running_head_projects">Projects</p>
-
-
+		<div class="running_head_pink" id="recent_posts">
+		<h1>Other Projects</h1>
+		</div>
 			<?php 
 
 			$recentPost = new WP_Query(
@@ -139,7 +139,7 @@
 
 			<div class="recent_post_thumbnail"><?php echo the_post_thumbnail('medium') ?></div>
 			<br>
-			<h2><?php the_title(); ?></h2>
+			<h2 class="blog-title" id="container_titles"><?php the_title(); ?></h2>
 			<br>
 			<p>
 			<?php echo get_the_excerpt() ?>

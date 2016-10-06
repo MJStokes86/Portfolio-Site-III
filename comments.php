@@ -65,15 +65,15 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
 
 
 
+    
+    <div class="comments_list">
         
-       
-    <div class="reply">
-        
-        <?php wp_list_comments('callbacks=mytheme_comments') ?>
-    </div>
+        <?php wp_list_comments('callbacks=bkny_comments') ?>
 
-        </div>
-        </li>
+    </div>
+   
+        
+    
 
         
   
@@ -150,6 +150,7 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
 
     <?php /* You might want to display this:  
         <p>XHTML: You can use these tags: <?php echo allowed_tags(); ?></p> */ ?> 
+        <br>
         
         <div class="input-wrap">
             <textarea name="comment" id="comment" rows="10" cols="30" class='form-control'></textarea>

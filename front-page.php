@@ -30,7 +30,12 @@
 	<div class="row">
 	<div class="col-xs-12">
 
-	<h1 class='text-left'>Latest Blog Posts</h1>
+	<h1 class='running_head_pink text-left'>Latest Blog Posts</h1>
+
+	<br>
+	<br>
+	<br>
+	<br>
 	
 
 
@@ -49,18 +54,14 @@
 
 			while($lastBlog->have_posts()): $lastBlog->the_post(); ?>
 
-		<br>	
-		<br>	
-		<br>
-
 
 	<div class="col-xs-4 text-center">
 
+
 			<div class="thumbnail-img"><?php echo the_post_thumbnail('medium'); ?></div>	
 
-			<br>	
 
-					<div class=" title text_bg2"><h1><?php get_template_part('content-title', get_post_format()); ?></h1></div>
+	<h1 class="featured-work-title"><span style="color: #fff;"class="blog-title"><?php echo the_title() ?></span></h1>
 
 				
 	</div>

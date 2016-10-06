@@ -1,52 +1,3 @@
-<?php 
-
-require 'PHPMailer-master/PHPMailerAutoload.php';
-
-
-
-
-
-$mail = new PHPMailer;
-
-$to = 'mjstokes1986@att.net';
-$name = $_POST['the_name'];
-$from = $_POST['the_email'];
-$subject = $_POST['subject'];
-$body = $_POST['body'];
-
-$mail->isSMTP();
-$mail->Host = 'outbound.att.net';
-$mail->SMTPAuth = true;
-$mail->Username = 'mjstokes1986@att.net';
-$mail->Password = 'ihave9sourcesofincome';
-$mail->SMTPSecure = 'ssl';
-$mail->Port = 465;
-
-$mail->From = $from;
-$mail->FromName = $name;
-$mail->addAddress($to, $to);
-$mail->addReplyTo($from, $name);
-$mail->Subject = $subject;
-$mail->Body = $body;
-$mail->isHTML(true);
-
-if(!$mail->send()) {
-	echo '<p style="color:#fff">Message could not be sent</p>';
-	echo '<p style="color:#fff">Mailer Error: ' . $mail->ErrorInfo . '</p>';
-} else {
-	echo '<p style="color:#fff">Message has been sent</p>';
-}
-
-
-
-
-
-
-
-
-
- ?>
-
 <?php get_header(); ?>
 
 <body id='page-contact'>
@@ -104,43 +55,7 @@ if(!$mail->send()) {
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="entry-content text-center">
 						<?php the_content(); ?>
-							
-					<form action="" id='contact' name='email' method='POST' novalidate='novalidate'>
-
-					<div class="form-group">
-						
-						<div class="input-wrap">
-							<input type="text" class='form-control' name='the_name' id='name' placeholder="NAME">
-						</div>
-
-						<br>
-
-
-						<div class="input-wrap">
-							<input type="text" class='form-control' name='the_email' id='mail' placeholder="EMAIL">
-						</div>
-
-						<br>
-
-						<div class="input-wrap">
-							<input type="text" class='form-control' name='subject' placeholder="SUBJECT">
-						</div>
-
-						<br>
-
-						<div class="input-wrap">
-							<textarea placeholder="MESSAGE" class='form-control' name='body' id='body' cols="30" rows="10"></textarea> 
-						</div>
-						<br>
-
-						<input type="submit" value='SEND' id='button'>
-
-
-					</div>
-					</form>
-						
-
-
+				<?php echo do_shortcode( '[contact-form-7 id="184" title="Contact form 1"]' ); ?>
 
 					</div>
 
