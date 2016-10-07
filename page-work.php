@@ -25,26 +25,15 @@
 		 	
 
 		<div class="running_head_pink" id='featured'><p>Featured Project</p></div>
-		<!-- <div class="col-xs-1" id="post_category">
-		<p>
 
-		<?php 
-
-
-		$cat = get_the_category();
-			echo $cat[0]->cat_name;
-
-
-		?></p>
-		</div>
- -->
 		<br>
 		<br>
 		<br>
 		<br>
 		<br>
+		
 
-		<div class="featured_photo"><?php echo the_post_thumbnail('large') ?></div>
+		<div class="featured_thumbnail" id="featured_photo"><?php echo the_post_thumbnail('large') ?></div>
 
 		<br>
 		<br>
@@ -137,13 +126,13 @@
 
 
 
-			<div class="recent_post_thumbnail"><?php echo the_post_thumbnail('medium') ?></div>
+			<div class="featured-thumbnail"><?php echo the_post_thumbnail('medium') ?></div>
 			<br>
 			<h2 class="blog-title" id="container_titles"><?php the_title(); ?></h2>
 			<br>
 			<p>
-			<?php echo get_the_excerpt() ?>
-			<a class="ghost-button-pink" href="<?php the_permalink(); ?>">Read more</a>
+			<!-- <?php echo get_the_excerpt() ?> -->
+			<a class="ghost-button" href="<?php the_permalink(); ?>">Read more</a>
 
 			
 		</p>
@@ -191,6 +180,9 @@
 			 </div>
 
 			 <?php
+
+			 if(function_exists('wp_page_numbers')) { wp_page_numbers(); }
+
 
 			}
 

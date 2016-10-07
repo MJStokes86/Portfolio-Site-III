@@ -829,7 +829,7 @@ html, body{
 
 .footer a:hover {
 	color: #fff;
-	
+
 
 }
 
@@ -948,6 +948,18 @@ html, body{
 
 }
 
+.fa-search {
+  position: absolute;
+  top: 75px;
+  left: 7px;
+}
+
+#search {
+	position: absolute;
+	left: 15px;
+	top: 60px;
+}
+
 
 
 /* end of search.php */
@@ -956,16 +968,13 @@ html, body{
 /* content-search.php */
 
 .results h1 {
-	background-color: pink;
-	display: block;
-	padding: 35px 0 5px 0;
-	margin: 4px 12px;
-	width: 250px;
-	line-height: 1.1em;
-	color: #000;
-	text-transform: uppercase;
-	font-family: Anton, sans-serif;
-
+	text-transform: uppercase;	
+	/* line-height: 1.8; */
+	color: pink;
+	padding: 20px;
+	font-size: 30px;
+	font-family: 'Anton', sans-serif;
+	
 }
 
 /* end of content-search.php */
@@ -1009,6 +1018,11 @@ html, body{
     -o-transition: color 0.5s linear;
      transition: color 0.5s linear;
 
+}
+
+.widget_categories {
+	position: relative;
+	top: 30px;
 }
 
 /* end of sidebar.php */

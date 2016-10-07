@@ -10,7 +10,8 @@
 	<div class="col-xs-12">
 
 	
-	<h1><?php single_cat_title($prefix='', $display=true) ?></h1>
+	<h1><?php 
+echo $wp_query->found_posts.' results found in '; ?> " <?php single_cat_title($prefix='', $display=true) ?> "</h1>
 
 	<?php 
 

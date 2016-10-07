@@ -9,7 +9,7 @@
 <div class="row">
 	<div class="col-xs-12">
 	<h1 class="blog-title"><?php 
-echo $wp_query->found_posts.' results that contains '; ?> " <?php the_search_query(); ?> "</h1>
+echo $wp_query->found_posts.' results with tags matching '; ?>  " <?php single_tag_title($prefix='', $display=true) ?> "</h1>
 
 	<?php 
 
@@ -25,7 +25,9 @@ echo $wp_query->found_posts.' results that contains '; ?> " <?php the_search_que
 
 			<?php endwhile;
 
-if(function_exists('wp_page_numbers')) { wp_page_numbers(); }
+			if(function_exists('wp_page_numbers')) { wp_page_numbers(); }
+
+
 
 		endif;
 

@@ -31,7 +31,7 @@
 		 <div class="running_head_black" id="post_date"><p><?php echo get_the_date('n.d.y'); ?></p></div>
 		
 
-		<div class="featured-thumbnail" id="featured_photo"><?php echo the_post_thumbnail('full') ?></div>
+		<div class="featured-thumbnail" ><?php echo the_post_thumbnail('full') ?></div>
 
 		
 
@@ -175,6 +175,8 @@
 			 </div>
 
 			 <?php
+
+			  if(function_exists('wp_page_numbers')) { wp_page_numbers(); }
 
 			}
 
