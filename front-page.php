@@ -15,7 +15,7 @@
 	</div>
 </div>
 
-<div class="content-block text-center parallax-window" data-parallax="scroll" data-image-src="<?php bloginfo('template_directory'); ?>/img/Dumbo-Brooklyn.jpg">	
+<div class="content-block text-center parallax-window" data-parallax="scroll" data-image-src="<?php bloginfo('template_directory'); ?>/img/GrandCentral.jpg">	
 <div class="container">	
 <div class="row">
 <div class="col-xs-12">

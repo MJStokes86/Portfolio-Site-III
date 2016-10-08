@@ -45,7 +45,7 @@ else{
 		
 </div>
 
-<!-- <a href="#" class='navbar-brand navbar-text-color'><img class= 'img-responsive navbar-img' src="<?php bloginfo('template_directory'); ?>/img/Logo.png" alt=""></a><h1 class="navbar-brand" id='my-name'>MICHAEL J STOKES</h1> -->
+ <a href="#" class='navbar-brand navbar-text-color'><img class= 'img-responsive navbar-img' src="<?php bloginfo('template_directory'); ?>/img/Logo.png" alt=""></a><h1 class="navbar-brand" id='my-name'>MICHAEL J STOKES</h1>
 				</div>
 			
 		</div>
