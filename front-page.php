@@ -30,7 +30,7 @@
 	<div class="row">
 	<div class="col-xs-12">
 
-	<h1 class='running_head_pink text-left'>Latest Blog Posts</h1>
+	<h1 class='running_head_pink text-left'>Latest Posts</h1>
 
 	<br>
 	<br>

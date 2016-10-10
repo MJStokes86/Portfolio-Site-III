@@ -118,6 +118,9 @@ html, body{
 	margin: 4px 12px;
 	width: 250px;
 	line-height: 1.1em;
+	font-family: Anton;
+	color: pink;
+	text-transform: uppercase;
 }
 
 .running_head_pink {
@@ -505,7 +508,7 @@ html, body{
 }
 
 #img2 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), url('../img/Dumbo-Brooklyn.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), url('../img/nycpink.jpg');
 	margin-top:0;
 	color: #fff;
 	/* background-color: #C8A585;
@@ -526,11 +529,11 @@ html, body{
 #img4 {
 
 
-	background-image:/*  linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), */ url('../img/bklynbridge.jpg');
+	background-image:/*  linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), */ url('../img/nycpink.jpg');
 	margin-top:0;
 	color: #fff;
-	background-color: pink;
-	background-blend-mode: multiply;
+	/* background-color: pink;
+	background-blend-mode: multiply; */
 
 }
 
@@ -639,12 +642,15 @@ html, body{
 
 .interests p {
 	font-size: 25px;
+	text-transform: uppercase;
+	font-family: Anton, sans-serif;
+	color: #fff;
 }
 
-.interests .container-fluid {
+/* .interests .container-fluid {
 	border: solid 1px #fff;	
 
-}
+} */
 
 /* end of page-about.php */
 
