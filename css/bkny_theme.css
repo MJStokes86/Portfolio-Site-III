@@ -23,6 +23,7 @@ html, body{
 	border-bottom: solid #fff 5px;
 	padding: 50px;
 	font-family: Garamond;
+	font-size: 20px;
 
 }
 
@@ -508,7 +509,7 @@ html, body{
 }
 
 #img2 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), url('../img/nycpink.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), url('../img/Dumbo-Brooklyn.jpg');
 	margin-top:0;
 	color: #fff;
 	/* background-color: #C8A585;
@@ -517,19 +518,19 @@ html, body{
 
 #img3 {
 
-	background-image:/*  linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), */ url('../img/bethesdactrlpk.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), url('../img/bethesdactrlpk.jpg');
 	margin-top:0;
 	color: #fff;
-	background-color: pink;
+	/* background-color: #212121;
 	background-blend-mode: multiply;
-
+ */
 }
 
 
 #img4 {
 
 
-	background-image:/*  linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), */ url('../img/nycpink.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), url('../img/nycpink.jpg');
 	margin-top:0;
 	color: #fff;
 	/* background-color: pink;
@@ -555,6 +556,21 @@ html, body{
 	font-size: 25px;
 	padding: 100px;
 	background-image: /* linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), */ url('../img/style2.jpg');
+	/* background-blend-mode: multiply; */
+
+
+
+}
+
+
+.content-block2 {
+	height: auto;
+	width:auto;
+	background-color: #212121 !important;
+	color: #fff;
+	font-size: 25px;
+	padding: 100px;
+	background-image: /* linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), */ url('../img/bethesdactrlpk.jpg');
 	/* background-blend-mode: multiply; */
 
 
@@ -598,15 +614,29 @@ html, body{
 /* page-about.php */
 
 #skills {
-	background-color: #212121;
+	background-color: #141414 !important;
 	color: #fff;
 	background-image: none !important;
+}
+
+#skills p {
+	font-size: 15px;
+}
+
+#skills h3 {
+	font-family: Anton, sans-serif;
+	color: pink;
+	text-transform: uppercase;
+}
+
+#skills h4 {
+	text-transform: uppercase;
 }
 
 .skill-bar span{
 	display: table;
 	height: 5px;
-	background-color: #fff;
+	background-color: pink;
 
 }
 

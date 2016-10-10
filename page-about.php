@@ -7,14 +7,30 @@
 		<div class="row">
 		
 		<div class="col-xs-12" id="brand">
+
+		<p>
+	<?php 
+	query_posts('cat=14&showposts=1'); 
+	if(have_posts()) {
+		the_post(); ?></p>
+
+	<article class="article_about"><p><?php the_content(); ?></p></article>
+
+	<?php 
+}
+
+
+
+
+?>
 		
 
 			</div>
 		</div>
 	</div>
 </div>
-
-<div class="content-block text-center parallax-window" data-parallax="scroll" data-image-src="<?php bloginfo('template_directory'); ?>/img/Dumbo-Brooklyn.jpg">	
+<!-- 
+<div class="content-block2 text-center parallax-window" data-parallax="scroll" data-image-src="<?php bloginfo('template_directory'); ?>/img/Dumbo-Brooklyn.jpg">	
 <div class="container">	
 <div class="row">
 <div class="col-xs-12">
@@ -39,7 +55,7 @@
 </div>									
 </div>
 </div>	
-</div>
+</div> -->
 
 <div class="skills">
 <div class="content-block text-center" id="skills">	
@@ -61,6 +77,10 @@
 
 
 ?>
+
+<center>
+<a href="<?php bloginfo('template_directory'); ?>/Michael_J_Stokes_Resume.pdf" target="_blank"><p class='ghost-button'>MY RESUME</p></a>
+</center>
 
 
 
@@ -91,6 +111,8 @@
 
 
 ?>
+
+
 
 	</div>			
 	</div>	
