@@ -226,10 +226,12 @@ html, body{
 #my-name {
 	font-family:'Anton', sans-serif;
 	font-size: 30px;
-	color: #fff;
+	color: pink;
 	margin-top: 15%;
 
+
 	}
+
 
 .navbar-brand img {
 	width: 100px;
@@ -313,7 +315,7 @@ html, body{
 }
 
 .button_container span {
-	background: #fff;
+	background: pink;
 	border: none;
 	height: 5px;
 	width: 100%;
@@ -456,14 +458,6 @@ html, body{
 
 }
 
-/* #bg {
-	background-color: #000;
-	color: #fff;
-	margin-top: 0;
-
-
-} */
-
 
 #brand {
 	
@@ -472,8 +466,13 @@ html, body{
 	flex-direction:column;
 	justify-content: center;
 	align-items:center;
+}
 
-
+#name {
+	position: absolute;
+	top: 70%;
+	color: pink;
+	font-family: Anton, sans-serif;
 }
 
 
@@ -482,8 +481,8 @@ html, body{
 #web-dev {
 	font-family: 'Arimo', sans-serif;
 	font-size: 25px;
-	border-top: solid #fff 3px;
-	border-bottom: solid #fff 3px;
+/* 	border-top: solid #fff 3px;
+	border-bottom: solid #fff 3px; */
 	padding:25px 100px;
 	display:inline-block;
 	/* background-color: #fff; */
@@ -496,13 +495,13 @@ html, body{
 
 
 #img1 {
-	background-image:  /* linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), */ url('../img/GrandCentral.jpg');
-	/* background-color: #DEABD6;
+	background-image:  linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), url('../img/flatrion.jpg');
+	/* background-color: #212121;
 	background-blend-mode: multiply; */
 }
 
 #img2 {
-	background-image: /* linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), */ url('../img/Dumbo-Brooklyn.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), url('../img/Dumbo-Brooklyn.jpg');
 	margin-top:0;
 	color: #fff;
 	/* background-color: #C8A585;
@@ -527,16 +526,14 @@ html, body{
 	color: #fff;
 	font-size: 25px;
 	padding: 100px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('../img/GrandCentral.jpg');
-	background-blend-mode: multiply;
+	background-image: /* linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), */ url('../img/style2.jpg');
+	/* background-blend-mode: multiply; */
 
 
 
 }
 
-/* .title {
-	width: 50%;
-} */
+
 
 .services {
 	height: auto;
@@ -547,6 +544,12 @@ html, body{
 	padding: 100px;
 	background-image: /* linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), */ url('../img/Dumbo-Brooklyn.jpg');
 	background-blend-mode: multiply;
+}
+
+.services-button {
+	position: absolute;
+	top: 100%;
+	left: 45%;
 }
 
 

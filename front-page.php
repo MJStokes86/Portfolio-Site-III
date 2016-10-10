@@ -5,10 +5,10 @@
 		<div class="row">
 		
 		<div class="col-xs-12" id="brand">
-<!-- 
-		<img src="<?php bloginfo('template_directory'); ?>/img/Logo.png" id='logo'>
-		<h1 id='my-name'>MICHAEL J STOKES</h1> -->
-		<br>
+
+		<!-- <img src="<?php bloginfo('template_directory'); ?>/img/Logo.png" id='logo'>
+		<h1 id='name' style='font-size: 50px'>MICHAEL J STOKES</h1>
+		<br> -->
 		<!-- <p id='web-dev'>WEB DEVELOPMENT</p> -->
 			</div>
 		</div>
@@ -61,7 +61,7 @@
 			<div class="thumbnail-img"><?php echo the_post_thumbnail('medium'); ?></div>	
 
 
-	<h1 class="featured-work-title"><span style="color: #fff;"class="blog-title"><?php echo the_title() ?></span></h1>
+	<h1 class="featured-work-title"><span style="color: pink;"class="blog-title"><?php echo the_title() ?></span></h1>
 
 				
 	</div>
