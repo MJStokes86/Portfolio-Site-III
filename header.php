@@ -10,6 +10,8 @@
 	<link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
 	<script src="https://use.fontawesome.com/a46e157fb6.js"></script>
 	<script src="//cdn.jsdelivr.net/jquery.touchswipe/1.6.15/jquery.touchSwipe.min.js"></script>
+	<script src="jquery.bootstrap-autohidingnavbar.js"></script>
+
 
 
 
@@ -33,7 +35,7 @@ else{
 
 <body <?php body_class($bkny_classes); ?>>
 
-<nav class="nav-default navbar-fixed-top navbar-color">
+<nav class="navigation nav-default navbar-fixed-top navbar-color">
 	<div class="container-fluid">
 		<div class="navbar-header">
 

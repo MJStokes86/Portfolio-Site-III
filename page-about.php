@@ -2,17 +2,13 @@
 
 
 
-<div class="img-bg text-center" id="img1">
+<div class="img-bg text-center" id="img3">
 	<div class="container">
 		<div class="row">
 		
 		<div class="col-xs-12" id="brand">
 		
 
-		<h4 style='color:#fff'>About</h4>
-		<hr style='color:#fff'>
-		<h1 id='my-name'>MICHAEL J STOKES</h1>
-		
 			</div>
 		</div>
 	</div>
@@ -76,7 +72,7 @@
 
 
 
-<div class="img-bg interests text-center" id='img2'>
+<div class="img-bg interests text-center" id='img4'>
 	<div class="container-fluid">
 	<div class="row">
 	<div class="col-xs-12">

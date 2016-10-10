@@ -11,6 +11,13 @@ jQuery(document).ready(function($) {
 	});
 
 
+   jQuery(window).scroll(function(){                          
+            if (jQuery(this).scrollTop() > 200) {
+                jQuery('.navbar-fixed-top').fadeIn(500);
+            } else {
+                jQuery('.navbar-fixed-top').fadeOut(500);
+            }
+        });
 
 
 

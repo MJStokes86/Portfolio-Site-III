@@ -58,7 +58,7 @@
 	<div class="col-xs-4 text-center">
 
 
-			<div class="thumbnail-img"><?php echo the_post_thumbnail('medium'); ?></div>	
+	<div class="thumbnail-img img-responsive"><?php echo the_post_thumbnail('medium'); ?></div>	
 
 
 	<h1 class="featured-work-title"><span style="color: pink;"class="blog-title"><?php echo the_title() ?></span></h1>

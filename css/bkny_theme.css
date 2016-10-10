@@ -206,6 +206,10 @@ html, body{
 	top: 5%;
 }
 
+.navbar-fixed-top {
+	display: none;
+}
+
 
 #menu-main-navigation {
 	display: inline;
@@ -220,14 +224,14 @@ html, body{
 	background-color: #212121 !important;
 	border: none !important;
 	background: rgb(0, 0, 0) !important;
-   background: rgba(0, 0, 0, 0.7) !important;
+   background: rgba(0, 0, 0, 0.9) !important;
 }
 
 #my-name {
 	font-family:'Anton', sans-serif;
 	font-size: 30px;
 	color: pink;
-	margin-top: 15%;
+	margin-top: 10%;
 
 
 	}
@@ -236,7 +240,7 @@ html, body{
 .navbar-brand img {
 	width: 100px;
 	height: 100px;
-	margin-top: 0;
+	margin-top: -5%;
 	display: none;
 	
 }
@@ -508,6 +512,27 @@ html, body{
 	background-blend-mode: multiply; */
 }
 
+#img3 {
+
+	background-image:/*  linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), */ url('../img/bethesdactrlpk.jpg');
+	margin-top:0;
+	color: #fff;
+	background-color: pink;
+	background-blend-mode: multiply;
+
+}
+
+
+#img4 {
+
+
+	background-image:/*  linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), */ url('../img/bklynbridge.jpg');
+	margin-top:0;
+	color: #fff;
+	background-color: pink;
+	background-blend-mode: multiply;
+
+}
 
 .parallax-window {
  
