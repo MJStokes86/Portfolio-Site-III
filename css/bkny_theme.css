@@ -1468,9 +1468,21 @@ html, body{
 }
 
 @media only screen /* iphone 6 */
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
+  and (min-device-width : 375px)
+  and (max-device-width : 667px) 
   							 { 
+
+  /*....................header....................*/
+	nav {
+		display: none;
+	}
+
+	.button_container_span {
+		display: inline-block;
+	}
+
+
+  /*......................end of header ..............*/
 
 
 

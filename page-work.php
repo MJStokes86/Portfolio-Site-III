@@ -47,7 +47,7 @@
 
 
 		<div class="template-part">
-		<p><?php echo get_the_excerpt() ?> <a class='ghost-button' href="<?php the_permalink(); ?>">Read more</a></p>
+		<p><?php echo get_the_excerpt() ?> <a class='ghost-button' href="<?php the_permalink(); ?>">Continue Reading</a></p>
 		</div>
 
 
@@ -83,7 +83,7 @@
 	<div class="row">
 		<div class="col-xs-12">
 		<div class="running_head_pink" id="recent_posts">
-		<h1>Other Projects</h1>
+		<h1>All Other Projects</h1>
 		</div>
 			<?php 
 
@@ -94,7 +94,8 @@
 					'posts_per_page' => 3,
 					'order' => 'ASC',
 					'orderby' => 'date',
-					'cat' => 17
+					'cat' => 17, 
+					'offset' => 1
 
 				)
 
@@ -132,7 +133,7 @@
 			<br>
 			<p>
 			<!-- <?php echo get_the_excerpt() ?> -->
-			<a class="ghost-button" href="<?php the_permalink(); ?>">Read more</a>
+			<a class="ghost-button" href="<?php the_permalink(); ?>">Read</a>
 
 			
 		</p>

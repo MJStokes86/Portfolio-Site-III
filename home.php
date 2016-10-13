@@ -23,7 +23,7 @@
 		 	while($latestPost->have_posts()){
 		 		$latestPost->the_post(); ?>
 
-		<div class="running_head_pink"  id="featured"><p>Featured Post</p>
+		<div class="running_head_pink"  id="featured"><p>New Post</p>
   		</div>
 		
 
@@ -43,7 +43,7 @@
 
 
 		<div class="template-part">
-		<p><?php echo get_the_excerpt() . "<br><br>" ?><a class='ghost-button' href="<?php the_permalink(); ?>">Read more</a></p>
+		<p><?php echo get_the_excerpt() . "<br><br>" ?><a class='ghost-button' href="<?php the_permalink(); ?>">Continue Reading</a></p>
 		</div>
 
 
@@ -78,7 +78,7 @@
 	<div class="row">
 		<div class="col-xs-12">
 		<div class="running_head_pink" id="recent_posts">
-		<h1>Recent Posts</h1>
+		<h1>All Other Posts</h1>
 		</div>
 
 
@@ -90,7 +90,9 @@
 					'type' => 'post',
 					'posts_per_page' => 6,
 					'order' => 'ASC',
-					'orderby' => 'date'
+					'orderby' => 'date',
+					'cat' => '39',
+					'offset' => 1
 
 				)
 
@@ -126,8 +128,8 @@
 			<h2 class="blog-title" id="container_titles"><?php the_title(); ?></h2>
 			<br>
 			<p>
-			<?php echo get_the_excerpt() ?>
-			<a class="ghost-button" href="<?php the_permalink(); ?>">Read more</a>
+			<!-- <?php echo get_the_excerpt() ?> -->
+			<a class="ghost-button" href="<?php the_permalink(); ?>">Read</a>
 
 			
 		</p>
