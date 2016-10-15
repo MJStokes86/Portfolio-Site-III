@@ -1497,6 +1497,8 @@ html, body{
 
   /*......................end of header ..............*/
 
+  /*......................front-page.php....................*/
+
 	#brand {
 		margin-top: 50%;
 	}
@@ -1518,6 +1520,11 @@ html, body{
 		background: transparent;
 		line-height: 2em;
 		padding: 0;
+
+	}
+
+	.parallax-window {
+		background-position: 50% 50% !important;
 
 	}
 
@@ -1543,6 +1550,8 @@ html, body{
 		top: 105%;
 		left: 5%;
 	}
+
+	/*........................end of front-page.php.................*/
 
 	/*........................footer.php.........................*/
 
