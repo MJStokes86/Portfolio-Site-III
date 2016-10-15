@@ -601,7 +601,7 @@ html, body{
 .services-button {
 	position: absolute;
 	top: 100%;
-	left: 39%;
+	left: 45%;
 }
 
 
@@ -918,6 +918,7 @@ html, body{
 
 .footer a {
 	color: #fff;
+
 }
 
 .footer a:hover {
@@ -928,6 +929,12 @@ html, body{
 
 .footer ul {
 	list-style: none;
+}
+
+.site_links li a{
+	position: relative;
+	left: -7%;
+
 }
 
 .social-media {
@@ -1468,27 +1475,137 @@ html, body{
 }
 
 @media only screen /* iphone 6 */
-  and (min-device-width : 375px)
-  and (max-device-width : 667px) 
-  							 { 
+  and (min-width: 375px)
+  and (max-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+ { 
+
+
 
   /*....................header....................*/
 	nav {
-		display: none;
+		display: none !important;
 	}
 
 	.button_container_span {
-		display: inline-block;
+		display: inline-block !important;
+	}
+
+	#name {
+		font-size: 2.5em !important;
+	}
+
+  /*......................end of header ..............*/
+
+	#brand {
+		margin-top: 50%;
+	}
+
+	#web-dev {
+		font-size: 1em;
+	}
+
+	#date {
+		font-size: 1.5em;
+	}
+
+	#latest-post-container {
+		margin-top: 20%;
+	}
+
+	.latest-blog-title span a {
+		font-size: 0.5em;
+		background: transparent;
+		line-height: 2em;
+		padding: 0;
+
+	}
+
+	.services p {
+		font-size: 0.5em;
+		width: 100% !important;
+
+	}
+
+	#code {
+		float: left;
+		margin-right: 50px;
+
+	}
+
+	#clock {
+		float: left;
+		margin-right: 50px;
+	}
+
+	.services-button {
+		position: absolute;
+		top: 105%;
+		left: 5%;
+	}
+
+	/*........................footer.php.........................*/
+
+	.footer-logo img {
+		height: 100px;
+		width: 100px;
+
+	}
+
+	.footer-logo {
+		position: absolute;
+		left: 110%;
 	}
 
 
-  /*......................end of header ..............*/
+
+	.site_links p,  .recent-post-links p{
+		position: relative;
+		left: 50% !important;
+	}
+
+	.site_links {
+		margin-top: 50%;
+		left: -3%;
+	}
+
+	.recent-post-links {
+		margin-top: 100%;
+		left: -27%;
+
+	}
+
+	.footer-contact {
+		margin-top: 220%;
+		left: -15%;
+	}
+
+	.footer-contact ul {
+		float: right;
+		margin-right: 100px;
+		display: inline !important;
+
+	}
+
+	.footer-contact small p {
+		float: right;
+		margin-right: 100px;
+		display: inline !important;
+		width: 100%;
+		font-size: 0.5em;
+
+	}
+
+
+
+
+
+
+	/*.......................end of footer.php....................*/
 
 
 
   }
 
-
-
-
+ 
 

@@ -16,7 +16,7 @@
 <?php wp_nav_menu(array('theme_location' => 'secondary')); ?>
 </div>
 
-<div class="col-xs-3">
+<div class="col-xs-3 recent-post-links">
 <p>Recent Posts</p>
 <ul class='recent_posts_list'>
 
@@ -29,6 +29,7 @@ array(
 	'posts_per_page' =>3,
 	'order' => 'ASC',
 	'orderby' => 'date',
+	'cat' => 39
 
 	)
 );
@@ -58,7 +59,7 @@ array(
 	
 </div>
 
-<div class="col-xs-3 text-center">
+<div class="col-xs-3 text-center footer-contact">
 <!-- <h3>Contact Me</h3>
 <p><i class="fa fa-phone"> (336) 693-5580</p></i><p><i class="fa fa-envelope"> mjstokes1986@att.net</p></i>
 <hr> -->
@@ -69,8 +70,8 @@ array(
 	<li><a href="http://twitter.com/mstokes86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/twitter32.png" alt=""></a></li>
 </ul>
 
-<small><p>Copyright &copy; <?php echo date('Y'); ?> |
-mjstokes.com |
+<small><p>Copyright &copy; <?php echo date('Y'); ?> <br>
+mjstokes.com <br>
 All rights reserved </p></small>
 	
 

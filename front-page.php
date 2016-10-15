@@ -28,7 +28,7 @@
 <div class="img-bg latest-post" id='img2'>
 	<div class="container-fluid">
 	<div class="row">
-	<div class="col-xs-12">
+	<div class="col-xs-12" id="latest-post-container">
 
 	<h1 class='running_head_pink text-left'>Latest Posts</h1>
 
@@ -100,8 +100,8 @@
 						while(have_posts()) {
 							the_post();?>
 
-
 					<p><?php the_content(); ?></p>
+					
 
 					<?php
 
