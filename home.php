@@ -11,7 +11,7 @@
 	<div class="col-xs-12">
 
 
-		<div class="cols left-div">
+		<div class="cols left-div" id="new_blog_post">
 
 		<?php 
 
@@ -62,7 +62,7 @@
 
 		
 
-		<div class="cols right-div"><?php get_sidebar() ?></div>
+		<div class="cols right-div" id="blog_page_sidebar"><?php get_sidebar() ?></div>
 
 		
 
@@ -73,7 +73,7 @@
 	<br>
 	<br>
 
-	<div class="container post_container">
+	<div class="container post_container" id="blog_post_container">
 
 	<div class="row">
 		<div class="col-xs-12">

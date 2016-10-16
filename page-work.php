@@ -33,7 +33,7 @@
 		<br>
 		
 
-		<div class="featured_thumbnail" id="featured_photo"><?php echo the_post_thumbnail('large') ?></div>
+		<div class="featured_thumbnail img-responsive" id="featured_photo"><?php echo the_post_thumbnail('large') ?></div>
 
 		<br>
 		<br>

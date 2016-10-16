@@ -2,7 +2,7 @@
 
 <div class="container">
 <div class="row">
-<div class="col-xs-12">
+<div class="col-xs-12 results_col">
 <br>
 <br>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -12,7 +12,7 @@
 </div>
 
 <div class="col-xs-4 results-content">
-	<?php the_title('<h2 class="blog-title" style="font-size:25px;">', '</h2>'); ?>
+	<?php the_title('<h2 class="blog-title" id="results_title" style="font-size:25px;">', '</h2>'); ?>
 	<?php if(has_post_thumbnail()): ?>
 
 
