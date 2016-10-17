@@ -1447,6 +1447,12 @@ html, body{
 	line-height: 2.5em;
 }
 
+.parallax-window {
+		background-position: 50% 50% !important;
+
+
+}
+
 
 
 
@@ -1474,11 +1480,16 @@ html, body{
 
 }
 
-@media only screen /* iphone 6 */
+/*.......................... iphone 6 ................................*/
+
+@media only screen 
   and (min-width: 375px)
   and (max-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)
  { 
+
+
 
  
 
@@ -1486,8 +1497,8 @@ html, body{
 
   /*....................header....................*/
 	.navbar-brand img {
-		height: 75px;
-		width: 75px;
+		height: 50px;
+		width: 50px;
 	}
 
 	#my-name {
@@ -1710,9 +1721,8 @@ html, body{
 
 
 
-	.site_links p,  .recent-post-links p{
-		position: relative;
-		left: 50% !important;
+	.site_links p {
+		width: 50%;
 	}
 
 	.site_links {
@@ -1720,15 +1730,19 @@ html, body{
 		left: -3%;
 	}
 
-	.recent-post-links {
+/* 	.recent-post-links {
 		margin-top: 100%;
 		left: -27%;
 
+	} */
+
+	.recent-post-links {
+		display: none;
 	}
 
 	.footer-contact {
 		margin-top: 220%;
-		left: -15%;
+		left: -15% !important;
 	}
 
 	.footer-contact ul {
@@ -1738,13 +1752,14 @@ html, body{
 
 	}
 
-	.footer-contact small p {
-		float: right;
-		margin-right: 100px;
-		display: inline !important;
-		width: 100%;
-		font-size: 0.5em;
+	.social-media {
+		position: relative;
+		left: -50% !important;
+	}
 
+	.footer-contact small p {
+		position: relative;
+		left: -50% !important;
 	}
 
 
@@ -1758,7 +1773,15 @@ html, body{
 
   }
 
-@media only screen /* iphone 5 */
+  /*.....................................end of iPhone 6...................*/
+
+
+
+
+/*.................................. iPhone 5.........................*/
+
+
+@media only screen 
   and (min-width: 320px)
   and (max-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
@@ -1857,7 +1880,7 @@ html, body{
 		font-size: 0.7em !important;
 	}
 
-	.devicons {
+	/* .devicons {
 		position: relative;
 		left: -50% !important;
 	}
@@ -1869,7 +1892,7 @@ html, body{
 	#cms {
 		width: 100% !important;
 	}
-
+ */
 	#interest_statement {
 		font-size: 3em;
 	}
@@ -2014,9 +2037,9 @@ html, body{
 
 
 
-	.site_links p,  .recent-post-links p{
+	.site_links p {
 		position: relative;
-		left: 65% !important;
+		left: 70% !important;
 	}
 
 	.site_links {
@@ -2024,15 +2047,19 @@ html, body{
 		left: -3%;
 	}
 
-	.recent-post-links {
+	/* .recent-post-links {
 		margin-top: 120%;
 		left: -27%;
 
+	} */
+
+	.recent-post-links {
+		display: none;
 	}
 
 	.footer-contact {
-		margin-top: 250%;
-		left: -5%;
+		margin-top: 120%;
+		left: 20% !important;
 	}
 
 	.footer-contact ul {
@@ -2081,6 +2108,7 @@ html, body{
 
   	 .navbar-fixed-top {
   	 	height: auto;
+  	 	padding: 10px;
   	 }
 
 	.navbar-brand img {
@@ -2090,10 +2118,12 @@ html, body{
 
 	#my-name {
 		font-size: 1.5em !important;
+		top: 5%;
 	}
 
 	#toggle {
-		top: 3%;
+		top: 5%;
+		left: 90%;
 	}
 
   /*......................end of header ..............*/
@@ -2101,12 +2131,36 @@ html, body{
  /*......................front-page.php....................*/
 
 	.home {
-		overflow: hidden !important;
+		padding: 0 !important;
+		width: 100% !important;
 	}
 
 	#date {
 		float: left;
 		left: 15%;
+
+	}
+
+	.container {
+		padding: 0 !important;
+		width: 100% !important;
+
+	}
+
+	body {
+		padding: 0 !important;
+		width: 100% !important;
+
+	}
+
+	.container-fluid {
+		padding: 0 !important;
+		width: 100% !important;
+
+	}
+
+	.services-button {
+		left: 45%;
 	}
 
 
@@ -2119,5 +2173,110 @@ html, body{
 
   }
 
- 
 
+/*........................... LG Gpad 8.0.....................*/ 
+
+@media only screen 
+  and (min-width: 800px )
+  and (max-width: 1280px )
+  and (-webkit-min-device-pixel-ratio: 2)
+
+  {
+
+  	 /*....................header....................*/
+
+  	 .navbar-fixed-top {
+  	 	height: auto;
+  	 	padding: 10px;
+  	 }
+
+	.navbar-brand img {
+		height: 80px;
+		width: 80px;
+	}
+
+	#my-name {
+		font-size: 1.5em !important;
+		top: 5%;
+	}
+
+	#toggle {
+		top: 5%;
+		left: 150% !important;
+	}
+
+  /*......................end of header ..............*/
+
+ /*......................front-page.php....................*/
+
+	.home {
+		padding: 0 !important;
+		width: 100% !important;
+	}
+
+	#date {
+		float: left;
+		left: 15%;
+
+	}
+
+	.container {
+		padding: 0 !important;
+		width: 100% !important;
+
+	}
+
+	body {
+		padding: 0 !important;
+		width: 100% !important;
+
+	}
+
+	.container-fluid {
+		padding: 0 !important;
+		width: 100% !important;
+
+	}
+
+	.services-button {
+		left: 45%;
+	}
+
+
+	/*........................end of front-page.php.................*/
+
+/*......................page-about.php....................*/
+
+	.about {
+		padding: 0 !important;
+		width: 100% !important;
+	}
+
+	.container {
+		padding: 0 !important;
+		width: 100% !important;
+
+	}
+
+	body {
+		padding: 0 !important;
+		width: 100% !important;
+
+	}
+
+	.container-fluid {
+		padding: 0 !important;
+		width: 100% !important;
+
+	}
+
+
+
+	/*........................end of page-about.php.................*/
+
+
+
+
+  }
+
+ /*..........................end of LG Gpad 8.0......................*/
