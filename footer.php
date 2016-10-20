@@ -7,7 +7,7 @@
 <div class="col-xs-12">
 <div class="col-xs-3">
 	<div class="footer-logo">
-		<img src="<?php bloginfo('template_directory'); ?>/img/Logo.png" id='footer-logo'>
+		<img src="<?php bloginfo('template_directory'); ?>/img/Logo.png" id='footer-logo' class="img-responsive">
 	</div>
 </div>
 
@@ -64,16 +64,19 @@ array(
 <p><i class="fa fa-phone"> (336) 693-5580</p></i><p><i class="fa fa-envelope"> mjstokes1986@att.net</p></i>
 <hr> -->
 <ul class="social-media">
+<div class="row">	
 	<li><a href="http://facebook.com/mstokesj86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/facebook32.png" alt=""></a></li>
 	<li><a href="http://linkedin.com/in/mjstokes1" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/linkedin32.png" alt=""></a></li>
 	<li><a href="http://github.com/mjstokes86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/github32.png" alt=""></a></li>
 	<li><a href="http://twitter.com/mstokes86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/twitter32.png" alt=""></a></li>
 </ul>
 
+
 <small><p>Copyright &copy; <?php echo date('Y'); ?> <br>
 mjstokes.com <br>
 All rights reserved </p></small>
-	
+</div>
+
 
 </div>
 

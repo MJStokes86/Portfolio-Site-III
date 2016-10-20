@@ -1548,9 +1548,9 @@ html, body{
 
 	}
 
-	.services p {
+	#my_services p {
 		font-size: 0.5em;
-		width: 100% !important;
+		width: 100px !important;
 
 	}
 
@@ -1710,63 +1710,15 @@ html, body{
 
 	/*........................footer.php.........................*/
 
-	.footer-logo img {
-		height: 100px;
-		width: 100px;
-
+	.social-media li {
+		padding: 0;
+		display: inline-block;
 	}
 
-	.footer-logo {
-		position: absolute;
-		left: 110%;
+	.social-media img {
+	height: 20px;
+	width: 20px;
 	}
-
-
-
-	.site_links p {
-		width: 50%;
-	}
-
-	.site_links {
-		margin-top: 50%;
-		left: -3%;
-	}
-
-/* 	.recent-post-links {
-		margin-top: 100%;
-		left: -27%;
-
-	} */
-
-	.recent-post-links {
-		display: none;
-	}
-
-	.footer-contact {
-		margin-top: 220%;
-		left: -15% !important;
-	}
-
-	.footer-contact ul {
-		float: right;
-		margin-right: 100px;
-		display: inline !important;
-
-	}
-
-	.social-media {
-		position: relative;
-		left: -50% !important;
-	}
-
-	.footer-contact small p {
-		position: relative;
-		left: -50% !important;
-	}
-
-
-
-
 
 
 	/*.......................end of footer.php....................*/
@@ -2025,61 +1977,10 @@ html, body{
 
 
 	/*........................footer.php.........................*/
-
-	.footer-logo img {
-		height: 100px;
-		width: 100px;
-
-	}
-
-	.footer-logo {
-		position: absolute;
-		left: 110%;
-	}
-
-
-
-	.site_links p {
-		position: relative;
-		left: 70% !important;
-	}
-
-	.site_links {
-		margin-top: 50%;
-		left: -3%;
-	}
-
-	/* .recent-post-links {
-		margin-top: 120%;
-		left: -27%;
-
-	} */
-
-	.recent-post-links {
-		display: none;
-	}
-
-	.footer-contact {
-		margin-top: 120%;
-		left: 20% !important;
-	}
-
-	.footer-contact ul {
-		float: right;
-		margin-right: 100px;
-		display: inline !important;
-
-	}
-
-	.footer-contact small p {
-		float: right;
-		margin-right: 100px;
-		display: inline !important;
-		width: 100%;
-		font-size: 0.5em;
-
-	}
-
+.social-media  {
+	width: 50%;
+	
+}
 
 
 
