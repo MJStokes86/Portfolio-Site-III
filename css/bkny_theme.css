@@ -1710,14 +1710,27 @@ html, body{
 
 	/*........................footer.php.........................*/
 
-	.social-media li {
-		padding: 0;
-		display: inline-block;
+	.site_links li a {
+		position: relative;
+		left: -10% !important;
+
 	}
 
-	.social-media img {
+	.social-media li {
+		padding: 0;
+		display: inline !important;
+	}
+
+	/* .social-media img {
 	height: 20px;
 	width: 20px;
+	} */
+
+	.footer-contact small p {
+		width: 100px;
+		position: relative;
+		left:  40%;
+
 	}
 
 

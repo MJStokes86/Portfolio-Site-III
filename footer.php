@@ -5,18 +5,18 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col-xs-12">
-<div class="col-xs-3">
+<div class="col-xs-4">
 	<div class="footer-logo">
 		<img src="<?php bloginfo('template_directory'); ?>/img/Logo.png" id='footer-logo' class="img-responsive">
 	</div>
 </div>
 
-<div class="col-xs-3 site_links">
+<div class="col-xs-4 site_links">
 <p>Site Links</p>
 <?php wp_nav_menu(array('theme_location' => 'secondary')); ?>
 </div>
 
-<div class="col-xs-3 recent-post-links">
+<div class="col-xs-4 recent-post-links">
 <p>Recent Posts</p>
 <ul class='recent_posts_list'>
 
@@ -52,14 +52,18 @@ array(
 
  }
 
+ 		wp_reset_postdata();
+
+
 
  	?>
  	</ul>
 
 	
 </div>
+</div>
 
-<div class="col-xs-3 text-center footer-contact">
+<div class="container-fluid text-center footer-contact">
 <!-- <h3>Contact Me</h3>
 <p><i class="fa fa-phone"> (336) 693-5580</p></i><p><i class="fa fa-envelope"> mjstokes1986@att.net</p></i>
 <hr> -->
@@ -82,7 +86,6 @@ All rights reserved </p></small>
 
 
 
-</div>
 </div>
 </div>
 </div>
