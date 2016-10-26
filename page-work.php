@@ -9,7 +9,7 @@
 	<div class="col-xs-12">
 
 
-		<div class="cols left-div">
+		<div class="cols left-div" id="featured_project_post">
 
 		<?php 
 
@@ -66,7 +66,7 @@
 
 		
 
-		<div class="cols right-div"><?php get_sidebar() ?></div>
+		<div class="cols right-div" id="project_sidebar"><?php get_sidebar() ?></div>
 
 		
 
@@ -78,12 +78,12 @@
 	<br>
 
 
-<div class="container post_container">
+<div class="container post_container" id="all_projects_container">
 
 	<div class="row">
 		<div class="col-xs-12">
 		<div class="running_head_pink" id="recent_posts">
-		<h1>All Other Projects</h1>
+		<h1>All Other Work</h1>
 		</div>
 			<?php 
 

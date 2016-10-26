@@ -41,7 +41,7 @@ array(
  	while($recentPost->have_posts()) {
  		$recentPost->the_post(); ?>
 
- 	<li><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></li>
+ 	<li><a href="<?php the_permalink(); ?>" ><p><?php the_title(); ?></p></a></li>
 
  	<?php
 

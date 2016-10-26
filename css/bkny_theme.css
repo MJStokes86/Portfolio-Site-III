@@ -582,7 +582,7 @@ html, body{
 	color: #fff;
 	font-size: 25px;
 	padding: 100px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('../img/ctrlpkgray.jpg');
+	background-image:/*  linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), */ url('../img/ctrlpkgray.jpg');
 	background-blend-mode: multiply;
 
 
@@ -1493,14 +1493,11 @@ html, body{
 
 
 
- 
-
-
 
   /*....................header....................*/
 	.navbar-brand img {
-		height: 50px;
-		width: 50px;
+		height: 75px;
+		width: 75px;
 	}
 
 	#my-name {
@@ -1511,9 +1508,24 @@ html, body{
 		top: 7%;
 	}
 
+	.overlay li a {
+		font-size: 0.7em;
+	}
+
   /*......................end of header ..............*/
 
   /*......................front-page.php....................*/
+
+  .img-bg {
+  	background-position: center;
+  	background-attachment: scroll;
+  }
+
+  .content-block {
+  	background-color: #141414 !important;
+  	background-image: none;
+  }
+
 
 	#brand {
 		margin-top: 50%;
@@ -1549,6 +1561,10 @@ html, body{
 
 	}
 
+	.services {
+		background-position: center;
+	}
+
 	#my_services p {
 		font-size: 0.5em;
 		width: 100px !important;
@@ -1569,7 +1585,7 @@ html, body{
 	.services-button {
 		position: absolute;
 		top: 105%;
-		left: 5%;
+		left: 10%;
 	}
 
 	/*........................end of front-page.php.................*/
@@ -1592,21 +1608,21 @@ html, body{
 		font-size: 0.9em;
 	}
 
-	.left-div {
-		width: auto;
-		left: 15%;
+	#featured_project_post {
+		width: auto !important;
+		left: -3%;
 	}
 	
-	.right-div {
+	#project_sidebar {
 
-		width: auto;
-		left: 15%;
+		width: 100%;
+		left: -3%;
 
 	}
 
-	.post_container {
-		width: 100%;
-		left: 10%;
+	#all_projects_container {
+		width: 100% !important;
+		left: 1%;
 	}
 
 
@@ -1621,20 +1637,23 @@ html, body{
 
 	/*..........................home.php.......................*/
 
+
 	#new_blog_post {
-		width: auto;
+	width: auto !important;
+ 	left: -3% ;
+
 	}
 	
 	#blog_page_sidebar {
 
-		width: auto;
-		left: 6%;
+		width: 100% !important;
+		left: -3%;
 
 	}
 
 	#blog_post_container {
-		width: 100%;
-		left: 10%;
+		width: 100% !important;
+		left: -5%;
 	}
 
 
@@ -1711,10 +1730,31 @@ html, body{
 
 	/*........................footer.php.........................*/
 
+	.footer-logo {
+		display: none;
+	}
+
 	.site_links li a {
 		position: relative;
 		left: -10% !important;
 
+	}
+
+	.site_links p {
+		position: relative;
+		left: 20%;
+	}
+
+	/* .recent_posts_list a {
+
+		font-size: 0.7em !important;
+		max-width:  20px !important;
+
+	} */
+
+
+	.recent-post-links {
+		display: none;
 	}
 
 	.social-media li {
@@ -1735,6 +1775,8 @@ html, body{
 	}
 
 
+
+
 	/*.......................end of footer.php....................*/
 
 
@@ -1744,267 +1786,39 @@ html, body{
   /*.....................................end of iPhone 6...................*/
 
 
-
-
-/*.................................. iPhone 5.........................*/
-
-
-@media only screen 
-  and (min-width: 320px)
-  and (max-width: 568px)
+@media only screen /* iPhone landscape */
+  and (min-width: 375px )
   and (-webkit-min-device-pixel-ratio: 2)
- { 
 
- 
+  {
 
-
-
-  /*....................header....................*/
-	.navbar-brand img {
+  	 /*....................header....................*/
+	/* .navbar-brand img {
 		height: 75px;
 		width: 75px;
+		top: 100%;
 	}
-
+ */
 	#my-name {
 		font-size: 1.5em !important;
 	}
 
-	#toggle {
-		top: 7%;
+	
+	.overlay li a {
+		font-size: 0.7em;
 	}
 
-	.overlay nav {
-		font-size: 2em;
+	.overlay {
+		height: auto;
 	}
 
   /*......................end of header ..............*/
 
-  /*......................front-page.php....................*/
-
-	#brand {
-		margin-top: 50%;
-	}
-
-	#name {
-		font-size: 2.5em !important;
-	}
-
-	#web-dev {
-		font-size: 1em;
-	}
-
-	#date {
-		font-size: 1.5em;
-	}
-
-	#latest-post-container {
-		margin-top: 20%;
-	}
-
-	.latest-blog-title span a {
-		font-size: 0.5em;
-		background: transparent;
-		line-height: 2em;
-		padding: 0;
-
-	}
-
-	.parallax-window {
-		background-position: 50% 50% !important;
-
-	}
-
-	.services p {
-		font-size: 0.5em;
-		width: 100% !important;
-
-	}
-
-	#code {
-		float: left;
-		margin-right: 50px;
-
-	}
-
-	#clock {
-		float: left;
-		margin-right: 50px;
-	}
-
-	.services-button {
-		position: absolute;
-		top: 105%;
-		left: 5%;
-	}
-
-	/*........................end of front-page.php.................*/
-
-
-
-
-	/*.........................page-about.php......................*/
-	
-	.article_about {
-		font-size: 0.7em !important;
-	}
-
-	/* .devicons {
-		position: relative;
-		left: -50% !important;
-	}
-
-	.skill-bar span {
-		width: 300% !important;
-	}
-
-	#cms {
-		width: 100% !important;
-	}
- */
-	#interest_statement {
-		font-size: 3em;
-	}
-
-	/*..........................end of page-about.php...............*/
-	
-	/*..........................page-work.php.......................*/
-
-	.featured-work-title span {
-		font-size: 0.9em;
-	}
-
-	.left-div {
-		width: auto;
-		left: 15%;
-	}
-	
-	.right-div {
-
-		width: auto;
-		left: 15%;
-
-	}
-
-	.post_container {
-		width: 100%;
-		left: 10%;
-	}
-
-
-
-	.post_container .col-xs-4 {
-		width: 100%;
-	}
-	
-	/*..........................end of page-work.php...................*/
-
-
-
-	/*..........................home.php.......................*/
-
-	#new_blog_post {
-		width: auto;
-	}
-	
-	#blog_page_sidebar {
-
-		width: auto;
-		left: 6%;
-
-	}
-
-	#blog_post_container {
-		width: 100%;
-		left: 10%;
-	}
-
-
-	#post_date {
-	
-	
-		top: 100px !important;
-		left: 3.8%;
-		font-size: 0.5em !important;
-		width: 100px;
-	
-	}
-
-	#post_date p {
-	
-		font-size: 1.7em;
-
-	
-	}
-
-
-	.featured-blog-title {
-		top: 190px !important;
-		line-height: 1.5em;
-		left: -2.5%;
-	}
-
-	.featured-blog-title span {
-		
-		font-size: 0.5em;
-	}
-	
-	/*..........................end of home.php...................*/
-
-	/*...........................single.php.......................*/
-	.wp-post-image {
-		width: 100%;
-		object-fit: cover;
-	}
-	/*...........................end of single.php.................*/
-
-
-
-	/*...........................content-search.php.......................*/
-
-	.results-content h2{
-		font-size: 1.5em !important;
-		
-	}
-	
-	.results-content p, .results-content .tags {
-		display: none;
-
-	}
-
-
-
-
-	.results-content .ghost-button {
-		position: absolute;
-		top: 150%;
-		left: -150%;
-	}
-
-	.results_col {
-		height: 100%;
-	}
-
-
-	
-	/*...........................end of content-search.php.................*/
-	
-
-
-	/*........................footer.php.........................*/
-.social-media  {
-	width: 50%;
-	
-}
-
-
-
-
-
-	/*.......................end of footer.php....................*/
-
 
 
   }
+
+
 
 
 
@@ -2083,7 +1897,39 @@ html, body{
 
 	/*........................end of front-page.php.................*/
 
+	/*..........................page-work.php.......................*/
 
+	
+	
+	#project_sidebar {
+
+		width: 100%;
+		left: 3%;
+
+	}
+
+	
+	
+	/*..........................end of page-work.php...................*/
+
+	
+
+	/*..........................home.php.......................*/
+
+
+	
+	#blog_page_sidebar {
+
+		width: 100% !important;
+		left: 3%;
+
+	}
+
+	
+
+	/*..........................end of home.php...................*/
+
+	
 
 
 
