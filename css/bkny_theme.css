@@ -952,6 +952,28 @@ html, body{
 
 }
 
+#WordPress{
+	font-size: 3em;
+}
+
+#WordPress  {
+	color: #fff;
+	text-decoration: none;
+
+}
+
+#WordPress:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#WordPress:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
 /*........................ end of footer.php........................ */
 
 
@@ -1397,7 +1419,7 @@ html, body{
 
 .services-button {
 	position: absolute;
-	left: 30%;
+	left: 37%;
 }
 
 
@@ -1772,6 +1794,12 @@ html, body{
 		position: relative;
 		left:  40%;
 
+	}
+
+	#WordPress {
+		position: relative;
+		left: 5%;
+		font-size: 2em;
 	}
 
 
