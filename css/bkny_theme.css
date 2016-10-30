@@ -1752,6 +1752,11 @@ html, body{
 
 	/*........................footer.php.........................*/
 
+	#footer-row {
+		margin-left: -15%;
+	}
+
+
 	.footer-logo {
 		display: none;
 	}

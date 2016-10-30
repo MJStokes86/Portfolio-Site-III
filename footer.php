@@ -3,7 +3,7 @@
 <footer>
 <div class="footer text-center">
 <div class="container-fluid">
-<div class="row">
+<div class="row" id="footer-row">
 <div class="col-xs-12">
 <div class="col-xs-4">
 	<div class="footer-logo">
@@ -80,7 +80,7 @@ array(
 mjstokes.com <br>
 All rights reserved </p></small>
 
-<small><a href="http://wordpress.org" target="_blank" id="WordPress" ><i class="devicons devicons-wordpress"></i></a></small>
+<small><a href="http://wordpress.org" target="_blank" id="WordPress" ><i class="devicons devicons-wordpress"></i></a><br><p>Powered by WordPress</p></small>
 </div>
 
 
