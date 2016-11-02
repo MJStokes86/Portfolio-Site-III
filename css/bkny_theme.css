@@ -1504,13 +1504,90 @@ html, body{
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media (min-width: 320px) and (max-width: 568px) {
+
+
+	 /*......................front-page.php....................*/
+	#name {
+
+			
+	}
+
+  
+
+	/*........................end of front-page.php.................*/
+
+
+
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*.......................... iphone 6 ................................*/
 
-@media only screen 
-  and (min-width: 375px)
-  and (max-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait)
+@media (min-width:320px) and (max-width: 667px)
+  
  { 
 
 
@@ -1570,11 +1647,13 @@ html, body{
 	}
 
 	.latest-blog-title span a {
-		font-size: 0.5em !important;
-		width: 100% !important;
-		line-height: 0px !important;
-		letter-spacing: 0px;
-		padding: 0px;
+		font-size: 0.5em;
+		padding: 8px;
+		letter-spacing: -1px;
+		background: none;
+		
+
+	
 
 	}
 
@@ -1797,7 +1876,7 @@ html, body{
 	.footer-contact small p {
 		width: 100px;
 		position: relative;
-		left:  40%;
+		left:  42%;
 
 	}
 
