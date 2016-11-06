@@ -1586,7 +1586,7 @@ html, body{
 
 /*.......................... iphone 6 ................................*/
 
-@media (min-width:320px) and (max-width: 667px)
+@media (min-width:320px) and (max-width: 736px)
   
  { 
 
@@ -1664,6 +1664,12 @@ html, body{
 
 	.services {
 		background-position: center;
+
+	}
+
+	#my_services {
+		padding: 50%; 
+		left: -31%;
 	}
 
 	#my_services p {
@@ -1672,7 +1678,7 @@ html, body{
 
 	}
 
-	#code {
+	/* #code {
 		float: left;
 		margin-right: 50px;
 
@@ -1682,11 +1688,11 @@ html, body{
 		float: left;
 		margin-right: 50px;
 	}
-
+ */
 	.services-button {
 		position: absolute;
 		top: 105%;
-		left: 10%;
+		left: 50%;
 	}
 
 	/*........................end of front-page.php.................*/
@@ -1898,10 +1904,10 @@ html, body{
   /*.....................................end of iPhone 6...................*/
 
 
-@media only screen /* iPhone landscape */
-  and (min-width: 375px )
-  and (-webkit-min-device-pixel-ratio: 2)
-
+@media screen /* iPhone landscape */
+  and (min-width: 375px)
+  and (orientation: landscape)
+  
   {
 
   	 /*....................header....................*/
@@ -1913,7 +1919,10 @@ html, body{
  */
 	#my-name {
 		font-size: 1.5em !important;
+		position: relative;
+		top: -1.5em !important;
 	}
+
 
 	
 	.overlay li a {
@@ -1926,9 +1935,61 @@ html, body{
 
   /*......................end of header ..............*/
 
+ /*......................front-page.php....................*/
+
+ #my_services {
+ 	padding: 0;
+ 	left: 7%;
+ }
+
+ .services-button {
+ 	left: 30%;
+ }
+
+	/*........................end of front-page.php.................*/
+
+
+	/*........................footer.php.........................*/
+
+	
+	.site_links li a, .social-media li {
+		position: relative;
+		left: 13% !important;
+	}
+
+	.footer-contact small p {
+		left: 48%;
+	}
+
+	.footer-logo, .recent-post-links {
+		display: inline;
+
+	}
+
+	.footer-logo img {
+		height: 100px;
+		width: 100px;
+		left: 10% !important;
+	}
+
+
+	
+
+
+	
+	
+
+
+
+
+	/*.......................end of footer.php....................*/
+
+
 
 
   }
+
+  /*........................end of iPhone Lanscape.................*/
 
 
 
@@ -2048,13 +2109,11 @@ html, body{
 
   }
 
-
-/*........................... LG Gpad 8.0.....................*/ 
-
-@media only screen 
+  @media only screen 
   and (min-width: 800px )
   and (max-width: 1280px )
   and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)
 
   {
 
@@ -2155,3 +2214,10 @@ html, body{
   }
 
  /*..........................end of LG Gpad 8.0......................*/
+
+/* @media screen and (min-width: 768px) {
+	.site_links p {
+		position: relative;
+		left: -50% !important;
+	}
+} */
