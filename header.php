@@ -1,15 +1,16 @@
-<!DOCTYPE html> <html <?php language_attributes(); ?>> <head>     <meta
-charset="<?php  bloginfo('charset'); ?>">     <title><?php  bloginfo('name');
-?> <?php wp_title(); ?></title>     <meta name="viewport" content="width
-=device-width, initial-scale=1.0, maximum-scale=1">     <meta name="description"
-content="<?php bloginfo('description'); ?>">     <?php if( is_singular() )
-wp_enqueue_script( 'comment-reply' );  ?>     <?php wp_head(); ?>     <link
-href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-rel="stylesheet">     <link
-href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css'
-rel='stylesheet'>     <script
-src="https://use.fontawesome.com/a46e157fb6.js"></script>     <script
-src="jquery.bootstrap-autohidingnavbar.js"></script>
+<!DOCTYPE html> 
+<html <?php language_attributes(); ?>> 
+<head>     
+<meta charset="<?php  bloginfo('charset'); ?>">     
+<title><?php  bloginfo('name');?> <?php wp_title(); ?></title> 
+<meta name="viewport" content="width=device-width, 
+    minimum-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="<?php bloginfo('description'); ?>">     <?php if( is_singular() )
+wp_enqueue_script( 'comment-reply' );  ?> <?php wp_head(); ?>     
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">     
+<link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>     
+<script src="https://use.fontawesome.com/a46e157fb6.js"></script>     
+<script src="jquery.bootstrap-autohidingnavbar.js"></script>
 
 
 

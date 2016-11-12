@@ -195,19 +195,6 @@ html, body{
 
 } 
 
-#search {
-	width: 80%;
-	border-radius: 0;
-	border: none;
-	border-bottom: solid pink 2px;
-	background-color: transparent;
-	color: #fff;
-}
-
-#search:focus {
-	
-  	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0);
-}
 
 
 .col-xs-6 {
@@ -488,7 +475,7 @@ html, body{
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
-	margin-top: -75px;
+	margin-top: 0;
 	
 
 }
@@ -496,7 +483,7 @@ html, body{
 
 #brand {
 	
-	margin-top: 20%;
+	margin-top: 15%;
 	display: flex;
 	flex-direction:column;
 	justify-content: center;
@@ -688,8 +675,7 @@ html, body{
 }
 
 .interests {
-/* 	margin-bottom:10px;
- */	margin-top: -30px;
+ 	margin-top: 20%;
 	display: flex;
 	flex-direction:column;
 	justify-content: center;
@@ -711,6 +697,65 @@ html, body{
 
 /*.................... end of page-about.php......................... */
 
+
+/*....................page-work.php...............*/
+
+.featured-project-title {
+	position: absolute;
+	top: 37%;
+	left: 0;
+	width: 75%;
+	font-size: 30px;
+	text-transform: uppercase;	
+	line-height: 1.8;
+	color: pink;
+	padding: 20px;
+	font-family: 'Anton', sans-serif;
+
+}
+
+.featured-project-title span {
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.9);
+   padding: 10px; 
+   font-size: 35px;
+}
+
+.project-thumbnail img {
+	position: absolute;
+	top: 20%;
+}
+
+#project-template-part {
+	position: absolute;
+	top: 65%;
+}
+
+#project_sidebar .fa-search {
+	font-size: 2em;
+}
+
+
+
+
+
+
+/*.................end of page-work.php...............*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*........................home.php....................................*/
+
 .tags_list {
 	display: inline-block;
 }
@@ -719,7 +764,6 @@ html, body{
 	color: #fff;
 }
 
-/*........................home.php....................................*/
 
 #page-blog {
 		background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('../img/bklynbridge.jpg') center no-repeat;
@@ -734,10 +778,10 @@ html, body{
 } 
 
 .cols {
-	min-height: 700px;
+	min-height: 850px;
 	background-color: #212121;
 	color:  #fff;
-	margin-top: 20px;
+	margin-top: 5%;
 	background: rgb(0, 0, 0);
    background: rgba(0, 0, 0, 0.8);
 
@@ -745,7 +789,7 @@ html, body{
 
 .featured_photo, .blog-title, .template-part {
 	position: relative;
-	left: 15px;
+	left: 3%;
 }
 
 .template-part p {
@@ -755,7 +799,7 @@ html, body{
 
 .featured-blog-title {
 	position: absolute;
-	top: 500px;
+	top: 60%;
 	left: 0;
 	width: 75%;
 	font-size: 30px;
@@ -775,27 +819,13 @@ html, body{
    font-size: 35px;
 }
 
-.featured-work-title {
+
+
+.featured-thumbnail img {
 	position: absolute;
-	top: 320px;
-	left: 0;
-	width: 75%;
-	font-size: 30px;
-	text-transform: uppercase;	
-	line-height: 1.8;
-	color: pink;
-	padding: 20px;
-	font-family: 'Anton', sans-serif;
-
+	top: 20%;
 }
 
-.featured-work-title span {
-   letter-spacing: -1px;  
-   background: rgb(0, 0, 0);
-   background: rgba(0, 0, 0, 0.9);
-   padding: 10px; 
-   font-size: 35px;
-}
 
 .latest-blog-title {
 	position: absolute;
@@ -818,6 +848,11 @@ html, body{
    color: pink;
 }
 
+.template-part {
+	position: absolute;
+	top: 80%;
+}
+
 
 
 
@@ -826,6 +861,7 @@ html, body{
 	position: relative;
 	float: left;
 	left: 3%;
+
 
 }
 
@@ -857,8 +893,8 @@ html, body{
 	color: #fff;
 	font-size: 2em;
 	padding-bottom: 2px;
-	position: relative;
-	top: 383px !important;
+	position: absolute;
+	top: 53%;
 	left: 2.9%;
 	z-index: 1;
 	background: rgb(0, 0, 0); 
@@ -880,24 +916,29 @@ html, body{
 	top: 5% !important;
 }
 
+#blog_sidebar .fa-search {
+	font-size: 2em;
+}
+
+
 
 .post_container {
 	background-color: #212121;
 	color: #fff;
-	height: 1000px;
-	position: relative;
-	left: 10px;
-	margin-top: 5px;
-	margin-bottom: 10px;
-	width: 95% !important;
 	height: auto;
+	position: relative;
+	left: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: 95% !important;
 	background: rgb(0, 0, 0);
    background: rgba(0, 0, 0, 0.9);
-
-
-
-
 }
+
+
+
+
+
 
 #border-right:not(:last-child) {
 	border-right: solid 1px pink;
@@ -1139,15 +1180,31 @@ html, body{
 
 .fa-search {
   position: absolute;
-  top: 75px;
-  left: 7px;
+  top: 10%;
+  left: 3%;
+  font-size: 2em;
 }
 
 #search {
 	position: absolute;
-	left: 15px;
+	left: 15%;
 	top: 60px;
 }
+
+#search {
+	width: 70%;
+	border-radius: 0;
+	border: none;
+	border-bottom: solid pink 2px;
+	background-color: transparent;
+	color: #fff;
+}
+
+#search:focus {
+	
+  	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0);
+}
+
 
 
 
@@ -1506,56 +1563,407 @@ html, body{
 
 
 
+/*.......................... iphone 5 and below ................................*/
+
+@media (min-width:320px) and (max-width: 568px)
+  
+ { 
 
 
 
 
-
-
-
-
-
-
-
-  /* ----------- iPhone 5 and 5S ----------- */
-
-/* Portrait and Landscape */
-@media (min-width: 320px) and (max-width: 568px) {
-
-
-	 /*......................front-page.php....................*/
-	#name {
-
-			
+  /*....................header....................*/
+	.navbar-brand img {
+		height: 75px;
+		width: 75px;
 	}
 
-  
+	#my-name {
+		font-size: 1.5em !important;
+	}
+
+	#toggle {
+		top: 7%;
+	}
+
+	.overlay li a {
+		font-size: 0.7em;
+	}
+
+  /*......................end of header ..............*/
+
+  /*......................front-page.php....................*/
+
+  .img-bg {
+  	background-position: center;
+  	background-attachment: scroll;
+  }
+
+  .content-block {
+  	background-color: #141414 !important;
+  	background-image: none;
+  }
+
+
+	#brand {
+		margin-top: 50%;
+	}
+
+	#name {
+		font-size: 2.5em !important;
+	}
+
+	#web-dev {
+		font-size: 1em;
+	}
+
+	#date {
+		font-size: 1em;
+
+	}
+
+	#latest-post-container {
+		margin-top: 20%;
+	}
+
+	.latest-blog-title span a {
+		font-size: 0.5em;
+		padding: 8px;
+		letter-spacing: -1px;
+		background: none;
+		
+
+	
+
+	}
+
+	.parallax-window {
+		background-position: 50% 50% !important;
+
+	}
+
+	.services {
+		background-position: center;
+
+	}
+
+	#my_services {
+		padding: 50%; 
+		left: -50%;
+	}
+
+	#my_services p {
+		font-size: 0.5em;
+		width: 100px !important;
+
+	}
+
+	/* #code {
+		float: left;
+		margin-right: 50px;
+
+	}
+
+	#clock {
+		float: left;
+		margin-right: 50px;
+	}
+ */
+	.services-button {
+		position: absolute;
+		top: 105%;
+		left: 50%;
+	}
 
 	/*........................end of front-page.php.................*/
 
 
 
 
-}
+	/*.........................page-about.php......................*/
+	
+	.article_about {
+		font-size: 0.9em !important;
+	}
 
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-}
+	.devicons {
+		font-size: 2em;
+	}
 
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-}
+	.col-md-3 h4 {
+		font-size: 0.5em;
+	}
 
 
+	/*..........................end of page-about.php...............*/
+	
+	/*..........................page-work.php.......................*/
+
+	
+
+	#featured_project_post {
+		width:100%;
+		left: -3%;
+		height: auto;
+	}
+
+	#project-title span{
+		font-size: 1em;
+		position: absolute;
+		top: -40%;
+	}
+
+
+	#project-template-part {
+		position: absolute;
+		top: 60%;
+	}
+
+	
+	
+	#project_sidebar {
+
+		width: 100%;
+		left: -3%;
+
+	}
+
+	#all_projects_container {
+		width: 100% !important;
+		left: 1%;
+	}
+
+
+
+	.post_container .col-xs-4 {
+		width: 100%;
+	}
+	
+	/*..........................end of page-work.php...................*/
+
+
+
+	/*..........................home.php.......................*/
+
+
+	#new_blog_post {
+	width: 100%;
+ 	left: -3% ;
+
+	}
+	
+	#blog_sidebar {
+
+		width: 100%;
+		left: -3%;
+
+	}
+
+	#blog_post_container {
+		width: 100%;
+		left: -5%;
+	}
+
+
+	#post_date {
+	
+	
+		position: absolute;
+		top: 25% !important;
+		left: -2%;
+		font-size: 0.5em !important;
+		width: 100px;
+	
+	}
+
+	#post_date p {
+	
+		font-size: 1.7em;
+
+	
+	}
+
+
+	.featured-blog-title span {
+		position: absolute;
+		top: -230%;
+		line-height: 1.5em;
+		left: 3.5%;
+	}
+
+	.featured-blog-title span {
+		
+		font-size: 0.5em;
+	}
+
+	.template-part {
+		position: absolute;
+		top: 50%;
+	}
+
+	#border-right:not(:last-child) {
+	border-right: none;
+	}
+
+	.recent-blog-posts {
+		left: 5%;
+	}
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+	/*..........................end of home.php...................*/
+
+	/*...........................single.php.......................*/
+	.wp-post-image {
+		width: 100%;
+		object-fit: cover;
+	}
+	/*...........................end of single.php.................*/
+
+
+
+	/*...........................content-search.php.......................*/
+
+	.results-content h2{
+		font-size: 1.5em !important;
+		
+	}
+	
+	.results-content p, .results-content .tags {
+		display: none;
+
+	}
+
+
+
+
+	.results-content .ghost-button {
+		position: absolute;
+		top: 150%;
+		left: -150%;
+	}
+
+	.results_col {
+		height: 100%;
+	}
+
+
+	
+	/*...........................end of content-search.php.................*/
+
+
+
+	/*.......................contact.php........................*/
+
+	.wpcf7 .form-control {
+		width: 100%;
+	}
+
+	.wpcf7-submit {
+		width: 100%;
+	}
+
+	/*...................end of contact.php......................*/
+	
+
+
+	/*........................footer.php.........................*/
+
+	#footer-row {
+		margin-left: -15%;
+	}
+
+
+	.footer-logo {
+		display: none;
+	}
+
+	.site_links li a {
+		position: relative;
+		left: -10% !important;
+
+	}
+
+	.site_links p {
+		position: relative;
+		left: 20%;
+	}
+
+	/* .recent_posts_list a {
+
+		font-size: 0.7em !important;
+		max-width:  20px !important;
+
+	} */
+
+
+	.recent-post-links {
+		display: none;
+	}
+
+	.social-media li {
+		padding: 0;
+		display: inline !important;
+	}
+
+	/* .social-media img {
+	height: 20px;
+	width: 20px;
+	} */
+
+	.footer-contact small p {
+		width: 100px;
+		position: relative;
+		left:  42%;
+
+	}
+
+	#WordPress {
+		position: relative;
+		left: 5%;
+		font-size: 2em;
+	}
+
+
+
+
+	/*.......................end of footer.php....................*/
+
+
+
+  }
+
+  /*.....................................end of iPhone 5 and below...................*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
@@ -1583,10 +1991,9 @@ html, body{
 
 
 
+/*.......................... iphone 6 and +................................*/
 
-/*.......................... iphone 6 ................................*/
-
-@media (min-width:320px) and (max-width: 736px)
+@media (min-width:375px) and (max-width: 667px)
   
  { 
 
@@ -1711,14 +2118,19 @@ html, body{
 	
 	/*..........................page-work.php.......................*/
 
-	.featured-work-title span {
-		font-size: 0.9em;
-	}
+	
 
 	#featured_project_post {
-		width: auto !important;
+		width:100%;
 		left: -3%;
+		height: auto;
 	}
+
+	#project-title span{
+		font-size: 1em;
+	}
+
+	
 	
 	#project_sidebar {
 
@@ -1746,12 +2158,12 @@ html, body{
 
 
 	#new_blog_post {
-	width: auto !important;
+	width: 100%;
  	left: -3% ;
 
 	}
 	
-	#blog_page_sidebar {
+	#blog_sidebar {
 
 		width: 100% !important;
 		left: -3%;
@@ -1767,8 +2179,9 @@ html, body{
 	#post_date {
 	
 	
-		top: 100px !important;
-		left: 3.8%;
+		position: absolute;
+		top: 30% !important;
+		left: -2%;
 		font-size: 0.5em !important;
 		width: 100px;
 	
@@ -1782,16 +2195,42 @@ html, body{
 	}
 
 
-	.featured-blog-title {
-		top: 190px !important;
+	.featured-blog-title span {
+		position: absolute;
+		top: -100%;
 		line-height: 1.5em;
-		left: -2.5%;
+		left: 3.5%;
 	}
 
 	.featured-blog-title span {
 		
 		font-size: 0.5em;
 	}
+
+	.template-part {
+		position: absolute;
+		top: 60%;
+	}
+
+	#border-right:not(:last-child) {
+	border-right: none;
+	}
+
+	.recent-blog-posts {
+		left: 5%;
+	}
+
+
+	
+
+
+
+
+
+
+
+
+
 	
 	/*..........................end of home.php...................*/
 
@@ -1832,6 +2271,20 @@ html, body{
 
 	
 	/*...........................end of content-search.php.................*/
+
+
+
+	/*.......................contact.php........................*/
+
+	.wpcf7 .form-control {
+		width: 100%;
+	}
+
+	.wpcf7-submit {
+		width: 100%;
+	}
+
+	/*...................end of contact.php......................*/
 	
 
 
@@ -1901,96 +2354,109 @@ html, body{
 
   }
 
-  /*.....................................end of iPhone 6...................*/
+  /*.....................................end of iPhone 6 and +...................*/
 
 
-@media screen /* iPhone landscape */
-  and (min-width: 375px)
-  and (orientation: landscape)
-  
-  {
+  /*............................iPhone Landscape........................*/
 
-  	 /*....................header....................*/
-	/* .navbar-brand img {
-		height: 75px;
-		width: 75px;
-		top: 100%;
-	}
- */
-	#my-name {
-		font-size: 1.5em !important;
+
+  @media (min-width: 375px) and (max-width: 667px) and (orientation: landscape)  {
+
+  	/*...................header..............................*/
+
+  	#my-name {
 		position: relative;
-		top: -1.5em !important;
+  		margin-top: 5%;
+
+  	}
+
+
+  	/*.....................end of header.......................*/
+
+   /*......................front-page.php....................*/
+
+  	#brand {
+  		position: absolute;
+  		top: -55%;
+  	}
+
+  	.services {
+		background-color: #212121 !important;
+		background-image: none;
+		height: 700px;
 	}
 
-
-	
-	.overlay li a {
-		font-size: 0.7em;
+  	#my_services {
+  	
+		left: -15%;
+		margin-top: -50%;
 	}
 
-	.overlay {
-		height: auto;
+	.services-button {
+		position: absolute;
+		top: 80%;
 	}
-
-  /*......................end of header ..............*/
-
- /*......................front-page.php....................*/
-
- #my_services {
- 	padding: 0;
- 	left: 7%;
- }
-
- .services-button {
- 	left: 30%;
- }
 
 	/*........................end of front-page.php.................*/
 
 
-	/*........................footer.php.........................*/
 
+	/*........................footer.php.........................*/
 	
-	.site_links li a, .social-media li {
+
+	.site_links p {
 		position: relative;
-		left: 13% !important;
+		left: 15%;
+	}
+
+	.site_links li a {
+		position: relative;
+		left: 5% !important;
+
+	}
+
+	.social-media li {
+		position: relative;
+		left: 10%;
 	}
 
 	.footer-contact small p {
-		left: 48%;
-	}
-
-	.footer-logo, .recent-post-links {
-		display: inline;
+		position: relative;
+		left: 47% !important;
 
 	}
 
-	.footer-logo img {
+	#WordPress {
+		position: relative;
+		left: 5% !important;
+	}
+
+	.recent-post-links, .footer-logo {
+		display: block;
+	}
+
+	#footer-logo {
 		height: 100px;
 		width: 100px;
-		left: 10% !important;
+		position: relative;
+		left: 25% !important;
+
 	}
 
-
 	
-
-
-	
-	
-
 
 
 
 	/*.......................end of footer.php....................*/
-
-
-
+	
 
   }
 
-  /*........................end of iPhone Lanscape.................*/
 
+
+
+
+  /*.............................end of iPhone Landscape.....................*/
 
 
 

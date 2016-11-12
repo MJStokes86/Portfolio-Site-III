@@ -1,7 +1,7 @@
+<?php get_header(); ?>
 
 <body id='page-blog'>
 
-<?php get_header(); ?>
 
 
 
@@ -31,7 +31,7 @@
 		 <div class="running_head_black" id="post_date"><p><?php echo get_the_date('n.d.y'); ?></p></div>
 		
 
-		<div class="featured-thumbnail" ><?php echo the_post_thumbnail('full') ?></div>
+		<div class="featured-thumbnail img-responsive" ><?php echo the_post_thumbnail('full') ?></div>
 
 		
 
@@ -62,7 +62,7 @@
 
 		
 
-		<div class="cols right-div" id="blog_page_sidebar"><?php get_sidebar() ?></div>
+		<div class="cols right-div" id="blog_sidebar"><?php get_sidebar() ?></div>
 
 		
 
@@ -91,8 +91,7 @@
 					'posts_per_page' => 6,
 					'order' => 'ASC',
 					'orderby' => 'date',
-					'cat' => '39',
-					'offset' => 1
+					'cat' => '39'
 
 				)
 
@@ -120,11 +119,11 @@
 
 				?>
 
-		<div class="col-xs-4" id='border-right'>
+		<div class="col-xs-4 recent-blog-posts" id='border-right'>
 
 
 
-			<div class="featured-thumbnail"><?php echo the_post_thumbnail('medium') ?><h3 style="color:pink; font-family:Anton, sans-serif;"><?php echo get_the_date('n.d.y'); ?></h3></div>
+			<div class="recent-thumbnail"><?php echo the_post_thumbnail('medium') ?><h3 style="color:pink; font-family:Anton, sans-serif;"><?php echo get_the_date('n.d.y'); ?></h3></div>
 			<h2 class="blog-title" id="container_titles"><?php the_title(); ?></h2>
 			<br>
 			<p>

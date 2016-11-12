@@ -3,6 +3,8 @@
 <body id='page-blog'>
 
 
+
+
 <div class="container-fluid">
 
 	<div class="row-fluid">
@@ -26,27 +28,22 @@
 
 		<div class="running_head_pink" id='featured'><p>Featured Project</p></div>
 
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
 		
 
-		<div class="featured_thumbnail img-responsive" id="featured_photo"><?php echo the_post_thumbnail('large') ?></div>
+		<div class="project-thumbnail img-responsive" id="project_photo"><?php echo the_post_thumbnail('large') ?></div>
 
 		<br>
 		<br>
 
 
-		<h1 class="featured-work-title"><span style="color: #fff;"class="blog-title"><?php echo the_title() ?></span></h1>
+		<h1 class="featured-project-title" id="project-title"><span style="color: #fff;"class="blog-title"><?php echo the_title() ?></span></h1>
 
 		<br>	
 		<br>
 		<br>
 
 
-		<div class="template-part">
+		<div class="template-part" id="project-template-part">
 		<p><?php echo get_the_excerpt() ?> <a class='ghost-button' href="<?php the_permalink(); ?>">Continue Reading</a></p>
 		</div>
 
@@ -127,7 +124,7 @@
 
 
 
-			<div class="featured-thumbnail"><?php echo the_post_thumbnail('medium') ?></div>
+			<div class="recent-thumbnail" id="project-img"><?php echo the_post_thumbnail('medium') ?></div>
 			<br>
 			<h2 class="blog-title" id="container_titles"><?php the_title(); ?></h2>
 			<br>
