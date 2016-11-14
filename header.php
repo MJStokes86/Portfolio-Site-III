@@ -51,7 +51,6 @@ else{
 				</div>
 			
 		</div>
-	</div>
 </nav>
 
 

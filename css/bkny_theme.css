@@ -8,6 +8,7 @@
 html, body{
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 .article_about {
@@ -152,6 +153,21 @@ html, body{
 	font-family: 'Anton', sans-serif;
 }
 
+.recent-posts  a {
+	color: pink;
+}
+
+.recent-posts a:hover {
+	text-decoration: none;
+	color: #fff;
+	-webkit-transition: color 0.5s linear; 
+    -moz-transition: color 0.5s linear;
+    -ms-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+     transition: color 0.5s linear;
+
+}
+
 
 #featured_photo {
 	position: relative;
@@ -234,9 +250,10 @@ html, body{
 
 }
 
-/* .menu-item {
-	float: right;
-} */
+
+.navbar-header {
+	padding: 10px !important;
+}
 
 .navbar-color {
 	background-color: #212121 !important;
@@ -264,7 +281,7 @@ html, body{
 }
 
 #toggle {
-	margin-top: 1%;
+	margin-top: 2%;
 	
 }
 
@@ -287,7 +304,6 @@ html, body{
 }
 
 
-/*.........................end of header.php......................... */
 
 /*......................... nav overlay.............................. */
 
@@ -459,13 +475,17 @@ html, body{
 /*................ end of nav overlay................................./*
 
 
-/* front-page.php */
+/*.........................end of header.php......................... */
+
+
+/*.......................... front-page.php.......................... */
 
 #date {
 	color: pink !important;
 	font-size: 80px;
 	font-family: Anton, sans-serif;
 	text-transform: uppercase;
+	margin-left: -10% !important;
 }
 
 .img-bg {
@@ -500,16 +520,18 @@ html, body{
 
 
 
-#web-dev {
-	font-family: 'Arimo', sans-serif;
-	font-size: 35px;
-	border-top: solid #fff 3px;
-	border-bottom: solid #fff 3px;
+#subtitle {
+	font-family: Anton, sans-serif;
+	font-size: 20px;
+	/* border-top: solid #fff 3px;
+	border-bottom: solid #fff 3px; */
 	padding:25px 100px;
 	display:inline-block;
 	/* background-color: #fff; */
 	/* background: rgba(0, 0, 0, 0.7); */
 	color: #fff;
+	text-transform: uppercase;
+
 
 }
 
@@ -1330,6 +1352,7 @@ html, body{
 	font-family: 'Open Sans', sans-serif;
 	min-width: 120px;
 	background-color: transparent;
+	width: 100%;
 
 }
 
@@ -1444,13 +1467,13 @@ html, body{
 
 	#toggle {
 	
-	top: 10%;
+	top: 6%;
 }
 
-#my-name {
-	position: relative;
-	top: 3%;
+.overlay li a {
+	font-size: 0.8em !important;
 }
+
 
 /*.........................end of header...............................*/
 
@@ -1613,7 +1636,7 @@ html, body{
 		font-size: 2.5em !important;
 	}
 
-	#web-dev {
+	#subtitle {
 		font-size: 1em;
 	}
 
@@ -2041,8 +2064,8 @@ html, body{
 		font-size: 3em !important;
 	}
 
-	#web-dev {
-		font-size: 1em;
+	#subtitle {
+		font-size: 1.2em;
 	}
 
 	#date {
@@ -2239,6 +2262,8 @@ html, body{
 		width: 100%;
 		object-fit: cover;
 	}
+
+
 	/*...........................end of single.php.................*/
 
 
@@ -2370,6 +2395,14 @@ html, body{
 
   	}
 
+  	.overlay li a {
+  		font-size: 0.6em;
+  	}
+
+  	#toggle {
+  		top: 10%;
+  	}
+
 
   	/*.....................end of header.......................*/
 
@@ -2398,6 +2431,37 @@ html, body{
 	}
 
 	/*........................end of front-page.php.................*/
+
+
+		/*..........................home.php.......................*/
+
+
+
+
+	#post_date {
+		position: absolute;
+		top: 50% !important;
+		left: 1%;
+	
+	
+	}
+
+	
+
+
+	.featured-blog-title {
+		position: absolute;
+		top: 60% !important;
+	}
+
+	.template-part {
+		position: absolute;
+		top: 70% !important;
+	}
+
+	
+	
+	/*..........................end of home.php...................*/
 
 
 
@@ -2467,12 +2531,124 @@ html, body{
 
 
 
-  @media only screen /* Tablets */
+
+
+
+
+ /*.............................iPhone6+ Landscape.....................*/
+
+
+    @media (min-width: 414px) and (max-width: 736px) and (orientation: landscape)  {
+
+  	/*...................header..............................*/
+
+  	#my-name {
+		position: relative;
+  		margin-top: 5%;
+
+  	}
+
+  	.overlay li a {
+  		font-size: 0.6em;
+  	}
+
+
+  	/*.....................end of header.......................*/
+
+	/*..........................page-work.php.......................*/
+
+
+	#featured_project_post {
+		width: 100% !important;
+		left: -3%;
+	}
+
+		#project_sidebar {
+
+		width: 100%;
+		left: -3%;
+
+	}
+
+
+	.post_container .col-xs-4 {
+		width: 100%;
+	}
+	
+
+	
+	/*..........................end of page-work.php...................*/
+
+
+
+
+
+	/*..........................home.php.......................*/
+
+	#new_blog_post {
+	width: 100% !important;
+ 	left: -3% ;
+
+	}
+	
+	#blog_sidebar {
+
+		width: 100% !important;
+		left: -3%;
+
+	}
+
+
+	
+	
+	/*..........................end of home.php...................*/
+
+
+	/*.......................contact.php........................*/
+
+	.wpcf7 .form-control {
+		width: 100%;
+	}
+
+	.wpcf7-submit {
+		width: 100%;
+	}
+
+	/*...................end of contact.php......................*/
+	
+
+
+
+
+  }
+
+
+
+
+
+  /*.............................end of iPhone6+ Landscape.....................*/
+
+
+
+
+
+
+
+
+
+  /*.................... iPad.........................................*/
+
+  @media only screen 
   and (min-width: 768px )
   and (max-width: 1024px )
   and (-webkit-min-device-pixel-ratio: 2)
 
   {
+
+  	body {
+  		overflow-x: hidden;
+
+  	}
 
   	 /*....................header....................*/
 
@@ -2496,14 +2672,28 @@ html, body{
 		left: 90%;
 	}
 
+	.overlay li a {
+		font-size: 1.2em !important;
+	}
+
+	
   /*......................end of header ..............*/
 
  /*......................front-page.php....................*/
+
+
 
 	.home {
 		padding: 0 !important;
 		width: 100% !important;
 	}
+
+	#brand {
+		position: absolute;
+		top: 20%;
+
+	}
+
 
 	#date {
 		float: left;
@@ -2538,6 +2728,10 @@ html, body{
 
 	/*..........................page-work.php.......................*/
 
+	#featured_project_post {
+		width: 100% !important;
+	}
+
 	
 	
 	#project_sidebar {
@@ -2546,6 +2740,12 @@ html, body{
 		left: 3%;
 
 	}
+
+
+	.post_container .col-xs-4 {
+		width: 100%;
+	}
+	
 
 	
 	
@@ -2557,16 +2757,44 @@ html, body{
 
 
 	
-	#blog_page_sidebar {
+	#new_blog_post {
+	width: 100% !important;
+
+	}
+
+
+	
+	#blog_sidebar {
 
 		width: 100% !important;
 		left: 3%;
-
+		
 	}
+
+	#blog_post_container {
+		width: 100% !important;
+		
+	}
+
+
 
 	
 
 	/*..........................end of home.php...................*/
+
+
+	/*.......................contact.php........................*/
+
+	.wpcf7 .form-control {
+		width: 100%;
+	}
+
+	.wpcf7-submit {
+		width: 100%;
+	}
+
+	/*...................end of contact.php......................*/
+
 
 	
 
@@ -2575,101 +2803,99 @@ html, body{
 
   }
 
+
+
+	/*...................end of iPad.............................*/
+
+
+
+	/*......................iPad Landscape........................*/
+
+
+	@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+
+		/*......................front-page.php....................*/
+
+	#brand {
+		position: absolute;
+		top: 10%;
+
+	}
+
+  
+
+	#date {
+
+		margin-left: 15%;
+	}
+
+	
+	.parallax-window {
+		background-position: 50% 50% !important;
+
+	}
+
+	
+
+	/*........................end of front-page.php.................*/
+
+
+
+
+
+
+	}
+
+
+
+	/*.......................end of iPad Landscape...................*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*........................LG GPad 8.0............................*/
+
+
   @media only screen 
   and (min-width: 800px )
   and (max-width: 1280px )
   and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait)
+ 
 
   {
 
   	 /*....................header....................*/
 
-  	 .navbar-fixed-top {
-  	 	height: auto;
-  	 	padding: 10px;
+  	 #toggle {
+  	 	top: 5% !important;
   	 }
 
-	.navbar-brand img {
-		height: 80px;
-		width: 80px;
-	}
-
-	#my-name {
-		font-size: 1.5em !important;
-		top: 5%;
-	}
-
-	#toggle {
-		top: 5%;
-		left: 150% !important;
-	}
+  	
 
   /*......................end of header ..............*/
 
  /*......................front-page.php....................*/
 
-	.home {
-		padding: 0 !important;
-		width: 100% !important;
-	}
-
-	#date {
-		float: left;
-		left: 15%;
-
-	}
-
-	.container {
-		padding: 0 !important;
-		width: 100% !important;
-
-	}
-
-	body {
-		padding: 0 !important;
-		width: 100% !important;
-
-	}
-
-	.container-fluid {
-		padding: 0 !important;
-		width: 100% !important;
-
-	}
-
-	.services-button {
-		left: 45%;
-	}
-
-
+	
 	/*........................end of front-page.php.................*/
 
 /*......................page-about.php....................*/
 
-	.about {
-		padding: 0 !important;
-		width: 100% !important;
-	}
-
-	.container {
-		padding: 0 !important;
-		width: 100% !important;
-
-	}
-
-	body {
-		padding: 0 !important;
-		width: 100% !important;
-
-	}
-
-	.container-fluid {
-		padding: 0 !important;
-		width: 100% !important;
-
-	}
-
+	
 
 
 	/*........................end of page-about.php.................*/
@@ -2681,9 +2907,3 @@ html, body{
 
  /*..........................end of LG Gpad 8.0......................*/
 
-/* @media screen and (min-width: 768px) {
-	.site_links p {
-		position: relative;
-		left: -50% !important;
-	}
-} */

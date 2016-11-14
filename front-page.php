@@ -6,10 +6,10 @@
 		
 		<div class="col-xs-12" id="brand">
 
-		<img src="<?php bloginfo('template_directory'); ?>/img/Logo.png" id='logo'>
+		<img src="<?php bloginfo('template_directory'); ?>/img/Logo.png" id='logo' alt=''>
 		<h1 id='name' style='font-size: 50px'>MICHAEL J STOKES</h1>
-		<br>
-		<p id='web-dev'>WEB DEVELOPMENT</p>
+		<!-- <hr style="border-color: #fff; width:50%; border-width:5px; "> -->
+		<p id='subtitle'>Front-End Developer</p>
 			</div>
 		</div>
 	</div>
@@ -55,13 +55,13 @@
 			while($lastBlog->have_posts()): $lastBlog->the_post(); ?>
 
 
-	<div class="col-xs-4 text-center">
+	<div class="col-xs-4 text-center recent-posts">
 
 
 	<div class="thumbnail-img img-responsive"><?php echo the_post_thumbnail('medium'); ?></div>	
 
 
-	<h1 class="latest-blog-title"><span><a href="<?php the_permalink(); ?>"><?php echo the_title() ?></a></span></h1>
+	<h1 class="blog-title"><span><a href="<?php the_permalink(); ?>"><?php echo the_title() ?></a></span></h1>
 
 				
 	</div>

@@ -80,7 +80,7 @@
 	<div class="row">
 		<div class="col-xs-12">
 		<div class="running_head_pink" id="recent_posts">
-		<h1>All Other Work</h1>
+		<h1>My Projects</h1>
 		</div>
 			<?php 
 
@@ -88,7 +88,7 @@
 
 				array(
 					'type' => 'post',
-					'posts_per_page' => 3,
+					'posts_per_page' => 6,
 					'order' => 'ASC',
 					'orderby' => 'date',
 					'cat' => 17, 
