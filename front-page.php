@@ -18,63 +18,49 @@
 <div class="content-block text-center parallax-window" data-parallax="scroll" data-image-src="<?php bloginfo('template_directory'); ?>/img/GrandCentral.jpg">	
 <div class="container">	
 <div class="row">
-<div class="col-xs-12">
-	<h1 id='date'><?php $d = date('F j, Y'); echo $d; ?></h1>
+<div class="col-xs-12" id="testimonials">
+
+	<?php 
+	query_posts('cat=12&showposts=1');
+	if(have_posts()) {
+		while(have_posts()) {
+			the_post();?>
+
+			<p><?php the_content(); ?></p>
+
+			<?php 
+			}
+		}
+
+		 ?>
+	
 </div>									
 </div>
 </div>	
 </div>
 
-<div class="img-bg latest-post" id='img2'>
+<div class="img-bg samples_of_work text-center" id='img2'>
 	<div class="container-fluid">
 	<div class="row">
-	<div class="col-xs-12" id="latest-post-container">
-
-	<h1 class='running_head_pink text-left'>Latest Posts</h1>
-
-	<br>
-	<br>
-	<br>
-	<br>
-	
-
+	<div class="col-xs-12" id="work_samples">
 
 	<?php 
 
-
-
-
-			$lastBlog = new WP_Query('type=post&posts_per_page=3&order=ASC&cat=39');
-
-			
+	query_posts('cat=90&showposts=1');
+	if(have_posts()) {
+		while(have_posts()) {
+			the_post();
 		
+	 ?>
 
+	 <p><?php the_content(); ?></p>
 
-			if( $lastBlog->have_posts()):
+	 <?php
+	 } 
 
-			while($lastBlog->have_posts()): $lastBlog->the_post(); ?>
+	 } 
 
-
-	<div class="col-xs-4 text-center recent-posts">
-
-
-	<div class="thumbnail-img img-responsive"><?php echo the_post_thumbnail('medium'); ?></div>	
-
-
-	<h1 class="blog-title"><span><a href="<?php the_permalink(); ?>"><?php echo the_title() ?></a></span></h1>
-
-				
-	</div>
-
-
-
-
-			<?php endwhile;
-
-		endif;
-
-		wp_reset_postdata();
-	?>
+	 ?>
 
 	</div>			
 	</div>	

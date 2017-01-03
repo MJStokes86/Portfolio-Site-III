@@ -308,3 +308,43 @@
 
 
 
+
+
+
+					<?php 
+					query_posts('cat=13&showposts=1');
+					if(have_posts()) {
+						while(have_posts()) {
+							the_post();?>
+
+					<p><?php the_content(); ?></p>
+					
+
+					<?php
+
+						}
+					}
+
+
+
+					 ?>
+
+
+					 <?php 
+
+	query_posts('cat=40&showposts=1');
+	if(have_posts()) {
+		while(have_posts()) {
+			the_post();
+		
+	 ?>
+
+	 <p><?php the_content(); ?></p>
+
+	 <?php
+	 } 
+
+	 } 
+
+	 ?>
+				

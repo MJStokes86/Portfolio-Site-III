@@ -3,7 +3,10 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Anton);
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:900);
-
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 html, body{
 	margin: 0;
@@ -11,22 +14,7 @@ html, body{
 	overflow-x: hidden;
 }
 
-.article_about {
 
-	column-width: 150px;
-	-webkit-column-width: 150px;
-	-moz-column-width: 150px;
-	column-gap: 30px;
-	-webkit-column-gap: 30px;
-	-moz-column-gap: 30px;
-	column-count: 3;
-	border-top: solid #fff 5px;
-	border-bottom: solid #fff 5px;
-	padding: 50px;
-	font-family: 'Arimo', sans-serif;
-	font-size: 20px;
-
-}
 
 .article_single {
 
@@ -207,6 +195,8 @@ html, body{
 #page-contact {
 		background: /* linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), */ url('../img/GrandCentral.jpg') center no-repeat;
 		background-size: cover;
+		background-color: #D9C7B6;
+		background-blend-mode: multiply;
 		
 
 } 
@@ -521,7 +511,7 @@ html, body{
 
 
 #subtitle {
-	font-family: Anton, sans-serif;
+	font-family: Josefin Sans, sans-serif;
 	font-size: 20px;
 	/* border-top: solid #fff 3px;
 	border-bottom: solid #fff 3px; */
@@ -540,16 +530,16 @@ html, body{
 
 #img1 {
 	background-image:  linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), url('../img/ctrlpkgray.jpg');
-	/* background-color: #212121;
-	background-blend-mode: multiply; */
+	background-color: #D9C7B6;
+	background-blend-mode: multiply;
 }
 
 #img2 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.7)), url('../img/sohogray.jpg');
 	margin-top:0;
 	color: #fff;
-	/* background-color: #C8A585;
-	background-blend-mode: multiply; */
+	background-color: #D9C7B6;
+	background-blend-mode: multiply;
 }
 
 #img3 {
@@ -557,9 +547,9 @@ html, body{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), url('../img/bethesdactrlpk.jpg');
 	margin-top:0;
 	color: #fff;
-	/* background-color: #212121;
+	background-color: #D9C7B6;
 	background-blend-mode: multiply;
- */
+
 }
 
 
@@ -569,8 +559,8 @@ html, body{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), url('../img/nycpink.jpg');
 	margin-top:0;
 	color: #fff;
-	/* background-color: pink;
-	background-blend-mode: multiply; */
+	background-color: #D9C7B6;
+	background-blend-mode: multiply;
 
 }
 
@@ -598,6 +588,32 @@ html, body{
 
 }
 
+#testimonials {
+	font-family: Josefin Sans, sans-serif;
+	text-transform: uppercase;
+	color: pink;
+}
+
+
+.samples_of_work {
+	align-items: center;
+	justify-content: center;
+	font-family: Josefin Sans, sans-serif;
+	text-transform: uppercase;
+	font-size: 25px;
+
+
+
+
+}
+
+.samples_of_work p {
+	margin-top: 25%;
+
+
+
+}
+
 
 .content-block2 {
 	height: auto;
@@ -620,16 +636,20 @@ html, body{
 	width:auto;
 	background-color: #212121 !important;
 	color: #fff;
-	font-size: 25px;
+	font-size: 20px;
 	padding: 100px;
 	background-image: /* linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), */ url('../img/sohogray.jpg');
 	background-blend-mode: multiply;
+	font-family: Josefin Sans, sans-serif;
+	text-transform: uppercase;
 }
 
 .services-button {
 	position: absolute;
 	top: 100%;
 	left: 45%;
+
+
 }
 
 
@@ -648,6 +668,24 @@ html, body{
 
 
 /*.....................page-about.php................................ */
+
+.article_about {
+
+	column-width: 150px;
+	-webkit-column-width: 150px;
+	-moz-column-width: 150px;
+	column-gap: 30px;
+	-webkit-column-gap: 30px;
+	-moz-column-gap: 30px;
+	column-count: 3;
+	border-left: solid pink 1px;
+	border-right: solid pink 1px;
+	padding: 50px;
+	font-family: 'Arimo', sans-serif;
+	font-size: 20px;
+
+}
+
 
 #skills {
 	background-color: #141414 !important;
@@ -708,7 +746,7 @@ html, body{
 .interests p {
 	font-size: 25px;
 	text-transform: uppercase;
-	font-family: Anton, sans-serif;
+	font-family: Josefin Sans, sans-serif;
 	color: #fff;
 }
 
@@ -789,8 +827,8 @@ html, body{
 
 #page-blog {
 		background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('../img/bklynbridge.jpg') center no-repeat;
-		/* background-color: pink;
-	background-blend-mode: multiply; */
+		background-color: #D9C7B6;
+	background-blend-mode: multiply;
 		 -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -1005,13 +1043,13 @@ html, body{
 .social-media {
 	list-style: none;
 	display: inline-block;
+	
 }
 
 .social-media li {
 	display: inline-block;
 	padding: 10px;
-
-
+	
 
 }
 
@@ -1063,9 +1101,9 @@ html, body{
 	column-gap: 30px;
 	-webkit-column-gap: 30px;
 	-moz-column-gap: 30px;
-	font-family: Times New Roman;
+	font-family: Source Sans Pro, sans-serif;
 	font-size: 20px;
-	column-count: 3;
+	column-count: 1;
 	line-height: 1.8em;
 
 
@@ -1441,9 +1479,10 @@ html, body{
 	margin-right: 12px;
 	display: inline-block;
 	text-decoration: none;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Josefin Sans, sans-serif;
 	min-width: 120px;
 	background-color: transparent;
+	text-transform: uppercase;
 
 }
 
@@ -1455,6 +1494,27 @@ html, body{
     -ms-transition: background-color 0.5s linear;
     -o-transition: background-color 0.5s linear;
      transition: background-color 0.5s linear;
+}
+
+.wpcf7-submit:focus {
+	border-color: pink;
+	outline: 0;
+    
+}
+
+.wpcf7 .form-control:focus {
+  border-color: pink;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.075), 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+
+
+div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
+	border: none;
+	font-family: Josefin Sans, sans-serif;
+	color: pink;
+	text-transform: uppercase;
+	font-size: 25px;
 }
 
 /*..............................End of Contact Form............................*/
@@ -2065,7 +2125,7 @@ html, body{
 	}
 
 	#subtitle {
-		font-size: 1.2em;
+		font-size: 0.8em;
 	}
 
 	#date {

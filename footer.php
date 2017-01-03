@@ -29,7 +29,8 @@ array(
 	'posts_per_page' =>3,
 	'order' => 'ASC',
 	'orderby' => 'date',
-	'cat' => 39
+	'cat' => 39,
+	'offset' => 2
 
 	)
 );
@@ -69,7 +70,7 @@ array(
 <hr> -->
 <ul class="social-media">
 <div class="row">	
-	<li><a href="http://facebook.com/mstokesj86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/facebook32.png" alt=""></a></li>
+	<li><a href="https://www.facebook.com/Michael-J-Stokes-609653772560194/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/facebook32.png" alt=""></a></li>
 	<li><a href="http://linkedin.com/in/mjstokes1" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/linkedin32.png" alt=""></a></li>
 	<li><a href="http://github.com/mjstokes86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/github32.png" alt=""></a></li>
 	<li><a href="http://twitter.com/mstokes86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/twitter32.png" alt=""></a></li>

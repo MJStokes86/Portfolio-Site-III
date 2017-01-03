@@ -109,6 +109,21 @@ function mytheme_comment($comment, $args, $depth) {
     }
 
 
+
+// function preprocess_new_comment($commentdata) {
+// 	if(!isset($_POST['is_legit'])) {
+// 		die('Not interested!');
+// 	}
+
+// 	return $commentdata;
+
+// }
+
+// if(function_exists('add_action')) {
+// 	add_action('preprocess_comment', 'preprocess_new_comment');
+// }
+
+
   
    
 
