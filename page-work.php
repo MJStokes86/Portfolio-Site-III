@@ -130,7 +130,7 @@
 			<br>
 			<p>
 			<!-- <?php echo get_the_excerpt() ?> -->
-			<a class="ghost-button" href="<?php the_permalink(); ?>">Read</a>
+			<a class="ghost-button" href="<?php the_permalink(); ?>">View</a>
 
 			
 		</p>

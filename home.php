@@ -23,7 +23,7 @@
 		 	while($latestPost->have_posts()){
 		 		$latestPost->the_post(); ?>
 
-		<div class="running_head_pink"  id="featured"><p>New Post</p>
+		<div class="running_head_pink"  id="featured"><p>Latest Post</p>
   		</div>
 		
 
@@ -78,7 +78,7 @@
 	<div class="row">
 		<div class="col-xs-12">
 		<div class="running_head_pink" id="recent_posts">
-		<h1>All Other Posts</h1>
+		<h1>Recent Posts</h1>
 		</div>
 
 

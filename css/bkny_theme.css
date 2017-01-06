@@ -1034,12 +1034,12 @@ html, body{
 	list-style: none;
 }
 
-.site_links li a{
+/* .site_links li a{
 	position: relative;
 	left: -7%;
 
 }
-
+ */
 .social-media {
 	list-style: none;
 	display: inline-block;
