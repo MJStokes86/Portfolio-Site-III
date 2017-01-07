@@ -26,8 +26,8 @@
 	<small><p>Copyright &copy; <?php echo date('Y'); ?> <br>
 mjstokes.com <br>
 All rights reserved </p></small>
-
-<small><a href="http://wordpress.org" target="_blank" id="WordPress" ><i class="devicons devicons-wordpress"></i></a><br><p>Powered by WordPress</p></small>
+<!-- 
+<small><a href="http://wordpress.org" target="_blank" id="WordPress" ><i class="devicons devicons-wordpress"></i></a><br><p>Powered by WordPress</p></small> -->
 </ul>
 
 

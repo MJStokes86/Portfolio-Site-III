@@ -166,7 +166,7 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
 
         <br>
 
-        <input type="submit" value='POST COMMENT' id='comment-button'>
+        <input type="submit" value='SUBMIT COMMENT' id='comment-button'>
         <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>"></p> 
      
     <?php do_action('comment_form', $post->ID); ?> 

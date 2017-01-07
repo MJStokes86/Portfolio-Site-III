@@ -678,11 +678,12 @@ html, body{
 	-webkit-column-gap: 30px;
 	-moz-column-gap: 30px;
 	column-count: 3;
-	border-left: solid pink 1px;
-	border-right: solid pink 1px;
+	/* border: solid pink 1px; */
 	padding: 50px;
 	font-family: 'Arimo', sans-serif;
 	font-size: 20px;
+	background:  linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
+
 
 }
 
@@ -1377,10 +1378,13 @@ html, body{
 
 }
 
+
+
 #comment-button {
 
-	color: pink;
-	border: 1px solid pink;
+	color: #fff;
+	border: 1px solid #fff;
+	border-color: #fff;
 	font-size: 17px;
 	padding: 7px 12px;
 	font-weight: normal;
@@ -1425,11 +1429,16 @@ html, body{
 #author, #email, #url, #comment {
 
 	border-radius: 0;
-	border: solid pink 2px;
+	border: solid #fff 2px;
 	background-color: transparent;
 	color: pink;
 
 
+}
+
+#author:focus , #email:focus, #url:focus , #comment:focus {
+
+	border-color: pink;
 }
 
 /* .comment-meta span {
@@ -1730,6 +1739,11 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 
 	}
 
+	.services-button p {
+		text-align: center;
+	}
+
+
 	#my_services {
 		padding: 50%; 
 		left: -50%;
@@ -1767,6 +1781,7 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 	
 	.article_about {
 		font-size: 0.9em !important;
+		margin-top: -40%;
 	}
 
 	.devicons {
@@ -1776,6 +1791,20 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 	.col-md-3 h4 {
 		font-size: 0.5em;
 	}
+
+
+	#interest_statement {
+		font-size: 2em !important;
+	}
+
+	.interests i  {
+		font-size: 1.5em;
+	}
+
+	.interests p  {
+		font-size: 0.8em;
+	}
+
 
 
 	/*..........................end of page-about.php...............*/
@@ -1971,16 +2000,15 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 		display: none;
 	}
 
-	.site_links li a {
-		position: relative;
-		left: -10% !important;
+	/* .site_links li a {
+		padding: 10px !important;
 
-	}
-
+	} */
+/* 
 	.site_links p {
 		position: relative;
 		left: 20%;
-	}
+	}  */
 
 	/* .recent_posts_list a {
 
@@ -1994,20 +2022,29 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 		display: none;
 	}
 
+
+
+
 	.social-media li {
-		padding: 0;
-		display: inline !important;
+
+		 width: 33.33333%;
+		 padding: 5px;
+		 display: table;
+
+ 		
+
+
 	}
 
+	
 	/* .social-media img {
 	height: 20px;
 	width: 20px;
 	} */
 
-	.footer-contact small p {
-		width: 100px;
+	.social-media small p {
 		position: relative;
-		left:  42%;
+		margin-top:  15%;
 
 	}
 
@@ -2194,6 +2231,19 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 	
 	.article_about {
 		font-size: 0.9em !important;
+		margin-top: -25%;
+	}
+
+	#interest_statement {
+		font-size: 2em !important;
+	}
+
+	.interests i  {
+		font-size: 1.5em;
+	}
+
+	.interests p  {
+		font-size: 1em;
 	}
 
 
@@ -2303,6 +2353,10 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 		left: 5%;
 	}
 
+	.services-button p {
+		text-align: center;
+	}
+
 
 	
 
@@ -2375,16 +2429,16 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 
 	/*........................footer.php.........................*/
 
-	#footer-row {
+	/* #footer-row {
 		margin-left: -15%;
 	}
-
+ */
 
 	.footer-logo {
 		display: none;
 	}
 
-	.site_links li a {
+	/* .site_links li a {
 		position: relative;
 		left: -10% !important;
 
@@ -2394,7 +2448,7 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 		position: relative;
 		left: 20%;
 	}
-
+ */
 	/* .recent_posts_list a {
 
 		font-size: 0.7em !important;
@@ -2412,12 +2466,18 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 		display: inline !important;
 	}
 
+	.social-media {
+		display: inline-block;
+
+	}
+
+
 	/* .social-media img {
 	height: 20px;
 	width: 20px;
 	} */
 
-	.footer-contact small p {
+	/* .footer-contact small p {
 		width: 100px;
 		position: relative;
 		left:  42%;
@@ -2429,7 +2489,7 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 		left: 5%;
 		font-size: 2em;
 	}
-
+ */
 
 
 
@@ -2456,7 +2516,8 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
   	}
 
   	.overlay li a {
-  		font-size: 0.6em;
+  		font-size: 0.6em !important;
+
   	}
 
   	#toggle {
@@ -2528,7 +2589,7 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 	/*........................footer.php.........................*/
 	
 
-	.site_links p {
+	/* .site_links p {
 		position: relative;
 		left: 15%;
 	}
@@ -2542,18 +2603,14 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 	.social-media li {
 		position: relative;
 		left: 10%;
-	}
+	} */
 
-	.footer-contact small p {
+	.social-media small p {
 		position: relative;
-		left: 47% !important;
+		margin-top:  15%;
 
 	}
 
-	#WordPress {
-		position: relative;
-		left: 5% !important;
-	}
 
 	.recent-post-links, .footer-logo {
 		display: block;
@@ -2563,8 +2620,8 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 		height: 100px;
 		width: 100px;
 		position: relative;
-		left: 25% !important;
-
+		/* left: 25% !important;
+ */
 	}
 
 	
