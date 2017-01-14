@@ -1332,6 +1332,10 @@ html, body{
 	top: 30px;
 }
 
+li.cat-item.cat-item-14, li.cat-item.cat-item-39, li.cat-item.cat-item-35, li.cat-item.cat-item-16,  li.cat-item.cat-item-17, li.cat-item.cat-item-77,  li.cat-item.cat-item-90,  li.cat-item.cat-item-13,  li.cat-item.cat-item-15,  li.cat-item.cat-item-12,  li.cat-item.cat-item-1 {
+	display: none;
+}
+
 /* end of sidebar.php */
 
 
@@ -1735,7 +1739,8 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 	}
 
 	.services {
-		background-position: center;
+		background-color: #141414 !important;
+  		background-image: none;
 
 	}
 
@@ -2190,7 +2195,8 @@ div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
 	}
 
 	.services {
-		background-position: center;
+		background-color: #141414 !important;
+  		background-image: none;
 
 	}
 

@@ -22,7 +22,7 @@
 	<li><a href="https://www.facebook.com/Michael-J-Stokes-609653772560194/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/facebook32.png" alt=""></a></li>
 	<li><a href="http://linkedin.com/in/mjstokes1" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/linkedin32.png" alt=""></a></li>
 	<li><a href="http://github.com/mjstokes86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/github32.png" alt=""></a></li>
-	<li><a href="http://twitter.com/mstokes86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/twitter32.png" alt=""></a></li>
+	<li><a href="https://twitter.com/MJSTOKES101" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/twitter32.png" alt=""></a></li>
 	<small><p>Copyright &copy; <?php echo date('Y'); ?> <br>
 mjstokes.com <br>
 All rights reserved </p></small>
@@ -49,10 +49,9 @@ $recentPost = new WP_Query(
 array(
 	'type' => 'post',
 	'posts_per_page' =>3,
-	'order' => 'ASC',
+	'order' => 'DESC',
 	'orderby' => 'date',
-	'cat' => 39,
-	'offset' => 2
+	'cat' => array(35, 39)
 
 	)
 );
@@ -66,6 +65,8 @@ array(
 
  	<li><a href="<?php the_permalink(); ?>" ><p><?php the_title(); ?></p></a></li>
 
+ 
+
  	<?php
 
 
@@ -75,7 +76,9 @@ array(
 
  }
 
- 		wp_reset_postdata();
+ wp_reset_postdata(); 
+
+ 		
 
 
 

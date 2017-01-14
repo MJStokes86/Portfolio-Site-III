@@ -15,6 +15,7 @@
 
 		<?php 
 
+
 		$latestPost = new WP_Query('type=post&posts_per_page=1&order=ASC&cat=35');
 
 
@@ -46,8 +47,7 @@
 		<p><?php echo get_the_excerpt() . "<br><br>" ?><a class='ghost-button' href="<?php the_permalink(); ?>">Continue Reading</a></p>
 		</div>
 
-
-
+		
 
 		<?php
 
@@ -84,18 +84,24 @@
 
 			<?php 
 
+
+		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
 			$recentPost = new WP_Query(
 
 				array(
 					'type' => 'post',
 					'posts_per_page' => 6,
-					'order' => 'ASC',
+					'order' => 'DESC',
 					'orderby' => 'date',
-					'cat' => '39'
+					'cat' => '39',
+					'paged' => $paged
 
 				)
 
 				);
+
+
 
 
 			if(have_posts()) { ?>
@@ -166,6 +172,9 @@
 
 				}
 
+				  wp_reset_postdata();
+
+
 
 		
 
@@ -177,11 +186,21 @@
 
 			 <?php
 
-			  if(function_exists('wp_page_numbers')) { wp_page_numbers(); }
+			  if(function_exists('wp_pagenavi')) { wp_pagenavi();  
+
+			 
 
 			}
 
-		wp_reset_postdata();
+			
+
+
+			}
+
+
+			
+
+		
 
 
 			?>

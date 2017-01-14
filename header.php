@@ -8,7 +8,9 @@
 <meta name="description" content="<?php bloginfo('description'); ?>">     <?php if( is_singular() )
 wp_enqueue_script( 'comment-reply' );  ?> <?php wp_head(); ?>     
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">     
-<link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>     
+<link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/Logo.ico">
+
 <script src="https://use.fontawesome.com/a46e157fb6.js"></script>     
 <script src="jquery.bootstrap-autohidingnavbar.js"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
