@@ -4,6 +4,8 @@ function bkny_theme_script_enqueue() {
 
 	wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/bkny_theme.css', array(), '4.5.3', 'all');
 
+	wp_enqueue_style('responsive-css', get_template_directory_uri() . '/css/responsive.css', array(), '4.5.3', 'all');
+
 	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.7', 'all');	
 
 	wp_enqueue_style('devicons', '//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css');
@@ -107,6 +109,13 @@ function mytheme_comment($comment, $args, $depth) {
   
     <?php
     }
+
+    @ini_set( 'upload_max_size' , '64M' );
+
+	@ini_set( 'post_max_size', '64M');
+
+	@ini_set( 'max_execution_time', '300' );
+
 
 
 

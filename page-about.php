@@ -79,7 +79,7 @@
 ?>
 
 <center>
-<a href="<?php bloginfo('template_directory'); ?>/Michael_J_Stokes_Resume.pdf" target="_blank"><p class='ghost-button'>MY RESUME</p></a>
+<a href="<?php bloginfo('template_directory'); ?>/Michael_J_Stokes_Resume.pdf" target="_blank" ><p id="resume_button" class='ghost-button'>MY RESUME</p></a>
 </center>
 
 
