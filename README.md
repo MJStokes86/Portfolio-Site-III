@@ -5,3 +5,11 @@ This is the third version of my portfolio site and my first Wordpress site I eve
 
 ![alt text](lib/img/wireframe1.jpg)
 ![alt text](lib/img/wireframe2.jpg)
+
+# Plugins Used
+1. Contact Form 7
+2. PHP Compatibility Checker
+
+# Working Demo of the Site
+[http://mjstokes.com/portfolioiii](https://www.mjstokes.com/portfolioiii)
+
