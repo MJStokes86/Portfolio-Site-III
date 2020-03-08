@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 if ( ! empty( $post->post_password ) && $_COOKIE[ 'wp-postpass_' . COOKIEHASH ] != $post->post_password ) : ?>
 
@@ -61,7 +61,7 @@ endif;
 endif;
 endforeach;
 		?>
-=======
+
 <?php 
 if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) : ?>
 
@@ -110,13 +110,12 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $po
  <?php  if('odd' == $thiscomment) {$thiscomment = 'even'; } else { $thiscomment = 'odd';} ?>
 
 <?php endif; endforeach; ?>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 </ol>
 
 <?php endif; ?>
 
-<<<<<<< HEAD
+
 	<?php if ( $numComments != 0 ) : ?>
 
 	<h2 class="comments-header"><?php _e( $numComments ); ?> Comments</h2>
@@ -180,7 +179,7 @@ else :
 	<div id="comments-form"> 
 
 	<div id="respond">
-=======
+
 <?php if($numComments != 0) : ?>
 
     <h2 class="comments-header"><?php  _e($numComments); ?> Comments</h2>
@@ -234,14 +233,13 @@ else :
     <div id="comments-form"> 
 
     <div id="respond">
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
  
 <h3 id="comments-header"><?php comment_form_title( 'Leave a Comment', 'Leave a Reply to %s' ); ?></h3>
  
 <div class="cancel-comment-reply">
 <small><?php cancel_comment_reply_link(); ?></small>
 </div>
-<<<<<<< HEAD
+
 	 
 	<?php if ( get_option( 'comment_registration' ) && ! $user_ID ) : ?> 
 		<p id="comments-blocked">You must be <a href="<?php echo get_option( 'siteurl' ); ?>/wp-login.php?redirect_to= 
@@ -324,7 +322,7 @@ else :
 	</div>
 	</form> 
 	</div> 
-=======
+
      
     <?php if (get_option('comment_registration') && !$user_ID ) : ?> 
         <p id="comments-blocked">You must be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to= 
@@ -390,16 +388,14 @@ else :
     </div>
     </form> 
     </div> 
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 <?php endif; // If registration required and not logged in ?> 
 
 <?php else : // Comments are closed ?> 
-<<<<<<< HEAD
+
 	<p id="comments-closed">Sorry, comments for this entry are closed at this time.</p> 
-=======
+
     <p id="comments-closed">Sorry, comments for this entry are closed at this time.</p> 
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 <?php endif; ?>
 
 
@@ -407,8 +403,7 @@ else :
 
 
 
-<<<<<<< HEAD
+
 	</ol>
-=======
+
     </ol>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a

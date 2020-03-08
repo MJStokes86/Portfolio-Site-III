@@ -1,13 +1,12 @@
-<<<<<<< HEAD
+
 <?php
 
 /*
-=======
+
 <?php 
 
 /*
 
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 Template Name: CategoryPost
 
 */ ?>
@@ -19,7 +18,7 @@ Template Name: CategoryPost
 	
 	<?php
 
-<<<<<<< HEAD
+
 	if ( have_posts() ) {
 		while ( have_posts() ) {
 			the_post();
@@ -31,7 +30,7 @@ Template Name: CategoryPost
 				while ( have_posts() ) {
 					the_post();
 					?>
-=======
+
 	if(have_posts()) {
 						while(have_posts()) {
 							the_post();?>
@@ -40,7 +39,6 @@ Template Name: CategoryPost
 			<?php if (have_posts()) {
 				while (have_posts()) {
 					the_post(); ?>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 					<p><?php the_content(); ?>
 
@@ -48,31 +46,29 @@ Template Name: CategoryPost
 				}
 			}
 		}
-<<<<<<< HEAD
+
 	}
 
 
 
 	?>
-=======
+
 	} 
 
 
 
 	 ?>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 
 </div>
 </div>
 
 <?php get_footer(); ?>
-<<<<<<< HEAD
-=======
 
 
 
 
 
 
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
+
+

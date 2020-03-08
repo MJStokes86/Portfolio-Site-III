@@ -13,7 +13,6 @@
 
 		<div class="cols left-div" id="featured_project_post">
 
-<<<<<<< HEAD
 		<?php
 
 		$latestPost = new WP_Query( 'type=post&posts_per_page=1&order=ASC&cat=11' );
@@ -27,7 +26,7 @@
 
 				
 			
-=======
+
 		<?php 
 
 		$latestPost = new WP_Query('type=post&posts_per_page=1&order=ASC&cat=17');
@@ -40,27 +39,22 @@
 
 		 		
 		 	
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 		<div class="running_head_pink" id='featured'><p>Featured Project</p></div>
 
 		
 
-<<<<<<< HEAD
 		<div class="project-thumbnail img-responsive" id="project_photo"><?php echo the_post_thumbnail( 'large' ); ?></div>
-=======
+
 		<div class="project-thumbnail img-responsive" id="project_photo"><?php echo the_post_thumbnail('large') ?></div>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 		<br>
 		<br>
 
 
-<<<<<<< HEAD
 		<h1 class="featured-project-title" id="project-title"><span style="color: #fff;"class="blog-title"><?php echo the_title(); ?></span></h1>
-=======
+
 		<h1 class="featured-project-title" id="project-title"><span style="color: #fff;"class="blog-title"><?php echo the_title() ?></span></h1>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 		<br>	
 		<br>
@@ -68,29 +62,25 @@
 
 
 		<div class="template-part" id="project-template-part">
-<<<<<<< HEAD
 		<p><?php echo get_the_excerpt(); ?> <a class='ghost-button' href="<?php the_permalink(); ?>">Continue Reading</a></p>
-=======
+
 		<p><?php echo get_the_excerpt() ?> <a class='ghost-button' href="<?php the_permalink(); ?>">Continue Reading</a></p>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 		</div>
 
 
 
 
-<<<<<<< HEAD
 				<?php
 
 			}
 		}
 		?>
-=======
+
 		<?php
 
 		}
 
 		 	} ?>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 			
 		
 
@@ -99,11 +89,9 @@
 
 		
 
-<<<<<<< HEAD
 		<div class="cols right-div" id="project_sidebar"><?php get_sidebar(); ?></div>
-=======
+
 		<div class="cols right-div" id="project_sidebar"><?php get_sidebar() ?></div>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 		
 
@@ -122,7 +110,6 @@
 		<div class="running_head_pink" id="recent_posts">
 		<h1>My Projects</h1>
 		</div>
-<<<<<<< HEAD
 			<?php
 
 			$recentPost = new WP_Query(
@@ -140,7 +127,7 @@
 
 			if ( have_posts() ) {
 				?>
-=======
+
 			<?php 
 
 			$recentPost = new WP_Query(
@@ -159,7 +146,6 @@
 
 
 			if(have_posts()) { ?>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 
 		<br>
@@ -169,7 +155,6 @@
 
 		<div class=" row posts_table">
 
-<<<<<<< HEAD
 				<?php
 
 				$counter = 0;
@@ -180,7 +165,7 @@
 
 
 					?>
-=======
+
 			<?php 
 
 			$counter = 0;
@@ -191,26 +176,21 @@
 
 
 				?>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 		<div class="col-xs-4" id='border-right'>
 
 
 
-<<<<<<< HEAD
 			<div class="recent-thumbnail" id="project-img"><?php echo the_post_thumbnail( 'medium' ); ?></div>
-=======
+
 			<div class="recent-thumbnail" id="project-img"><?php echo the_post_thumbnail('medium') ?></div>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 			<br>
 			<h2 class="blog-title" id="container_titles"><?php the_title(); ?></h2>
 			<br>
 			<p>
-<<<<<<< HEAD
 			<!-- <?php echo get_the_excerpt(); ?> -->
-=======
+
 			<!-- <?php echo get_the_excerpt() ?> -->
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 			<a class="ghost-button" href="<?php the_permalink(); ?>">View</a>
 
 			
@@ -225,27 +205,24 @@
 
 
 
-<<<<<<< HEAD
 					<?php
 
 					$counter++;
 
 					if ( $counter % 3 == 0 ) {
 						?>
-=======
+
 		<?php 
 
 		$counter++;
 
 		if($counter %3 == 0) {
 			?>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 					</div>
 		<div class="row posts_table">
 
 
-<<<<<<< HEAD
 						<?php
 
 					}
@@ -267,7 +244,7 @@
 			}
 
 			wp_reset_postdata();
-=======
+
 		<?php
 
 		}
@@ -298,7 +275,6 @@
 			}
 
 		wp_reset_postdata();
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 
 			?>
@@ -312,7 +288,5 @@
 	</div>
 
 	<?php get_footer(); ?>
-<<<<<<< HEAD
-=======
+
 		
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a

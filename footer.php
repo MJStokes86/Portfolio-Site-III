@@ -1,16 +1,13 @@
-
-
 <footer>
 <div class="footer text-center">
 <div class="container-fluid">
 <div class="row" id="footer-row">
 <div class="col-xs-12">
 
-<<<<<<< HEAD
 <br>
 
 <div class="footer-logo">
-		<img src="<?php bloginfo( 'template_directory' ); ?>/lib/img/Logo.png" id='footer-logo' class="img-responsive">
+		<img src="<?php bloginfo('template_directory'); ?>/lib/img/Logo.png" id='footer-logo' class="img-responsive">
 	</div>
 
 
@@ -21,40 +18,13 @@
 <small><a href="http://wordpress.org" target="_blank" id="WordPress" ><i class="devicons devicons-wordpress"></i></a><br><p>Powered by WordPress</p></small> -->
 
 <!-- <ul class="social-media">
-	<li><a href="https://www.facebook.com/Michael-J-Stokes-609653772560194/" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/lib/img/facebook32.png" alt=""></a></li>
-	<li><a href="http://linkedin.com/in/mjstokes1" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/lib/img/linkedin32.png" alt=""></a></li>
-	<li><a href="http://github.com/mjstokes86" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/lib/img/github32.png" alt=""></a></li>
-	<li><a href="https://twitter.com/MStokes86" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/lib/img/twitter32.png" alt=""></a></li>
+	<li><a href="https://www.facebook.com/Michael-J-Stokes-609653772560194/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/lib/img/facebook32.png" alt=""></a></li>
+	<li><a href="http://linkedin.com/in/mjstokes1" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/lib/img/linkedin32.png" alt=""></a></li>
+	<li><a href="http://github.com/mjstokes86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/lib/img/github32.png" alt=""></a></li>
+	<li><a href="https://twitter.com/MStokes86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/lib/img/twitter32.png" alt=""></a></li>
 </ul>
 
  -->
-=======
-
-<div class="col-xs-4">
-	<div class="footer-logo">
-		<img src="<?php bloginfo('template_directory'); ?>/img/Logo.png" id='footer-logo' class="img-responsive">
-	</div>
-</div>
-
-
-
-<div class="col-xs-4 site_links">
-<?php wp_nav_menu(array('theme_location' => 'secondary')); ?>
-
-<ul class="social-media">
-	<li><a href="https://www.facebook.com/Michael-J-Stokes-609653772560194/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/facebook32.png" alt=""></a></li>
-	<li><a href="http://linkedin.com/in/mjstokes1" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/linkedin32.png" alt=""></a></li>
-	<li><a href="http://github.com/mjstokes86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/github32.png" alt=""></a></li>
-	<li><a href="https://twitter.com/MStokes86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/twitter32.png" alt=""></a></li>
-	<small><p>Copyright &copy; <?php echo date('Y'); ?> <br>
-mjstokes.com <br>
-All rights reserved </p></small>
-<!-- 
-<small><a href="http://wordpress.org" target="_blank" id="WordPress" ><i class="devicons devicons-wordpress"></i></a><br><p>Powered by WordPress</p></small> -->
-</ul>
-
-
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 
 </div>
@@ -62,22 +32,7 @@ All rights reserved </p></small>
 
 
 
-<<<<<<< HEAD
 <!-- <div class="col-xs-4 recent-post-links">
-<p>Recent Posts</p>
-<ul class='recent_posts_list'>
-
-<?php
-
-$recentPost = new WP_Query(
-	array(
-		'type'           => 'post',
-		'posts_per_page' => 3,
-		'order'          => 'DESC',
-		'orderby'        => 'date',
-		'cat'            => array( 3, 5 ),
-=======
-<div class="col-xs-4 recent-post-links">
 <p>Recent Posts</p>
 <ul class='recent_posts_list'>
 
@@ -90,42 +45,11 @@ array(
 	'posts_per_page' =>3,
 	'order' => 'DESC',
 	'orderby' => 'date',
-	'cat' => array(35, 39)
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
+	'cat' => array(3, 5)
 
 	)
 );
 
-<<<<<<< HEAD
-if ( $recentPost->have_posts() ) {
-	?>
-
-
-	<?php
-	while ( $recentPost->have_posts() ) {
-		$recentPost->the_post();
-		?>
-
-	 <li><a href="<?php the_permalink(); ?>" ><p><?php the_title(); ?></p></a></li>
-
- 
-
-		<?php
-
-
-
-	}
-}
-
- wp_reset_postdata();
-
-
-
-
-
-?>
-	 </ul>
-=======
  if($recentPost->have_posts()) { ?>
 
 
@@ -154,7 +78,6 @@ if ( $recentPost->have_posts() ) {
 
  	?>
  	</ul>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 	
 </div>
@@ -176,11 +99,7 @@ if ( $recentPost->have_posts() ) {
 
 
 </div>
-<<<<<<< HEAD
 </div> -->
-=======
-</div>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 
 <!-- ....................mobile-footer.................-->
@@ -192,13 +111,8 @@ if ( $recentPost->have_posts() ) {
 <div class="col-xs-12">
 
 
-<<<<<<< HEAD
 <<!-- div class="mobile-site_links">
-<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
-=======
-<div class="mobile-site_links">
 <?php wp_nav_menu(array('theme_location' => 'secondary')); ?>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 </div>
 
 <br>
@@ -209,17 +123,6 @@ if ( $recentPost->have_posts() ) {
 <p id="mobile-recent-post-links-title">Recent Posts</p>
 <ul class='recent_posts_list'>
 
-<<<<<<< HEAD
-<?php
-
-$recentPost = new WP_Query(
-	array(
-		'type'           => 'post',
-		'posts_per_page' => 3,
-		'order'          => 'DESC',
-		'orderby'        => 'date',
-		'cat'            => array( 3, 5 ),
-=======
 <?php 
 
 $recentPost = new WP_Query(
@@ -229,42 +132,11 @@ array(
 	'posts_per_page' =>3,
 	'order' => 'DESC',
 	'orderby' => 'date',
-	'cat' => array(35, 39)
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
+	'cat' => array(3, 5)
 
 	)
 );
 
-<<<<<<< HEAD
-if ( $recentPost->have_posts() ) {
-	?>
-
-
-	<?php
-	while ( $recentPost->have_posts() ) {
-		$recentPost->the_post();
-		?>
-
-	 <li><a href="<?php the_permalink(); ?>" ><p><?php the_title(); ?></p></a></li>
-
- 
-
-		<?php
-
-
-
-	}
-}
-
- wp_reset_postdata();
-
-
-
-
-
-?>
-	 </ul>
-=======
  if($recentPost->have_posts()) { ?>
 
 
@@ -293,52 +165,32 @@ if ( $recentPost->have_posts() ) {
 
  	?>
  	</ul>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 	
 </div>
 
 <br>
-<<<<<<< HEAD
  -->
-=======
-
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 
 
 
 
 
 	<div class="mobile-footer-logo">
-<<<<<<< HEAD
-		<img src="<?php bloginfo( 'template_directory' ); ?>/lib/img/Logo.png" id='mobile-footer-logo' class="img-responsive">
-=======
-		<img src="<?php bloginfo('template_directory'); ?>/img/Logo.png" id='mobile-footer-logo' class="img-responsive">
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
+		<img src="<?php bloginfo('template_directory'); ?>/lib/img/Logo.png" id='mobile-footer-logo' class="img-responsive">
 	</div>
 
 	<br>
 
 	<ul class="mobile-social-media">
-<<<<<<< HEAD
-	<li><a href="https://www.facebook.com/Michael-J-Stokes-609653772560194/" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/lib/img/facebook32.png" alt=""></a></li>
-	<li><a href="http://linkedin.com/in/mjstokes1" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/lib/img/linkedin32.png" alt=""></a></li>
-	<li><a href="http://github.com/mjstokes86" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/lib/img/github32.png" alt=""></a></li>
-	<li><a href="https://twitter.com/MJSTOKES101" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/lib/img/twitter32.png" alt=""></a></li>
-	<br>
-	<br>
-
-	<small><p>Copyright &copy; <?php echo date( 'Y' ); ?> <br>
-=======
-	<li><a href="https://www.facebook.com/Michael-J-Stokes-609653772560194/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/facebook32.png" alt=""></a></li>
-	<li><a href="http://linkedin.com/in/mjstokes1" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/linkedin32.png" alt=""></a></li>
-	<li><a href="http://github.com/mjstokes86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/github32.png" alt=""></a></li>
-	<li><a href="https://twitter.com/MJSTOKES101" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/twitter32.png" alt=""></a></li>
+	<li><a href="https://www.facebook.com/Michael-J-Stokes-609653772560194/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/lib/img/facebook32.png" alt=""></a></li>
+	<li><a href="http://linkedin.com/in/mjstokes1" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/lib/img/linkedin32.png" alt=""></a></li>
+	<li><a href="http://github.com/mjstokes86" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/lib/img/github32.png" alt=""></a></li>
+	<li><a href="https://twitter.com/MJSTOKES101" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/lib/img/twitter32.png" alt=""></a></li>
 	<br>
 	<br>
 
 	<small><p>Copyright &copy; <?php echo date('Y'); ?> <br>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
 mjstokes.com <br>
 All rights reserved </p></small>
 <!-- 
@@ -412,8 +264,4 @@ All rights reserved </p></small>
 
 <?php wp_footer(); ?>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
