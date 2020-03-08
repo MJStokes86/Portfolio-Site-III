@@ -1,0 +1,1645 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Arimo);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Anton);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:900);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+
+html, body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+
+
+.article_single {
+
+	column-width: 150px;
+	-webkit-column-width: 150px;
+	-moz-column-width: 150px;
+	column-gap: 30px;
+	-webkit-column-gap: 30px;
+	-moz-column-gap: 30px;
+	font-family: 'Arimo', sans-serif;
+	column-count: 2;
+
+
+}
+
+
+.reg-text p {
+	
+	column-width: 0 !important;
+	-webkit-column-width: 0 !important;
+	-moz-column-width: 0 !important;
+	column-gap: 0 !important;
+	-webkit-column-gap: 0 !important;
+	-moz-column-gap: 0 !important;
+	font-family: 'Arimo', sans-serif;
+	column-count: 1 !important;
+
+
+
+
+}
+
+
+.entry-title {
+	width: 300px;
+}
+
+.entry img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.first-item {
+	font-size: 5em;
+}
+
+
+.ghost-button {
+
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 17px;
+	padding: 7px 12px;
+	font-weight: normal;
+	margin-right: 12px;
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	min-width: 120px;
+
+}
+
+
+
+.ghost-button:hover {
+	color: #000;
+	background-color: pink;
+	border-color: pink;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s linear; 
+    -moz-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+     transition: background-color 0.5s linear;
+
+}
+
+.ghost-button-pink {
+
+	color: #000;
+	border: 1px solid #fff;
+	font-size: 17px;
+	padding: 7px 5px;
+	font-weight: normal;
+	margin-right: 12px;
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	min-width: 120px;
+	background-color: pink;
+
+}
+
+.running_head_black {
+	background-color: #000;
+	display: block;
+	padding: 35px 0 5px 0;
+	margin: 4px 12px;
+	width: 250px;
+	line-height: 1.1em;
+	font-family: Anton;
+	color: pink;
+	text-transform: uppercase;
+}
+
+.running_head_pink {
+	background-color: pink;
+	display: block;
+	padding: 35px 0 5px 0;
+	margin: 4px 12px;
+	width: 250px;
+	line-height: 1.1em;
+	color: #000;
+	text-transform: uppercase;
+	font-family: Anton, sans-serif;
+}
+
+.blog-title {
+	text-transform: uppercase;	
+	/* line-height: 1.8; */
+	color: pink;
+	padding: 20px;
+	font-size: 20px;
+	font-family: 'Anton', sans-serif;
+}
+
+.recent-posts  a {
+	color: pink;
+}
+
+.recent-posts a:hover {
+	text-decoration: none;
+	color: #fff;
+	-webkit-transition: color 0.5s linear; 
+    -moz-transition: color 0.5s linear;
+    -ms-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+     transition: color 0.5s linear;
+
+}
+
+
+#featured_photo {
+	position: relative;
+	top: 5% !important;
+}
+
+.running_head_text {
+	font-size: 15px;
+	text-transform: uppercase;
+	padding-left: 10px;
+
+}
+
+.running_head_text {
+	position: relative;
+	top: 50px;
+}
+
+#running_head_projects {
+	position: relative;
+	top: 0;
+	left: -10px;
+}
+
+#container_titles {
+	font-size: 30px;
+	padding: 0;
+}
+
+
+
+.featured-thumbnail img {
+	max-width: 100%;
+	height: auto !important;
+}
+
+#page-contact {
+		background: /* linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), */ url('../img/GrandCentral.jpg') center no-repeat;
+		background-size: cover;
+		background-color: #D9C7B6;
+		background-blend-mode: multiply;
+		
+
+} 
+
+
+
+.col-xs-6 {
+	color: #fff;
+}
+
+.social {
+	text-decoration: none;
+	color: #fff;
+}
+
+.social li {
+	display:  inline-block;
+}
+
+.entry-content {
+	color: #fff;
+}
+
+
+/*............................. header.php......................... */
+ 
+
+#bars {
+	color: #fff;
+	position:  fixed;
+	top: 5%;
+}
+
+.navbar-fixed-top {
+	display: none;
+}
+
+
+#menu-main-navigation {
+	display: inline;
+
+}
+
+
+.navbar-header {
+	padding: 10px !important;
+}
+
+.navbar-color {
+	background-color: #212121 !important;
+	border: none !important;
+	background: rgb(0, 0, 0) !important;
+   background: rgba(0, 0, 0, 0.9) !important;
+}
+
+#my-name {
+	font-family:'Anton', sans-serif;
+	font-size: 30px;
+	color: pink;
+	margin-top: 10%;
+
+
+	}
+
+
+.navbar-brand img {
+	width: 100px;
+	height: 100px;
+	margin-top: -5%;
+	display: none;
+	
+}
+
+#toggle {
+	margin-top: 1.7%;
+	
+}
+
+
+
+
+#menu-main-navigation li a{
+	color: #fff !important;
+	position: relative;
+	
+}
+
+#menu-main-navigation li a:hover {
+	color:  pink !important;
+	-webkit-transition: color 0.5s linear; 
+    -moz-transition: color 0.5s linear;
+    -ms-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+     transition: color 0.5s linear;
+}
+
+
+
+/*......................... nav overlay.............................. */
+
+.button_container {
+	position: fixed;
+	top: 5%;
+	right: 2%;
+	height: 27px;
+	width: 35px;
+	cursor: pointer;
+	z-index: 100;
+	transition: opacity .25s ease;
+
+
+
+	
+}
+
+
+
+
+
+.button_container:hover {
+	opacity: .7;
+
+	}
+
+
+
+
+
+.button_container.active .top {
+	transform: translateY(11px) translateX(0) rotate(45deg);
+
+	
+}
+
+.button_container.active .middle {
+	opacity: 0;
+	background: #fff;
+
+}
+
+.button_container.active .bottom {
+	transform: translateY(-11px) translateX(0) rotate(-45deg);
+	
+}
+
+.button_container span {
+	background: pink;
+	border: none;
+	height: 5px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .35s ease;
+	cursor: pointer;
+	
+	
+}
+
+.button_container span:nth-of-type(2) {
+	top: 11px;
+}
+
+.button_container span:nth-of-type(3) {
+	top: 22px;
+}
+
+.overlay {
+	position: fixed;
+	background: #000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .35s, visibility .35s, height .35s;
+	overflow: hidden;
+	z-index: 99;
+}
+
+.overlay.open {
+	opacity: .9;
+	visibility: visible;
+	height: 100%;
+}
+
+.overlay.open li {
+	animation: fadeInRight .5s ease forwards;
+	animation-delay: .35s;
+}
+
+.overlay.open li:nth-of-type(2) {
+	animation-delay: .4s;
+}
+
+.overlay.open li:nth-of-type(3) {
+	animation-delay: .45s;
+}
+
+.overlay.open li:nth-of-type(4) {
+	animation-delay: .50s;
+}
+
+.overlay nav {
+	position: relative;
+	height: 70%;
+	top: 70%;
+	transform: translateY(-50%);
+	font-size: 50px;
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	text-align: center;
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	position: relative;
+	height: 100%;
+
+}
+
+.overlay ul li a {
+	display: block;
+	position: relative;
+	color: #000;
+	text-decoration: none;
+	overflow: hidden;
+
+}
+
+/* .overlay ul li a:hover::after, .overlay ul li a:focus::after, .overlay ul li a:active::after {
+	width: 25%;
+} */
+
+
+.overlay ul li a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0%;
+	transform: translateX(-50%);
+	height: 3px;
+	background: #fff;
+	transition: .35s;
+}
+
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		left: 20%;
+	}
+	100% {
+		opacity: 1;
+		left: 0;
+	}
+	
+}
+
+
+/*................ end of nav overlay................................./*
+
+
+/*.........................end of header.php......................... */
+
+
+/*.......................... front-page.php.......................... */
+
+#date {
+	color: pink !important;
+	font-size: 80px;
+	font-family: Anton, sans-serif;
+	text-transform: uppercase;
+	margin-left: -10% !important;
+}
+
+.img-bg {
+    height: 800px;
+    width:auto;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-top: 0;
+	
+
+}
+
+
+#brand {
+	
+	margin-top: 15%;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items:center;
+}
+
+#name {
+	position: relative;
+	top: 70%;
+	color: pink;
+	font-family: Anton, sans-serif;
+}
+
+
+
+
+#subtitle {
+	font-family: Josefin Sans, sans-serif;
+	font-size: 20px;
+	/* border-top: solid #fff 3px;
+	border-bottom: solid #fff 3px; */
+	padding:25px 100px;
+	display:inline-block;
+	/* background-color: #fff; */
+	/* background: rgba(0, 0, 0, 0.7); */
+	color: #fff;
+	text-transform: uppercase;
+
+
+}
+
+
+
+
+#img1 {
+	background-image:  linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), url('../img/ctrlpkgray.jpg');
+	background-color: #D9C7B6;
+	background-blend-mode: multiply;
+}
+
+#img2 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.7)), url('../img/sohogray.jpg');
+	margin-top:0;
+	color: #fff;
+	background-color: #D9C7B6;
+	background-blend-mode: multiply;
+}
+
+#img3 {
+
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), url('../img/bethesdactrlpk.jpg');
+	margin-top:0;
+	color: #fff;
+	background-color: #D9C7B6;
+	background-blend-mode: multiply;
+
+}
+
+
+#img4 {
+
+
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), url('../img/nycpink.jpg');
+	margin-top:0;
+	color: #fff;
+	background-color: #D9C7B6;
+	background-blend-mode: multiply;
+
+}
+
+.parallax-window {
+ 
+    background: transparent;
+    background-size: cover;
+	background-attachment: fixed;
+	background-position: 30% 50% !important;
+
+}
+
+
+.content-block {
+	height: auto;
+	width:auto;
+	background-color: #212121 !important;
+	color: #fff;
+	font-size: 25px;
+	padding: 100px;
+	background-image:/*  linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), */ url('../img/ctrlpkgray.jpg');
+	background-blend-mode: multiply;
+
+
+
+}
+
+#testimonials {
+	font-family: Josefin Sans, sans-serif;
+	text-transform: uppercase;
+	color: pink;
+	margin-left: -2% !important;
+}
+
+.samples_of_work {
+	height: 1000px;
+}
+
+.nutrition-club-title {
+	background-color: #252525;
+	display: block;
+	padding: 10px;
+	color: pink;
+	text-transform: uppercase;
+	font-family: Playfair Display, sans-serif;
+	margin-top: -3%;
+	margin-left: 10%;
+	position: relative;
+	right: 5%;
+
+}
+
+.nutrition-club-link a:hover {
+	color: #000 !important;
+}
+
+.nutrition-club-link a:visited {
+	text-decoration: none !important;
+	color: #fff;
+}
+
+
+
+
+.mobile {
+	display: none;
+}
+
+
+.samples_of_work {
+	align-items: center;
+	justify-content: center;
+	font-family: Josefin Sans, sans-serif;
+	text-transform: uppercase;
+	font-size: 25px;
+
+
+
+
+}
+
+.samples_of_work p {
+	margin-top: 5%;
+
+
+
+}
+
+.samples_of_work a {
+	color: #fff;
+}
+
+.samples_of_work a:hover {
+	text-decoration: none;
+	color: pink;
+	-webkit-transition: color 0.5s linear; 
+    -moz-transition: color 0.5s linear;
+    -ms-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+     transition: color 0.5s linear;
+
+}
+
+
+
+.content-block2 {
+	height: auto;
+	width:auto;
+	background-color: #212121 !important;
+	color: #fff;
+	font-size: 25px;
+	padding: 100px;
+	background-image: /* linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), */ url('../img/bethesdactrlpk.jpg');
+	/* background-blend-mode: multiply; */
+
+
+
+}
+
+
+
+.services {
+	height: auto;
+	width:auto;
+	background-color: #212121 !important;
+	color: #fff;
+	font-size: 20px;
+	padding: 100px;
+	background-image: /* linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), */ url('../img/sohogray.jpg');
+	background-blend-mode: multiply;
+	font-family: Josefin Sans, sans-serif;
+	text-transform: uppercase;
+}
+
+.services-button {
+	position: absolute;
+	top: 100%;
+	left: 45%;
+
+
+}
+
+.mobile {
+	display: none !important;
+}
+
+
+
+
+#devices {
+	height: 500px;
+	width: 500px;
+}
+
+.device-bg {
+	background-color: #fff !important;
+}
+
+/*...................... end of front-page.php....................... */
+
+
+/*.....................page-about.php................................ */
+
+.article_about {
+
+	column-width: 150px;
+	-webkit-column-width: 150px;
+	-moz-column-width: 150px;
+	column-gap: 30px;
+	-webkit-column-gap: 30px;
+	-moz-column-gap: 30px;
+	column-count: 3;
+	/* border: solid pink 1px; */
+	padding: 50px;
+	font-family: 'Arimo', sans-serif;
+	font-size: 20px;
+	background:  linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
+
+
+}
+
+#source-code a {
+	color: #fff;
+
+}
+
+#source-code a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+#source-code a:visited {
+	text-decoration: none;
+	
+}
+
+
+#skills {
+	background-color: #141414 !important;
+	color: #fff;
+	background-image: none !important;
+}
+
+#skills p {
+	font-size: 15px;
+}
+
+#skills h3 {
+	font-family: Anton, sans-serif;
+	color: pink;
+	text-transform: uppercase;
+}
+
+#skills h4 {
+	text-transform: uppercase;
+}
+
+
+
+.skills .col-xs-12 {
+	margin-left: -7%;
+}
+
+ .devicons {
+	font-size: 2em;
+}
+
+.glyphicon {
+	font-size: 3em;
+}
+.fa {
+	font-size: 3em;
+}
+
+.skills ul li i {
+	list-style: none;
+	font-size: 1em !important;
+}
+
+.skills ul {
+	position: relative;
+	left: -20px;
+}
+
+#resume_button {
+	margin-top: 10% !important;
+	margin-left: 15% !important;
+}
+
+.interests {
+ 	margin-top: 20%;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items:center;
+	
+}
+
+.interests p {
+	font-size: 25px;
+	text-transform: uppercase;
+	font-family: Josefin Sans, sans-serif;
+	color: #fff;
+}
+
+/* .interests .container-fluid {
+	border: solid 1px #fff;	
+
+} */
+
+/*.................... end of page-about.php......................... */
+
+
+/*....................page-work.php...............*/
+
+.featured-project-title {
+	position: absolute;
+	top: 37%;
+	left: 0;
+	width: 75%;
+	font-size: 30px;
+	text-transform: uppercase;	
+	line-height: 1.8;
+	color: pink;
+	padding: 20px;
+	font-family: 'Anton', sans-serif;
+
+}
+
+.featured-project-title span {
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.9);
+   padding: 10px; 
+   font-size: 35px;
+}
+
+.project-thumbnail img {
+	position: absolute;
+	top: 20%;
+}
+
+#project-template-part {
+	position: absolute;
+	top: 65%;
+}
+
+#project_sidebar .fa-search {
+	font-size: 2em;
+}
+
+
+
+
+
+
+/*.................end of page-work.php...............*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*........................home.php....................................*/
+
+.tags_list {
+	display: inline-block;
+}
+
+.tags_list a {
+	color: #fff;
+}
+
+
+#page-blog {
+		background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('../img/bklynbridge.jpg') center no-repeat;
+		background-color: #D9C7B6;
+	background-blend-mode: multiply;
+		 -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+
+} 
+
+.cols {
+	min-height: 850px;
+	background-color: #212121;
+	color:  #fff;
+	margin-top: 5%;
+	background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.8);
+
+}
+
+.featured_photo, .blog-title, .template-part {
+	position: relative;
+	left: 3%;
+}
+
+.template-part p {
+	width: 75%;
+}
+
+
+.featured-blog-title {
+	position: absolute;
+	top: 60%;
+	left: 0;
+	width: 75%;
+	font-size: 30px;
+	text-transform: uppercase;	
+	line-height: 1.8;
+	color: pink;
+	padding: 20px;
+	font-family: 'Anton', sans-serif;
+
+}
+
+.featured-blog-title span {
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+   font-size: 35px;
+}
+
+
+
+.featured-thumbnail img {
+	position: absolute;
+	top: 20%;
+}
+
+
+.latest-blog-title {
+	position: absolute;
+	left: 15%;
+	width: 75%;
+	text-transform: uppercase;	
+	line-height: 1.8;
+	color: pink;
+	padding: 20px;
+	font-family: 'Anton', sans-serif;
+
+}
+
+.latest-blog-title span a {
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.9);
+   padding: 10px; 
+   font-size: 35px;
+   color: pink;
+}
+
+.template-part {
+	position: absolute;
+	top: 80%;
+}
+
+
+
+
+.left-div {
+	width: 800px;
+	position: relative;
+	float: left;
+	left: 3%;
+
+
+}
+
+.right-div {
+	width: 350px;
+	position: relative;
+	float: right;
+	right: 3%;
+
+}
+
+#featured {
+	position: relative;
+	left: 0;
+}
+
+#featured p, #post_date p, #recent_posts h1 {
+	position: relative;
+	left: 5%;
+	font-size: 25px;
+
+}
+
+
+
+
+#post_date {
+	
+	color: #fff;
+	font-size: 2em;
+	padding-bottom: 2px;
+	position: absolute;
+	top: 53%;
+	left: 2.9%;
+	z-index: 1;
+	background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.7);
+    font-family: Anton, sans-serif;
+}
+
+#post_category {
+	background-color: #fff;
+	color: #000;
+	padding: 0px 5px;
+}
+
+
+
+
+#blog_photo {
+	position: relative;
+	top: 5% !important;
+}
+
+#blog_sidebar .fa-search {
+	font-size: 2em;
+}
+
+
+
+.post_container {
+	background-color: #212121;
+	color: #fff;
+	height: auto;
+	position: relative;
+	left: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: 95% !important;
+	background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.9);
+}
+
+
+
+
+
+
+#border-right:not(:last-child) {
+	border-right: solid 1px pink;
+}
+
+
+
+/*............................end of home.php........................ */
+
+
+
+
+/*.......................... footer.php.............................. */
+
+.footer {
+
+	background-color: #000;
+	color: #fff;
+	display: block !important;
+
+}
+
+.footer a {
+	color: #fff;
+
+}
+
+.footer a:hover {
+	color: #fff;
+
+
+}
+
+.footer ul {
+	list-style: none;
+}
+
+#footer-logo  {
+	position: relative;
+	margin-left: 48% !important;
+	height: 80px;
+	width: 80px;
+}
+
+
+/* .site_links li a{
+	position: relative;
+	left: -7%;
+
+}
+ */
+.social-media {
+	list-style: none;
+	display: inline-block;
+	
+}
+
+.social-media li {
+	display: inline-block;
+	padding: 10px;
+	
+
+}
+
+#WordPress{
+	font-size: 3em;
+}
+
+#WordPress  {
+	color: #fff;
+	text-decoration: none;
+
+}
+
+#WordPress:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#WordPress:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.mobile-footer {
+	display: none !important;
+}
+
+
+/*........................ end of footer.php........................ */
+
+
+
+
+/*.......................... single.php.............................. */
+
+ .main-blog {
+ 	background-color: #212121;
+ 	color: #fff;
+ 	height: auto;
+ 	width: auto;
+ 	background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.9);
+
+
+}
+
+.content p {
+
+	column-width: 150px;
+	-webkit-column-width: 150px;
+	-moz-column-width: 150px;
+	column-gap: 30px;
+	-webkit-column-gap: 30px;
+	-moz-column-gap: 30px;
+	font-family: Source Sans Pro, sans-serif;
+	font-size: 20px;
+	column-count: 1;
+	line-height: 1.8em;
+
+
+}
+
+.content p a {
+	color: pink;
+
+}
+
+.content p a:hover {
+	text-decoration: none;
+}
+
+
+.pull-left {
+	height: 200px;
+	width: 200px;
+}
+
+
+
+.tags {
+	list-style: none;
+	display: inline-block;
+	font-family: Anton, sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+
+}
+
+
+.tags li a {
+	color: pink;
+	
+}
+
+.tags li a:hover {
+	text-decoration: none;
+	color: #fff;
+     -webkit-transition: color 0.5s linear; 
+    -moz-transition: color 0.5s linear;
+    -ms-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+     transition: color 0.5s linear;
+
+}
+
+
+
+
+
+
+
+/* .....................end of single.php....................... */
+
+
+/*......................portfolio-page.......................*/
+
+.project-info {
+	padding-left: 30px;
+	color: #fff;
+	font-family: 'Arimo', sans-serif;
+	border: solid #fff;
+}
+
+
+.project-info h1 {
+	font-family: 'Anton', sans-serif;
+	color: #fff;
+}
+
+.project-meta h3 {
+	font-weight:bold;
+	color: #fff;
+}
+
+.project-meta li {
+	list-style: none;
+}
+
+.key-highlights li {
+	list-style: circle;
+}
+
+.project-button a p {
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 17px;
+	padding: 7px 12px;
+	font-weight: normal;
+	margin-right: 12px;
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	min-width: 120px;
+	background-color: transparent;
+	text-transform: uppercase;
+	
+}
+
+.project-button a {
+	color: #fff !important;
+
+}
+
+.project-button a p:hover {
+	color: #000 !important;
+	text-decoration: none;
+	background-color: pink;
+	-webkit-transition: background-color 0.5s linear; 
+    -moz-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+     transition: background-color 0.5s linear;
+
+}
+
+
+/*......................end of portfolio-page.................*/
+
+
+/* search.php */
+
+.results {
+	background-color: #212121;
+	color: #fff;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.9);
+
+}
+
+.fa-search {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  font-size: 2em;
+}
+
+#search {
+	position: absolute;
+	left: 15%;
+	top: 60px;
+}
+
+#search {
+	width: 70%;
+	border-radius: 0;
+	border: none;
+	border-bottom: solid pink 2px;
+	background-color: transparent;
+	color: #fff;
+}
+
+#search:focus {
+	
+  	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0);
+}
+
+
+
+
+/* end of search.php */
+
+
+/* content-search.php */
+
+.results h1 {
+	text-transform: uppercase;	
+	/* line-height: 1.8; */
+	color: pink;
+	padding: 20px;
+	font-size: 30px;
+	font-family: 'Anton', sans-serif;
+	
+}
+
+/* end of content-search.php */
+
+
+/* sidebar.php */
+
+.widget-title {
+/* 	background-color: #000;
+ */	display: block;
+	padding: 35px 0 5px 0;
+	margin: 4px 12px;
+	width: 200px;
+	line-height: 1.1em;
+	color: pink;
+	text-transform: uppercase;
+	font-family: Anton, sans-serif;
+	font-size: 20px;
+}
+
+.widget-title h1 {
+	position: relative;
+	left: 5%;
+	font-size: 25px;
+}
+
+.widgets-area ul {
+	list-style: none;
+}
+
+.widgets-area li a {
+	color: #fff;
+}
+
+.widgets-area li a:hover {
+	color: pink;
+	text-decoration: none;
+	-webkit-transition: color 0.5s linear; 
+    -moz-transition: color 0.5s linear;
+    -ms-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+     transition: color 0.5s linear;
+
+}
+
+.widget_categories  {
+	position: relative;
+	top: 90px;
+}
+
+
+
+.widget_recent_comments {
+	position: relative;
+	top: 80px;
+}
+
+.widget_archive {
+	position: relative;
+	top: 80px;
+
+}
+
+
+
+li.cat-item.cat-item-14, li.cat-item.cat-item-39, li.cat-item.cat-item-35, li.cat-item.cat-item-16,  li.cat-item.cat-item-17, li.cat-item.cat-item-77,  li.cat-item.cat-item-90,  li.cat-item.cat-item-13,  li.cat-item.cat-item-15,  li.cat-item.cat-item-12,  li.cat-item.cat-item-1 {
+	display: none;
+}
+
+/* end of sidebar.php */
+
+
+
+/*...........................Comments.......................................*/
+
+.avatar {
+	height: 50px;
+	width: 50px;
+}
+
+.reply a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.says {
+	display: none;
+}
+
+
+.comment_container {
+
+	background-color: #212121;
+	color: #fff;
+	height: auto;
+	position: relative;
+	left: 10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 95% !important;
+	background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.9);
+
+}
+
+.comments-header, #comments-header {
+
+	text-transform: uppercase;	
+	color: pink;
+	padding: 20px;
+	font-size: 30px;
+	font-family: 'Anton', sans-serif;
+
+}
+
+
+
+#comment-button {
+
+	color: #fff;
+	border: 1px solid #fff;
+	border-color: #fff;
+	font-size: 17px;
+	padding: 7px 12px;
+	font-weight: normal;
+	margin-right: 12px;
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	min-width: 120px;
+	background-color: transparent;
+	width: 100%;
+
+}
+
+
+
+#comment-button:hover {
+	color: #000;
+	background-color: pink;
+	border-color: pink;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s linear; 
+    -moz-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+     transition: background-color 0.5s linear;
+
+}
+
+ li {
+	list-style: none;
+}
+
+.comment-edit-link {
+	display: none;
+}
+
+
+
+
+
+
+#author, #email, #url, #comment {
+
+	border-radius: 0;
+	border: solid #fff 2px;
+	background-color: transparent;
+	color: pink;
+
+
+}
+
+#author:focus , #email:focus, #url:focus , #comment:focus {
+
+	border-color: pink;
+}
+
+/* .comment-meta span {
+	color: pink;
+} */
+
+
+
+
+/*............................End of Comments........................*/
+
+
+/*..............................Contact Form...........................*/
+
+#page-contact .container {
+	height: 900px;
+}
+
+.contact-container {
+	background-color: #212121;
+	background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.7);
+
+}
+
+.wpcf7 .form-control {
+
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 17px;
+	padding: 7px 12px;
+	font-weight: normal;
+	margin-right: 12px;
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	min-width: 120px;
+	background-color: transparent;
+	border-radius: 0;
+	width: 50%;
+
+}
+
+
+.wpcf7-submit {
+
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 17px;
+	padding: 7px 12px;
+	font-weight: normal;
+	margin-right: 12px;
+	display: inline-block;
+	text-decoration: none;
+	font-family: Josefin Sans, sans-serif;
+	min-width: 120px;
+	background-color: transparent;
+	text-transform: uppercase;
+
+}
+
+.wpcf7-submit:hover {
+	background-color: pink;
+	color: #000;
+	-webkit-transition: background-color 0.5s linear; 
+    -moz-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+     transition: background-color 0.5s linear;
+}
+
+.wpcf7-submit:focus {
+	border-color: pink;
+	outline: 0;
+    
+}
+
+.wpcf7 .form-control:focus {
+  border-color: pink;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.075), 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+
+
+div.wpcf7-mail-sent-ok, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors  {
+	border: none;
+	font-family: Josefin Sans, sans-serif;
+	color: pink;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+
+/*..............................End of Contact Form............................*/
+
+
+
