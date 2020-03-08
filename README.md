@@ -1,19 +1,7 @@
-# Portfolio III
-## This is my first ever WordPress site built from scratch based on my own design
+#PortfolioIII
 
----
+##About the site....
+This is the third version of my portfolio site and my first Wordpress site I ever built. The name of the theme is call **BKNY2**. I have personally created this theme from scratch based off my own designs I drawn on paper. 
 
-# The name of my Theme is call BKNY
-
----
-
-# The plugins I used were
-Contact Form 7
-
----
-
-# The site can be seen at 
-[title](https://mjstokes.com/portfolioiii)
-
-
-
+![alt text](wireframe1.jpg)
+![alt text](wireframe2.jpg)
