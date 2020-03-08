@@ -13,3 +13,8 @@ This is the third version of my portfolio site and my first Wordpress site I eve
 # Working Demo of the Site
 [http://mjstokes.com/portfolioiii](https://www.mjstokes.com/portfolioiii)
 
+![alt text](lib/img/home.jpg)
+![alt text](lib/img/menu.jpg)
+![alt text](lib/img/work.jpg)
+![alt text](lib/img/blog.jpg)
+
