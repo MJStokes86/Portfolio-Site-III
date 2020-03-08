@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php get_header(); ?>
 
 <body id='page-blog'>
@@ -215,3 +216,13 @@
 
 
 <?php get_footer(); ?>
+=======
+<?php /*
+
+Template Name: Default
+
+*/   ?>
+
+
+<?php get_header(); ?>
+>>>>>>> eeda3f6a7304f0a3c3a9b64ecc6e15072a27fd8a
