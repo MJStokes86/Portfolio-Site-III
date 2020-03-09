@@ -10,9 +10,12 @@ This is the third version of my portfolio site and my first Wordpress site I eve
 1. Contact Form 7
 2. PHP Compatibility Checker
 
-# Libraries Used
+# Libraries and 3rd Party Files for both JS and CSS Used
 1. Bootstrap
 2. Font Awesome
+3. jQuery
+4. Parallax
+5. Devicons
 
 # Working Demo of the Site
 [http://mjstokes.com/portfolioiii](https://www.mjstokes.com/portfolioiii)
