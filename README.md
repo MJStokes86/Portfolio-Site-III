@@ -10,6 +10,10 @@ This is the third version of my portfolio site and my first Wordpress site I eve
 1. Contact Form 7
 2. PHP Compatibility Checker
 
+# Libraries Used
+1. Bootstrap
+2. Font Awesome
+
 # Working Demo of the Site
 [http://mjstokes.com/portfolioiii](https://www.mjstokes.com/portfolioiii)
 
